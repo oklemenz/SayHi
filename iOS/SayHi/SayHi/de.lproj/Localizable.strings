@@ -1,0 +1,376 @@
+/* 
+  Localizable.strings
+  SayHi
+
+  Export Command:
+  egrep -roh '".*?".localized' . | sort | uniq | sed 's|\(".*"\)\.localized|\1 = \1;|g'
+ 
+  Created by Klemenz, Oliver on 17.11.16.
+  Copyright © 2016 Klemenz, Oliver. All rights reserved.
+*/
+"L" = "Niedrig";
+"M" = "Mittel";
+"Q" = "Viertel";
+"H" = "Hoch";
+
+"m" = "männlich";
+"m_short" = "m.";
+"f" = "weiblich";
+"f_short" = "w.";
+
+"basic" = "Einfach";
+"Basic" = "Einfach";
+"basic_1" = "1. Einfach";
+"exact" = "Exakt";
+"Exact" = "Exakt";
+"exact_2" = "2. Exakt";
+"adapt" = "Anpassen";
+"Adapt" = "Anpassen";
+"adapt_3" = "3. Anpassen";
+"tries" = "Versuch";
+"Tries" = "Versuch";
+"tries_4" = "4. Versuch";
+"open" = "Offen";
+"Open" = "Offen";
+"open_5" = "5. Offen";
+
+"min0" = "Sofort";
+"min1" = "Nach 1 Minute";
+"min5" = "Nach 5 Minuten";
+"min10" = "Nach 10 Minuten";
+
+"None" = "Keinen";
+"Date" = "Date";
+"Single" = "Single";
+"Family" = "Familie";
+"Partner" = "Partner";
+"Wife" = "Frau";
+"Husband" = "Ehemann";
+"Parent" = "Eltern";
+"Father" = "Vater";
+"Mother" = "Mutter";
+"Child" = "Kind";
+"Son" = "Sohn";
+"Daugther" = "Tochter";
+"Sibling" = "Geschwister";
+"Brother" = "Bruder";
+"Sister" = "Schwester";
+"Grandparent" = "Großeltern";
+"Grandfather" = "Großvater";
+"Grandmother" = "Großmutter";
+"Grandchild" = "Enkelkind";
+"Grandson" = "Enkelsohn";
+"Granddaughter" = "Enkeltochter";
+"Relative" = "Verwandter";
+"Uncle" = "Onkel";
+"Aunt" = "Tante";
+"Cousins" = "Cousins";
+"Cousin" = "Cousin";
+"Cousine" = "Cousine";
+"Nephew" = "Neffe";
+"Niece" = "Nichte";
+"Friend" = "Freund(in)";
+"Boyfriend" = "Freund";
+"Girlfriend" = "Freundin";
+"Colleague" = "Kollege";
+"Boss" = "Chef";
+"Manager" = "Manager";
+"Employee" = "Mitarbeiter";
+"Peer" = "Gleichaltriger";
+"Other" = "Andere(r)";
+
+"ChooseFromFavorites" = "Wähle aus den Favoriten";
+"ChooseFromSearch" = "Wähle aus dem Suchergebnis";
+"ChooseFromOwn" = "Wähle aus eigenen Tags";
+"ChooseFromUncategorized" = "Wähle aus nicht kategorisierten Tags";
+"ChooseFromCategory" = "Wähle aus '%@'";
+"ChooseFromDots" = "Wähle aus ...";
+
+"MatchExplanation" = "Der niedrigere Matching-Modus von beiden wird zum Matching herangezogen. Der Matching-Modus kann auf Profilebene übersteuert werden.";
+"MatchForce" = "Der Matching-Modus auf Profilebene wird übersteuert.";
+
+"ActivateMultipleProfiles" = "Aktiviere mehrere Profile.";
+"ProvideBirthYear" = "Gib zuerst dein Geburtsjahr an.";
+"ActivateOwnTags" = "Aktiviere eigene Tags.";
+"InviteFriends1" = "Lade zuerst zwei Leute ein. Sende die erste von zwei Einladungen.";
+"InviteFriends2" = "Lade zuerst zwei Leute ein. Sende die zweite von zwei Einladungen.";
+
+"CameraError" = "Diese App benötigt die Frontkamera um korrekt zu funktionieren. Erlaube den Zugriff auf die Kamera in den Geräteeinstellungen der App.";
+"MicrophoneError" = "Diese App benötigt das Mikrofon um korrekt zu funktionieren. Erlaube den Zugriff auf das Mikrofon in den Geräteeinstellungen der App.";
+"LocationError" = "Diese App kann deinen Standort während des Matchens ermitteln. Um diese Funktion zu aktivieren, erlaube den Zugriff auf die Ortungsdienste in den Geräteeinstellungen der App.";
+"MailNotConfigured" = "Das Gerät ist nicht für das Versenden von E-Mails konfiguriert.";
+"MessageNotConfigured" = "Das Gerät ist nicht für das Versenden von Nachrichten konfiguriert.";
+
+"ContactMail" = "contact@sayhi-app.com";
+"ContactSubject" = "SAY Hi! - Feedback & Support (iOS)";
+"ContactBody" = "
+<p>Hi!</p>
+<p>
+Ich habe Feedback oder brauche Hilfe!
+<br>
+<br>
+</p>
+<p>Danke!</p>
+<p>%@</p>";
+
+"InviteSubject" = "Einladung zu SAY Hi!";
+"InviteBody" = "
+<p>Hi!</p>
+<p>
+Ich nutze die App SAY Hi! und finde sie echt klasse!
+<br>
+Wenn du sie dir auch holst, dann können wir sie gemeinsam nutzen.
+</p>
+<p>
+Du kannst die App hier herunterladen:
+</p>
+<p>
+iOS:
+<br>
+<a href='%@'>%@</a>
+<p>
+<p>
+Android:
+<br>
+<a href='%@'>%@</a>
+</p>
+Bis bald!
+</p>
+<p>%@</p>";
+"InviteMessage" = "Hi!\nIch nutze SAY Hi!. Echt klasse.\n\niOS: %@\n\nAndroid: %@\n\n%@";
+
+"ConfigurationAdjusted" = "Die Konfiguration wurde erfolgreich angepasst.";
+"SettingsConfiguration" = "Die App-Konfiguration ist jederzeit durch das Icon 'Einstellungen' oben links erreichbar und kann dort angepasst werden.";
+"NoActiveProfile" = "Kein aktives Profil selektiert.";
+"DeleteProfile" = "Möchtest du wirklich das Profil '%@' löschen?";
+"DeleteMatch" = "Möchtest du wirklich den Match löschen?";
+"DeleteAllMatches" = "Möchtest du wirklich alle Matches löschen?";
+"InvalidQR" = "Zuletzt erkannter QR-Code ist nicht gültig für die App.";
+"DifferentSpace" = "Matchen in verschiedenen Bereichen ist nicht möglich. Wechselt in den Einstellungen zum selben Bereich und versucht es erneut.";
+"MatchModeNotOpen" = "Matching-Modus ist nicht aktiv auf der anderen Seite.";
+"AlreadyMatched" = "Letzter QR-Code wurde bereits erfolgreich gematcht. Siehe Matching-Historie.";
+"QRCodeImageNotAvailable" = "QR-Code ist nicht verfügbar mit dieser Korrekturstufe. Letzte verfügbare Version wird verwendet.";
+"QRCodeRecognitionActive" = "QR-Code\nErkennung\nist aktiv";
+"QRCodeRecognitionNotActive" = "QR-Code\nErkennung\nist NICHTsaktiv";
+"MatchIsProcessed" = "Der Match wird gerade verarbeitet. Bitte warte einen Moment.";
+"WaitingForOtherSide" = "Der Match muss von der anderen Seite bestätigt werden. Haltet weiterhin die Geräte zueinander zeigend.";
+"UnexpectedErrorOccurred" = "Ein unerwarteter Fehler ist aufgetreten. Prüfe die Netzwerkverbindung oder versuche es später nochmal.";
+"NoTagsForLanguage" = "Es existieren keine Tags für die aktuell gewählte Sprache. Erstelle neue Tags oder wechsle die Inhaltssprache.";
+"MisspelledWordsDetected" = "Der Name scheint falsch geschriebene Wörter zu enthalten. Willst du fortsetzen?";
+
+"TagAlreadyExists" = "Tag '%@' existiert bereits für die Kategorie '%@'.";
+"SimilarTagsExist" = "Ähnliche Tags existieren. Wie willst du weiter vorgehen?";
+"CategoryAlreadyExists" = "Kategorie '%@' existiert bereits.";
+"SimilarCategoriesExist" = "Ähnliche Kategorien existieren. Wie willst du weiter vorgehen?";
+"UseExistingTag" = "Verwende Existierenden";
+"UseExistingCategory" = "Verwende Existierende";
+
+"DisplaysMatchingScore" = "Zeigt dein Matching-\nErgebnis";
+"DisplaysMatchingScoreHighscore" = "Zeigt dein Matching-\nErgebnis, tippe für \n den Zugriff auf \ndie Highscore";
+"ShareOrShowHighscore" = "Teile deine Punkte oder zeige die Highscore an.";
+"ShareMatchingPoint" = "Teile %i Matching-Punkt";
+"ShareMatchingPoints" = "Teile %i Matching-Punkte";
+"ShareMatchingMatch" = "(%i Match)";
+"ShareMatchingMatches" = "(%i Matches)";
+"ProvideAliasShare" = "Gib einen Alias an, um dein Matching-Ergebnis zu teilen.";
+"ScoreShared" = "Dein Matching-Ergebnis wurde geteilt.";
+"PlayingRecording" = "Spiele Aufnahme ab...";
+"DeviceNotMuted" = "(Gerät sollte nicht stummgeschaltet sein)";
+"MatchingDetails" = "Matchingdetails";
+"MatchingDifferentLanguage" = "Matching wurde basierend auf unterschiedlichen Inhaltssprachen durchgeführt (%@ / %@).\n\nTags ohne englische Entsprechung wurden beim Matching nicht berücksichtigt.";
+
+"AppStoreUrlIOS" = "https://itunes.apple.com/de/app/say-hi/id1224255479?l=de&ls=1&mt=8";
+"AppStoreUrlAndroid" = "https://play.google.com/store/apps/details?id=de.oklemenz.sayhi";
+
+"%@*" = "%@*";
+"%i Match" = "%i Match";
+"%i Matches" = "%i Matches";
+"%i Matching Point" = "%i Matching-Punkt";
+"%i Matching Points" = "%i Matching-Punkte";
+"(%i pt.)" = "(%i Pkt.)";
+"(%i pts.)" = "(%i Pkte.)";
+"%i pt." = "%i Pkt.";
+"%i pts." = "%i Pkte.";
+"?" = "?";
+"Alias" = "Alias";
+"Access your data" = "Zugriff auf deine Daten";
+"Application Error" = "Applikationsfehler";
+"Back" = "Zurück";
+"Bye!" = "Bis Bald!";
+"First-time Configuration" = "Erstmalige Konfiguration";
+"Cancel" = "Abbrechen";
+"Category Creation" = "Kategorie-Erstellung";
+"Choose custom profile matching mode." = "Wähle einen Profil Matching-Modus.";
+"Clear Recorded Voice" = "Lösche Stimmaufnahme";
+"Close" = "Schließen";
+"Continue" = "Fortsetzen";
+"Copy Profile" = "Kopiere Profil";
+"Current Profile" = "Aktuelles Profil";
+"Default Setting" = "Standardeinstellung";
+"Delete" = "Löschen";
+"Delete Matching History" = "Lösche Matching-Historie";
+"Done" = "Fertig";
+"EN:" = "EN:";
+"Enter name for new Profile." = "Gib einen Namen für das neue Profil ein.";
+"Enter name for this Profile." = "Gib einen Namen für das Profil.";
+"Filter" = "Filtern";
+"Finish" = "Abschließen";
+"Hi, I'm %@!" = "Hi, ich bin %@!";
+"Hi!" = "Hi!";
+"Highscore" = "Highscore";
+"Language Information" = "Sprachinformationen";
+"Mail Configuration" = "E-Mail-Konfiguration";
+"Match Deletion" = "Löschen von Match";
+"Matching History (%i)" = "Matching-Historie (%i)";
+"Matching History" = "Matching-Historie";
+"Matching Points" = "Matching-Punkte";
+"Matching Point" = "Matching-Punkt";
+"Matching Voice" = "Matching-Stimme";
+"Message Configuration" = "Nachrichten-Konfiguration";
+"Mode" = "Modus";
+"More..." = "Mehr...";
+"Name" = "Name";
+"Network Error" = "Netzwerkfehler";
+"New Category" = "Neue Kategorie";
+"New Profile" = "Neues Profil";
+"New Tag" = "Neuer Tag";
+"Next >" = "Weiter >";
+"OK" = "OK";
+"Other..." = "Andere...";
+"Play Recorded Voice" = "Aufgenommene Stimme abspielen";
+"Play Synthesized Voice" = "Synthetische Stimme abspielen";
+"Say:" = "Sag:";
+"Profile Deletion" = "Profil-Löschung";
+"Profile Locked" = "Profil gesperrt";
+"Provide Profile Name." = "Gib einen Profilnamen ein.";
+"QR Code Generation" = "QR-Code Generierung";
+"QR Code Recognition" = "QR-Code Erkennung";
+"Record New" = "Neue Aufnahme";
+"Recorded" = "Aufgenommen";
+"Rename Profile" = "Profil umbenennen";
+"Request Auth." = "Auth. anfordern";
+"Search Category" = "Suche Kategorie";
+"Search" = "Suche";
+"Select an Action" = "Wähle eine Aktion";
+"Send Message" = "Schicke Nachricht";
+"Override Matching Mode" = "Überschreibe Matching-Modus";
+"Set Active" = "Setze Aktiv";
+"Settings" = "Einstellungen";
+"Share" = "Teile";
+"Share Score" = "Teile Ergebnis";
+"Show Highscore" = "Zeige Highscore";
+"Show Similar" = "Zeige Ähnliche";
+"Similar Categories" = "Ähnliche Kategorien";
+"Similar Tags" = "Ähnliche Tags";
+"Skip Once" = "Einmal überspringen";
+"Standard" = "Standard";
+"Space Switch" = "Bereichswechsel";
+"Enter a space name or choose standard space." = "Gib einen Bereichsnamen ein oder wähle den Standardbereich.";
+"Enter access code of space." = "Gib den Zugangscode des Bereichs ein.";
+"Access code not correct." = "Zugangscode ist nicht korrekt.";
+"Access Code" = "Zugangscode";
+"Space '%@' not found." = "Bereich '%@' nicht gefunden.";
+"SpaceSwitchedSuccessfully." = "Bereich erfolgreich gewechselt. Bereich kann in den Einstellungen wieder geändert werden.";
+"Synthesized" = "Synthetisch";
+"Tag Creation" = "Tag-Erstellung";
+"Tag Matching" = "Tag-Matching";
+"Use Passcode" = "Benutze Code";
+"Use Touch ID" = "Benutze Touch ID";
+"Use Face ID" = "Benutze Face ID";
+"Voice Recording" = "Stimmaufnahme";
+"Word Spelling Check" = "Wörter Korrekturprüfung";
+"Write Mail" = "Schreibe E-Mail";
+"[Press to Unlock]" = "[Zum Entsperren drücken]";
+"i!" = "i!";
+"n/a" = "k.A.";
+"~%i y." = "~%i J.";
+"%i (~%i year)" = "%i (~%i Jahr)";
+"%i (~%i years)" = "%i (~%i Jahre)";
+"» «" = "» «";
+"»%@«" = "»%@«";
+
+"LikeNum" = "%@ (%i)";
+"DislikeNum" = "%@ (%i)";
+"LikeDislikeNum" = "%@%i %@%i";
+"DislikeLikeNum" = "%@%i %@%i";
+"BothLikeNum" = "%@|%@ (%i/%i|%i)";
+"OnlyLikeNum" = "%@|%@ (%i/%i|%i)";
+"OnlyDislikeNum" = "%@|%@ (%i/%i|%i)";
+"BothDislikeNum" = "%@|%@ (%i/%i|%i)";
+
+"ModeIcon" = "Modus %@";
+"OverrideMatchingMode" = "Überschreibe Matching-Modus %@";
+"SetRelationType" = "Setze Beziehungstyp %@";
+"ProfileEdit" = "Bearbeiten → Mehr...
+• Kopiere Profil
+• Benenne Profil um
+• Setze Beziehungstyp %@
+• Überschreibe Matching-Modus %@";
+"MatchInformation" = "Match-Information
+
+1. Zeile: Daten über den anderen
+• Name
+• Geschlecht
+• Alter
+• Anzahl der Likes (%@)
+• Anzahl der Dislikes (%@)
+• Matching-Punkte
+
+2. Zeile: Daten über Dich
+• Matching-Profil
+• Beziehungstyp (%@)
+• Matching-Modus (%@)
+• Matching-Uhrzeit";
+
+"MatchBasic" = "Matche nur Tags, die beide mögen. Nutze diesen Modus, um sich abzustimmen.";
+"MatchExact" = "Matche nur Tags, die beide mögen oder beide nicht mögen. Nutze diesen Modus, um nur das preiszugeben, was beide mögen.";
+"MatchAdapt" = "Matche exakt und zeige zusätzlich Tags, die du magst, der andere aber nicht mag. Nutze diesen Modus, um dich anzupassen.";
+"MatchTry" = "Matche exakt und zeige zusätzlich Tags, die du nicht magst, der andere aber mag. Nutze diesen Modus, um etwas Neues auszuprobieren.";
+"MatchOpen" = "Matche alle Tags, die beide entweder mögen oder nicht mögen. Nutze diesen Modus, um dich zu öffnen.";
+"MatchInformation" = "Match-Information\n\n1. Zeile: Daten über den anderen\n  • Name \n  • Geschlecht \n  • Alter \n  • Sprache \n  • Anzahl der Likes (%@)\n  • Anzahl der Dislikes (%@) \n  • Matching-Punkte \n\n2. Zeile: Daten über Dich\n  • Matching-Profil \n  • Beziehungstyp (%@) \n  • Matching-Modus (%@) \n  • Matching-Standort\n  • Matching-Uhrzeit \n\n\n(Transparent angezeigte Matches werden \nfür das Ergebnis nicht gezählt, da schon\nein Match mit dem selben Gegenüber\nam gleichen Tag bestätigt wurde)";
+"ILike" = "%@ Mag Ich";
+"IDislike" = "%@ Mag Ich Nicht";
+"ShowsTagsBothLike" = "Zeigt Tags für\nThemen, die\nihr beide mögt";
+"ShowsTagsBothDislike" = "Zeigt Tags für\nThemen, die ihr\nbeide nicht mögt";
+"ShowsTagsLikeDislike" = "Zeigt Tags für\nThemen, die du\nmagst, der andere\naber nicht mag";
+"ShowsTagsDislikeLike" = "Zeigt Tags für\nThemen, die du nicht\nmagst, der andere\naber mag";
+"DropTagsTopicsLike" = "Ziehe hierhin Tags für Themen, die du magst, beginnend mit dem besten.\n\nReihenfolge kann geändert werden.";
+"DropTagsTopicsDislike" = "Ziehe hierhin Tags für Themen, die du nicht magst, beginnend mit dem schlechtesten.\n\nReihenfolge kann geändert werden.";
+"ShowsTagsLike" = "Zeigt Tags für\nThemen, die\ndu magst";
+"ShowsTagsDislike" = "Zeigt Tags für\nThemen, die\ndu nicht magst";
+
+"MatchBasic_exchange" = "Matche nur Tags, die beide wollen. Nutze diesen Modus, um sich abzustimmen.";
+"MatchExact_exchange" = "Matche nur Tags, die beide wollen oder beide anbieten. Nutze diesen Modus, um Themen abzugleichen.";
+"MatchAdapt_exchange" = "Matche exakt und zeige zusätzlich Tags, die du willst und der andere anbietet. Nutze diesen Modus, um deine Wünsche zu erfüllen.";
+"MatchTry_exchange" = "Matche exakt und zeige zusätzlich Tags, die du anbietest und der andere will. Nutze diesen Modus, um deine Angebote mitzuteilen.";
+"MatchOpen_exchange" = "Matche alle Tags, die beide entweder wollen oder anbieten. Nutze diesen Modus, um alle Aspekte abzudecken.";
+"MatchInformation_exchange" = "Match-Information\n\n1. Zeile: Daten über den anderen\n  • Name \n  • Geschlecht \n  • Alter \n  • Sprache \n  • Anzahl der Nachfrage (%@)\n  • Anzahl der Angebote (%@) \n  • Matching-Punkte \n\n2. Zeile: Daten über Dich\n  • Matching-Profil \n  • Beziehungstyp (%@) \n  • Matching-Modus (%@) \n  • Matching-Standort\n  • Matching-Uhrzeit \n\n\n(Transparent angezeigte Matches werden \nfür das Ergebnis nicht gezählt, da schon\nein Match mit dem selben Gegenüber\nam gleichen Tag bestätigt wurde)";
+"ILike_exchange" = "%@ Will Ich";
+"IDislike_exchange" = "%@ Biete Ich";
+"ShowsTagsBothLike_exchange" = "Zeigt Tags für\nThemen, die\nihr beide wollt";
+"ShowsTagsBothDislike_exchange" = "Zeigt Tags für\nThemen, die ihr\nbeide anbietet";
+"ShowsTagsLikeDislike_exchange" = "Zeigt Tags für\nThemen, die du\nwillst und der \nandere anbietet";
+"ShowsTagsDislikeLike_exchange" = "Zeigt Tags für\nThemen, die du\nanbietest und der \nandere will";
+"DropTagsTopicsLike_exchange" = "Ziehe hierhin Tags für Themen, die du willst.\n\nReihenfolge kann geändert werden.";
+"DropTagsTopicsDislike_exchange" = "Ziehe hierhin Tags für Themen, die du anbietest.\n\nReihenfolge kann geändert werden.";
+"ShowsTagsLike_exchange" = "Zeigt Tags für\nThemen, die\ndu willst";
+"ShowsTagsDislike_exchange" = "Zeigt Tags für\nThemen, die\ndu anbietest";
+
+"MatchBasic_generic" = "Matche nur Tags, die beide '%@' zugewiesen haben.";
+"MatchExact_generic" = "Matche nur Tags, die beide '%@' oder beide '%@' zugewiesen haben.";
+"MatchAdapt_generic" = "Matche exakt und zeige zusätzlich Tags, die du '%@' zugewiesen hast und der andere '%@' zugewiesen hat.";
+"MatchTry_generic" = "Matche exakt und zeige zusätzlich Tags, die du '%@' zugewiesen hast und der andere '%@' zugewiesen hat.";
+"MatchOpen_generic" = "Matche alle Tags, die beide entweder '%@' oder '%@' zugewiesen haben.";
+"MatchInformation_generic" = "Match-Information\n\n1. Zeile: Daten über den anderen\n  • Name \n  • Geschlecht \n  • Alter \n  • Sprache \n  • Anzahl der Tags '%@' zugewiesen\n  • Anzahl der Tags '%@' zugewiesen \n  • Matching-Punkte \n\n2. Zeile: Daten über Dich\n  • Matching-Profil \n  • Beziehungstyp (%@) \n  • Matching-Modus (%@) \n  • Matching-Standort\n  • Matching-Uhrzeit \n\n\n(Transparent angezeigte Matches werden \nfür das Ergebnis nicht gezählt, da schon\nein Match mit dem selben Gegenüber\nam gleichen Tag bestätigt wurde)";
+"ILike_generic" = "%@";
+"IDislike_generic" = "%@";
+"ShowsTagsBothLike_generic" = "Zeigt Tags für\nThemen, die\nihr beide '%@' zugewiesen habt";
+"ShowsTagsBothDislike_generic" = "Zeigt Tags für\nThemen, die ihr\nbeide '%@' zugewiesen habt";
+"ShowsTagsLikeDislike_generic" = "Zeigt Tags für\nThemen, die du\n'%@' zugewiesen hast\nund der \nandere '%@' zugewiesen hat";
+"ShowsTagsDislikeLike_generic" = "Zeigt Tags für\nThemen, die du\n'%@' zugewiesen hast\nund der \nandere '%@' zugewiesen hat";
+"DropTagsTopicsLike_generic" = "Ziehe hierhin Tags für Themen, die du '%@' zuweisen willst.\n\nReihenfolge kann geändert werden.";
+"DropTagsTopicsDislike_generic" = "Ziehe hierhin Tags für Themen, die du '%@' zuweisen willst.\n\nReihenfolge kann geändert werden.";
+"ShowsTagsLike_generic" = "Zeigt Tags für\nThemen, die du \n'%@' zugewiesen hast";
+"ShowsTagsDislike_generic" = "Zeigt Tags für\nThemen, die du \n'%@' zugewiesen hast";
+
+

@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SAY Hi!</string>
+
+    <string name="L">Niedrig</string>
+    <string name="M">Mittel</string>
+    <string name="Q">Viertel</string>
+    <string name="H">Hoch</string>
+
+    <string name="m">männlich</string>
+    <string name="m_short">m.</string>
+    <string name="f">weiblich</string>
+    <string name="f_short">w.</string>
+
+    <string name="basic">Einfach</string>
+    <string name="Basic">Einfach</string>
+    <string name="basic_1">1. Einfach</string>
+    <string name="exact">Exakt</string>
+    <string name="Exact">Exakt</string>
+    <string name="exact_2">2. Exakt</string>
+    <string name="adapt">Anpassen</string>
+    <string name="Adapt">Anpassen</string>
+    <string name="adapt_3">3. Anpassen</string>
+    <string name="tries">Versuch</string>
+    <string name="Tries">Versuch</string>
+    <string name="tries_4">4. Versuch</string>
+    <string name="open">Offen</string>
+    <string name="Open">Offen</string>
+    <string name="open_5">5. Offen</string>
+
+    <string name="min0">Sofort</string>
+    <string name="min1">Nach 1 Minute</string>
+    <string name="min5">Nach 5 Minuten</string>
+    <string name="min10">Nach 10 Minuten</string>
+
+    <string name="None">Keinen</string>
+    <string name="Date">Date</string>
+    <string name="Single">Single</string>
+    <string name="Family">Familie</string>
+    <string name="Partner">Partner</string>
+    <string name="Wife">Frau</string>
+    <string name="Husband">Ehemann</string>
+    <string name="Parent">Eltern</string>
+    <string name="Father">Vater</string>
+    <string name="Mother">Mutter</string>
+    <string name="Child">Kind</string>
+    <string name="Son">Sohn</string>
+    <string name="Daugther">Tochter</string>
+    <string name="Sibling">Geschwister</string>
+    <string name="Brother">Bruder</string>
+    <string name="Sister">Schwester</string>
+    <string name="Grandparent">Großeltern</string>
+    <string name="Grandfather">Großvater</string>
+    <string name="Grandmother">Großmutter</string>
+    <string name="Grandchild">Enkelkind</string>
+    <string name="Grandson">Enkelsohn</string>
+    <string name="Granddaughter">Enkeltochter</string>
+    <string name="Relative">Verwandter</string>
+    <string name="Uncle">Onkel</string>
+    <string name="Aunt">Tante</string>
+    <string name="Cousins">Cousins</string>
+    <string name="Cousin">Cousin</string>
+    <string name="Cousine">Cousine</string>
+    <string name="Nephew">Neffe</string>
+    <string name="Niece">Nichte</string>
+    <string name="Friend">Freund(in)</string>
+    <string name="Boyfriend">Freund</string>
+    <string name="Girlfriend">Freundin</string>
+    <string name="Colleague">Kollege</string>
+    <string name="Boss">Chef</string>
+    <string name="Manager">Manager</string>
+    <string name="Employee">Mitarbeiter</string>
+    <string name="Peer">Gleichaltriger</string>
+    <string name="Other">Andere(r)</string>
+
+    <string name="ChooseFromFavorites">Wähle aus den Favoriten</string>
+    <string name="ChooseFromSearch">Wähle aus dem Suchergebnis</string>
+    <string name="ChooseFromOwn">Wähle aus eigenen Tags</string>
+    <string name="ChooseFromUncategorized">Wähle aus unkategorisierten Tags</string>
+    <string name="ChooseFromCategory">Wähle aus \'%1$s\'</string>
+    <string name="ChooseFromDots">Wähle aus &#8230;</string>
+
+    <string name="MatchExplanation">Der niedrigere Matching-Modus von beiden wird zum Matching herangezogen. Der Matching-Modus kann auf Profilebene übersteuert werden.</string>
+    <string name="MatchForce">Der Matching-Modus auf Profilebene wird übersteuert.</string>
+
+    <string name="ActivateMultipleProfiles">Aktiviere mehrere Profile.</string>
+    <string name="ProvideBirthYear">Gib zuerst dein Geburtsjahr an.</string>
+    <string name="ActivateOwnTags">Aktiviere eigene Tags.</string>
+    <string name="InviteFriends1">Lade zuerst zwei Leute ein. Sende die erste von zwei Einladungen.</string>
+    <string name="InviteFriends2">Lade zuerst zwei Leute ein. Sende die zweite von zwei Einladungen.</string>
+
+    <string name="CameraError">Diese App benötigt die Frontkamera um korrekt zu funktionieren. Erlaube den Zugriff auf die Kamera in den Geräteeinstellungen der App.</string>
+    <string name="MicrophoneError">Diese App benötigt das Mikrofon um korrekt zu funktionieren. Erlaube den Zugriff auf das Mikrofon in den Geräteeinstellungen der App.</string>
+    <string name="LocationError">Diese App kann deinen Standort während des Matchens ermitteln. Um diese Funktion zu aktivieren, erlaube den Zugriff auf die Ortungsdienste in den Geräteeinstellungen der App.</string>
+    <string name="MailNotConfigured">Das Gerät ist nicht für das Versenden von E-Mails konfiguriert.</string>
+    <string name="MessageNotConfigured">Das Gerät ist nicht für das Versenden von Nachrichten konfiguriert.</string>
+
+    <string name="ContactMail">contact@sayhi-app.com</string>
+    <string name="ContactSubject">SAY Hi! - Feedback &amp; Support (Android)</string>
+    <string name="ContactBody">
+        <![CDATA[
+            <p>Hi!</p>
+            <p>
+            Ich habe Feedback oder brauche Hilfe!
+            <br>
+            <br>
+            </p>
+            <p>Danke!</p>
+            <p>%1$s</p></string>
+        ]]>
+    </string>
+    <string name="InviteSubject">Einladung zu SAY Hi!</string>
+    <string name="InviteBody">
+        <![CDATA[
+            <p>Hi!</p>
+            <p>
+            Ich nutze die App SAY Hi! und finde sie echt klasse!
+            <br>
+            Wenn du sie dir auch holst, dann können wir sie gemeinsam nutzen.
+            </p>
+            <p>
+            Du kannst die App hier herunterladen:
+            </p>
+            <p>
+            iOS:
+            <br>
+            <a href=\'%1$s\'>%2$s</a>
+            <p>
+            <p>
+            Android:
+            <br>
+            <a href=\'%3$s\'>%4$s</a>
+            </p>
+            Bis bald!
+            </p>
+            <p>%5$s</p>
+        ]]>
+    </string>
+    <string name="InviteMessage">Hi!\nIch nutze SAY Hi!. Echt klasse.\n\niOS: %1$s\n\nAndroid: %2$s\n\n%3$s"</string>
+
+    <string name="ConfigurationAdjusted">Die Konfiguration wurde erfolgreich angepasst.</string>
+    <string name="SettingsConfiguration">Die App-Konfiguration ist jederzeit durch das Icon \'Einstellungen\' oben links erreichbar und kann dort angepasst werden.</string>
+    <string name="NoActiveProfile">Kein aktives Profil selektiert.</string>
+    <string name="DeleteProfile">Möchtest du wirklich das Profil \'%1$s\' löschen?</string>
+    <string name="DeleteMatch">Möchtest du wirklich den Match löschen?</string>
+    <string name="DeleteAllMatches">Möchtest du wirklich alle Matches löschen?</string>
+    <string name="InvalidQR">Zuletzt erkannter QR-Code ist nicht gültig für die App.</string>
+    <string name="DifferentSpace">Matchen in verschiedenen Bereichen ist nicht möglich. Wechselt in den Einstellungen zum selben Bereich und versucht es erneut.</string>
+    <string name="MatchModeNotOpen">Matching-Modus ist nicht aktiv auf der anderen Seite.</string>
+    <string name="AlreadyMatched">Letzter QR-Code wurde bereits erfolgreich gematcht. Siehe Matching-Historie.</string>
+    <string name="QRCodeImageNotAvailable">QR-Code ist nicht verfügbar mit dieser Korrekturstufe. Letzte verfügbare Version wird verwendet.</string>
+    <string name="QRCodeRecognitionActive">QR-Code\nErkennung\nist aktiv</string>
+    <string name="QRCodeRecognitionNotActive">QR-Code\nErkennung\nist NICHT aktiv</string>
+    <string name="MatchIsProcessed">Der Match wird gerade verarbeitet. Bitte warte einen Moment.</string>
+    <string name="WaitingForOtherSide">Der Match muss von der anderen Seite bestätigt werden. Haltet weiterhin die Geräte zueinander zeigend.</string>
+    <string name="UnexpectedErrorOccurred">Ein unerwarteter Fehler ist aufgetreten. Prüfe die Netzwerkverbindung oder versuche es später nochmal.</string>
+    <string name="NoTagsForLanguage">Es existieren keine Tags für die aktuell gewählte Sprache. Erstelle neue Tags oder wechsle die Inhaltssprache.</string>
+    <string name="MisspelledWordsDetected">Der Name scheint falsch geschriebene Wörter zu enthalten. Willst du fortsetzen?</string>
+
+    <string name="TagAlreadyExists">Tag \'%1$s\' existiert bereits für die Kategorie \'%2$s\'.</string>
+    <string name="SimilarTagsExist">Ähnliche Tags existieren. Wie willst du weiter vorgehen?</string>
+    <string name="CategoryAlreadyExists">Kategorie \'%1$s\' existiert bereits.</string>
+    <string name="SimilarCategoriesExist">Ähnliche Kategorien existieren. Wie willst du weiter vorgehen?</string>
+    <string name="UseExistingTag">Verwende Existierenden</string>
+    <string name="UseExistingCategory">Verwende Existierende</string>
+
+    <string name="AppStoreUrlIOS">https://itunes.apple.com/de/app/say-hi/id1224255479?l=de&amp;ls=1&amp;mt=8</string>
+    <string name="AppStoreUrlAndroid">https://play.google.com/store/apps/details?id=de.oklemenz.sayhi</string>
+
+    <string name="MatchNum">%1$d Match</string>
+    <string name="MatchesNum">%1$d Matches</string>
+    <string name="MatchingPointNum">%1$d Matching-Punkt</string>
+    <string name="MatchingPointsNum">%1$d Matching-Punkte</string>
+    <string name="Pt">(%1$d Pkt.)</string>
+    <string name="Pts">(%1$d Pkte.)</string>
+    <string name="PtPlain">%1$d Pkt.</string>
+    <string name="PtsPlain">%1$d Pkte.</string>
+    <string name="QuestionMark">\?</string>
+    <string name="AccessYourData">Zugriff auf deine Daten</string>
+    <string name="ApplicationError">Applikationsfehler</string>
+    <string name="NavBack">&#8249; Zurück</string>
+    <string name="NavProfiles">&#8249; Profile</string>
+    <string name="NavMatches">&#8249; Matches</string>
+    <string name="NavMatch">&#8249; Match</string>
+    <string name="NavHi">&#8249; i!</string>
+    <string name="NavSettings">&#8249; Einst.</string>
+    <string name="NavNewTag">&#8249; Neuer Tag</string>
+    <string name="Alias">Alias</string>
+    <string name="Back">Zurück</string>
+    <string name="Bye">Bis Bald!</string>
+    <string name="FirstTimeConfiguration">Erstmalige Konfiguration</string>
+    <string name="Cancel">Abbrechen</string>
+    <string name="CategoryCreation">Kategorie-Erstellung</string>
+    <string name="ChooseCustomProfileMatchingMode">Wähle einen Profil Matching-Modus.</string>
+    <string name="ClearRecordedVoice">Lösche Stimmaufnahme</string>
+    <string name="Close">Schließen</string>
+    <string name="Continue">Fortsetzen</string>
+    <string name="CopyProfile">Kopiere Profil</string>
+    <string name="CurrentProfile">Aktuelles Profil</string>
+    <string name="DefaultSetting">Standardeinstellung</string>
+    <string name="Default">Standard</string>
+    <string name="Delete">Löschen</string>
+    <string name="DeleteMatchingHistory">Lösche Matching-Historie</string>
+    <string name="Done">Fertig</string>
+    <string name="EN">EN:</string>
+    <string name="EnterNameForNewProfile">Gib einen Namen für das neue Profil ein.</string>
+    <string name="EnterNameForThisProfile">Gib einen Namen für das Profil.</string>
+    <string name="Filter">Filtern</string>
+    <string name="Finish">Abschließen</string>
+    <string name="Highscore">Highscore</string>
+    <string name="HiPlain">Hi!</string>
+    <string name="HiIm">Hi, ich bin %1$s!</string>
+    <string name="LanguageInformation">Sprachinformationen</string>
+    <string name="MailConfiguration">E-Mail-Konfiguration</string>
+    <string name="MatchDeletion">Löschen von Match</string>
+    <string name="MatchingHistoryNum">Matching-Historie (%1$d)</string>
+    <string name="MatchingHistory">Matching-Historie</string>
+    <string name="MatchingPoints">Matching-Punkte</string>
+    <string name="MatchingPoint">Matching-Punkt</string>
+    <string name="MatchingVoice">Matching-Stimme</string>
+    <string name="MessageConfiguration">Nachrichten-Konfiguration</string>
+    <string name="Mode">Modus</string>
+    <string name="More">Mehr&#8230;</string>
+    <string name="Name">Name</string>
+    <string name="NetworkError">Netzwerkfehler</string>
+    <string name="NewCategory">Neue Kategorie</string>
+    <string name="NewProfile">Neues Profil</string>
+    <string name="NewTag">Neuer Tag</string>
+    <string name="Next">Weiter &gt;</string>
+    <string name="OK">OK</string>
+    <string name="OtherLang">Andere&#8230;</string>
+    <string name="OverrideMatchingMode">Überschreibe Matching-Modus</string>
+    <string name="OverrideMatchingModeIcon">Überschreibe Matching-Modus %1$s</string>
+    <string name="PlayRecordedVoice">Aufgenommene Stimme abspielen</string>
+    <string name="PlaySynthesizedVoice">Synthetische Stimme abspielen</string>
+    <string name="ProfileDeletion">Profil-Löschung</string>
+    <string name="ProfileLocked">Profil gesperrt</string>
+    <string name="ProvideProfileName">Gib einen Profilnamen ein.</string>
+    <string name="QRCodeGeneration">QR-Code Generierung</string>
+    <string name="QRCodeRecognition">QR-Code Erkennung</string>
+    <string name="RecordNew">Neue Aufnahme</string>
+    <string name="Recorded">Aufgenommen</string>
+    <string name="RenameProfile">Profil umbenennen</string>
+    <string name="RequestAuth">Authentisierung anfordern</string>
+    <string name="Say">Sag:</string>
+    <string name="SearchCategory">Suche Kategorie</string>
+    <string name="Search">Suche</string>
+    <string name="SelectAnAction">Wähle eine Aktion</string>
+    <string name="SendMessage">Schicke Nachricht</string>
+    <string name="SetRelationTypeIcon">Setze Beziehungstyp %1$s</string>
+    <string name="Settings">Einstellungen</string>
+    <string name="SettingsShort">Einst.</string>
+    <string name="Share">Teile</string>
+    <string name="ShareScore">Teile Ergebnis</string>
+    <string name="ShowHighscore">Zeige Highscore</string>
+    <string name="ShowSimilar">Zeige Ähnliche</string>
+    <string name="SimilarCategories">Ähnliche Kategorien</string>
+    <string name="SimilarTags">Ähnliche Tags</string>
+    <string name="SkipOnce">Einmal überspringen</string>
+    <string name="Standard">Standard</string>
+    <string name="SpaceSwitch">Bereichswechsel</string>
+    <string name="EnterSpaceName">Gib einen Bereichsnamen ein oder wähle den Standardbereich.</string>
+    <string name="EnterAccessCode">Gib den Zugangscode des Bereichs ein.</string>
+    <string name="AccessCodeNotCorrect">Zugangscode ist nicht korrekt.</string>
+    <string name="AccessCode">Zugangscode</string>
+    <string name="SpaceNotFound">Bereich \'%1$s\' nicht gefunden.</string>
+    <string name="SpaceSwitchedSuccessfully">Bereich erfolgreich gewechselt. Bereich kann in den Einstellungen wieder geändert werden.</string>
+    <string name="Synthesized">Synthetisch</string>
+    <string name="TagCreation">Tag-Erstellung</string>
+    <string name="TagMatching">Tag-Matching</string>
+    <string name="UsePasscode">Benutze Code</string>
+    <string name="VoiceRecording">Stimmaufnahme</string>
+    <string name="WordSpellingCheck">Wörter Korrekturprüfung</string>
+    <string name="WriteMail">Schreibe E-Mail</string>
+    <string name="PressToUnlock">[Zum Entsperren drücken]</string>
+    <string name="New">%1$s*</string>
+    <string name="Hi">i!</string>
+    <string name="NA">k.A.</string>
+    <string name="Y">~%1$d J.</string>
+    <string name="Year">%1$d (~%2$d Jahr)</string>
+    <string name="Years">%1$d (~%2$d Jahre)</string>
+    <string name="Marks">» «</string>
+    <string name="MarksText">»%1$s«</string>
+    <string name="LikeNum">%1$s (%2$d)</string>
+    <string name="DislikeNum">%1$s (%2$d)</string>
+    <string name="LikeDislikeNum">%1$s%2$d %3$s%4$d</string>
+    <string name="DislikeLikeNum">%1$s%2$d %3$s%4$d</string>
+    <string name="BothLikeNum">%1$s|%2$s (%3$d/%4$d|%5$d)</string>
+    <string name="OnlyLikeNum">%1$s|%2$s (%3$d/%4$d|%5$d)</string>
+    <string name="OnlyDislikeNum">%1$s|%2$s (%3$d/%4$d|%5$d)</string>
+    <string name="BothDislikeNum">%1$s|%2$s (%3$d/%4$d|%5$d)</string>
+
+    <string name="DisplaysMatchingScore">Zeigt dein Matching-\nErgebnis</string>
+    <string name="DisplaysMatchingScoreHighscore">Zeigt dein Matching-\nErgebnis, tippe für \n den Zugriff auf \ndie Highscore</string>
+    <string name="ShareOrShowHighscore">Teile deine Punkte oder zeige die Highscore an.</string>
+    <string name="ShareMatchingPoint">Teile %1$s Matching-Punkt</string>
+    <string name="ShareMatchingPoints">Teile %1$s Matching-Punkte</string>
+    <string name="ShareMatchingMatch">(%1$s Match)</string>
+    <string name="ShareMatchingMatches">(%1$s Matches)</string>
+    <string name="ProvideAliasShare">Gib einen Alias an, um dein Matching-Ergebnis zu teilen.</string>
+    <string name="ScoreShared">Dein Matching-Ergebnis wurde geteilt.</string>
+
+    <string name="CreatePrimaryLangCategory">Erstelle eine Kategorie\nin Englisch,\nals Matching-Referenz.</string>
+    <string name="CreateNewTag">Erstelle neuen Tag</string>
+    <string name="WriteInvitationMail">Schreibe Einladungs-Mail</string>
+    <string name="ShowAllProfiles">Zeige\nalle Profile</string>
+    <string name="ShowFavoriteTags">Zeige favorisierte Tags, eigene Tags \noder suche nach Tags. \nFiltere Tags nach Kategorie.</string>
+    <string name="DataPrivacy">Datenschutzerklärung</string>
+    <string name="Test">Test</string>
+    <string name="Play">Abspielen</string>
+    <string name="HoldDevicesDistance">Haltet die Geräte \nzueinander \nzeigend in \neiner Distanz \nvon ca. 25 cm</string>
+    <string name="EditMore">Bearbeiten → Mehr&#8230;\n • Kopiere Profil\n • Benenne Profil um\n • Setze Beziehungstyp %1$s\n • Überschreibe Matching-Modus %2$s</string>
+    <string name="RateApp">Bewerte App im App Store</string>
+    <string name="Profiles">Profile</string>
+    <string name="KeepDevicesSteady">Haltet ruhig &amp; parallel in\ngleicher Höhe für einige\nSekunden, bis der \nMatch bestätigt ist</string>
+    <string name="RecognitionHints">Hinweise zu Erkennungs-\nproblemen</string>
+    <string name="Language">Sprache</string>
+    <string name="Low">Niedrig</string>
+    <string name="English">Englisch</string>
+    <string name="SendInvitationMessage">Schicke Einladungs-Nachricht</string>
+    <string name="UseOwnTag">Eigener</string>
+    <string name="PlayVoice">Stimme abspielen</string>
+    <string name="ShowTagsCurrentProfile">Zeige Tags des\n aktuellen Profils</string>
+    <string name="Matches">Matches</string>
+    <string name="ProvidePersonalStatus">Gib persönliche Statusinformationen an, um während des Matchens mitzuteilen, was Dich aktuell bewegt.</string>
+    <string name="You">Du</string>
+    <string name="Licenses">Lizenzen</string>
+    <string name="DataIsEncrypted">Kürzere Zeiten sind sicherer.\n\nDeine Daten werden verschlüsselt und auf dem Gerät sicher gespeichert.</string>
+    <string name="Security">Sicherheit</string>
+    <string name="LongPressDragToGroup">Drücke lange und ziehe Tags\nzu den obigen Gruppen. \n\nSuche oder filtere Tags. Ziehe Tags hierhin, um sie von oben zu entfernen.</string>
+    <string name="ChooseFrom">Wähle aus</string>
+    <string name="Category">Kategorie</string>
+    <string name="Gender">Geschlecht</string>
+    <string name="German">Deutsch</string>
+    <string name="ShowCurrentStatus">Zeigt deinen \naktuellen Status, \nzum Ändern tippen</string>
+    <string name="ContentLanguage">Inhaltssprache</string>
+    <string name="SelectCategoryOfTag">Wähle die Kategorie des Tags</string>
+    <string name="NotSelected">Nicht Gewählt</string>
+    <string name="SayHi">SAY Hi!</string>
+    <string name="Male">Männlich</string>
+    <string name="Female">Weiblich</string>
+    <string name="UseFingerprint">Benutze Fingerabdruck</string>
+    <string name="CreateNewProfile">Erstelle neues Profil</string>
+    <string name="Suggested">Empfohlen</string>
+    <string name="Popular">Beliebt</string>
+    <string name="All">Alle</string>
+    <string name="ChangeCorrectionLevel">Ändere die Korrekturstufe, im Falle von QR-Code Erkennungs-\nproblemen</string>
+    <string name="ShowsOthersStatus">Zeigt den Status\ndes anderen, zum\nZeitpunkt des Matchens</string>
+    <string name="DisplayMatchingLocation">Zeige\nMatching-\nStandort</string>
+    <string name="Handshake">Handschlag</string>
+    <string name="Vibrate">Vibrieren</string>
+    <string name="SelectAlreadyExistingTags">Wähle aus bereits vorhandenen,\nähnlichen Tags, anstatt einen neuen anzulegen</string>
+    <string name="SetRelationType">Setze Beziehungstyp</string>
+    <string name="ModeIcon">Modus %1$s</string>
+    <string name="Profile">Profil</string>
+    <string name="BothRecognizedHandshake">\nWenn \'Handschlag\' \nauf mind. einer der \nSeiten aktiv ist, muss \nder QR-Code von \njeder Seite erkannt \nwerden, um den Match \nzu bestätigen</string>
+    <string name="FirstName">Vorname</string>
+    <string name="MatchingIsPrepared">Matchen wird vorbereitet.\nStelle die Verbindung zum Internet sicher.</string>
+    <string name="Details">Details</string>
+    <string name="ChangeSettings">Ändere \nEinstellungen</string>
+    <string name="ChooseContentLanguage">Wähle die Inhaltssprache.\nRelevant für Auswahl der Tags.</string>
+    <string name="SelectActiveProfile">Wähle das aktuelle\naktive Profil</string>
+    <string name="Match">Match</string>
+    <string name="MatchingLocation">Matching-Standort</string>
+    <string name="ChooseTheSideAssignment">Wähle die Seite der Zuordnung</string>
+    <string name="ShowTagsOfCurrentProfile">Zeige Tags des\naktuellen Profils</string>
+    <string name="After5Minutes">Nach 5 Minutes</string>
+    <string name="Welcome">Willkommen</string>
+    <string name="ProvidePrimaryLangTag">Gib den entsprechenden Tag in englischer Sprache an. Genaue Angaben verbessern die Matching-Ergebnisse.</string>
+    <string name="PrimaryReference">Englische Entsprechung</string>
+    <string name="GroupTagLabeling">Gruppen Tag-Beschriftung:\n\nMatch-Anzahl / deine Tag-Anzahl |\nTag-Anzahl des anderen</string>
+    <string name="Voice">Stimme</string>
+    <string name="SelectAlreadyExistingCategories">Wähle aus bereits vorhandenen,\nähnlichen Kategorien, anstatt eine neue anzulegen</string>
+    <string name="IgnoreSimilarCategories">Ignoriere ähnliche Kategorien und erstelle\ndeine eigene</string>
+    <string name="ProvidePrimaryLangCategory">Gib die entsprechende Kategorie in englischer Sprache an. Genaue Angaben verbessern die Matching-Ergebnisse.</string>
+    <string name="CorrectionLevel">Korrektur-\nstufe</string>
+    <string name="CreatePrimaryLangTag">Erstelle einen Tag in Englisch,\nals Matching-Referenz</string>
+    <string name="ShowMatchingResults">Zeige Match\nErgebnisdetails</string>
+    <string name="LivePreview">Live Vorschau\n(QR-Code komplett und klar sichtbar)</string>
+    <string name="RequestAuthentication">Authentisierung anfordern</string>
+    <string name="FeedbackSupport">Feedback &amp; Support</string>
+    <string name="ActiveProfileUsedMatching">Aktives Profil, das beim Matchen \nbenutzt wird, anzeigen und pflegen</string>
+    <string name="SelectGender">Wähle dein Geschlecht.\nBeeinflusst die Matching-Stimme.</string>
+    <string name="Miscellaneous">Sonstiges</string>
+    <string name="StartMatching">Starte \nMatching \n\"SAY Hi!\"</string>
+    <string name="ShowPreviousMatches">Vorherige Matches anzeigen</string>
+    <string name="ProvideBirthYearContext">Gib dein Geburtsjahr an.\nGibt Kontext beim Matchen.</string>
+    <string name="ScanSuccessively">QR-Codes \nkönnen auch \nnacheinander \ngescannt werden \n\nNur ein QR-Code \nmuss erkannt werden, \nwenn \'Handschlag\' auf \nbeiden Seiten \n inaktiv ist</string>
+    <string name="Languages">Sprachen</string>
+    <string name="SearchExistingCategories">Suche nach vorhandenen Kategorien</string>
+    <string name="IgnoreSimilarTags">Ignoriere ähnliche\nTags und erstelle\ndeinen eigenen</string>
+    <string name="EnterNameOfCategory">Gib den Namen der Kategorie ein\n(max. 30 Zeichen)</string>
+    <string name="Tag">Tag</string>
+    <string name="EnterNameOfTag">Gib den Namen des Tags ein\n(max. 30 Zeichen)</string>
+    <string name="BirthYear">Geburtsjahr</string>
+    <string name="Status">Status</string>
+    <string name="ShowsCurrentStatus">Zeigt deinen aktuellen Status</string>
+    <string name="MaintainProfile">Ein Profil anzeigen\nund pflegen</string>
+    <string name="UseOwnCategory">Eigene</string>
+    <string name="EnterFirstName">Gib deinen Vornamen ein.\nWird für das Matchen verwendet.</string>
+    <string name="Assignment">Zuordnung</string>
+    <string name="AppliedActiveSide">Angewendet, wenn auf einer Seite aktiv</string>
+    <string name="CreateNewCategory">Erstelle neue Kategorie</string>
+    <string name="QRCodeRecognitionActiveHelp">QR-Code\nErkennung\nist aktiv</string>
+    <string name="YourPersonalMatchingInformation">Deine persönliche \nMatching-Information</string>
+    <string name="MatchingSettings">Matching Einstellungen</string>
+    <string name="DeviceVibratesOnMatch">Gerät vibriert bei\neinem Match</string>
+    <string name="MatchingVoicePlayedOnMatch">Matching-Stimme\nwird bei einem\nMatch abgespielt</string>
+    <string name="BothQRCodesExchanged">Beide QR-Codes müssen\nwährend des Matchens \nausgetauscht werden</string>
+    <string name="LanguagesMostSpoken">Meistgesprochene Sprachen</string>
+    <string name="LanguagesMostContent">Sprachen, für die \nder meiste Inhalt \nverfügbar ist</string>
+    <string name="LanguagesAll">Alle auf dem\nGerät verfügbaren\nSprachen</string>
+    <string name="CameraNotActive">Kamera ist\nnicht aktiv</string>
+    <string name="Space">Bereich</string>
+    <string name="CameraUsageDescription">Wird verwendet, um den Matching QR-Code zu scannen.</string>
+    <string name="MicrophoneUsageDescription">Wird verwendet, um die Matching-Stimme aufzunehmen.</string>
+    <string name="LocationUsageDescription">Wird verwendet, um den Standort während des Matchens zu ermitteln (optional).</string>
+    <string name="MaintenanceMode">Die App ist aktuell \nnicht verfügbar. \nVersuche es später noch einmal.</string>
+    <string name="CountedMatches">Gezählte Matches \n und erzieltes \n Matching-Ergebnis</string>
+    <string name="PlayingRecording">Spiele Aufnahme ab…</string>
+    <string name="DeviceNotMuted">(Gerät sollte nicht stummgeschaltet sein)</string>
+    <string name="MatchingDetails">Matchingdetails</string>
+    <string name="MatchingDifferentLanguage">Matching wurde basierend auf unterschiedlichen Inhaltssprachen durchgeführt (%1$s / %2$s).\n\nTags ohne englische Entsprechung wurden beim Matching nicht berücksichtigt.</string>
+
+    <string name="MatchBasic">Matche nur Tags, die beide mögen. Nutze diesen Modus, um sich abzustimmen.</string>
+    <string name="MatchExact">Matche nur Tags, die beide mögen oder beide nicht mögen. Nutze diesen Modus, um nur das preiszugeben, was beide mögen.</string>
+    <string name="MatchAdapt">Matche exakt und zeige zusätzlich Tags, die du magst, der andere aber nicht mag. Nutze diesen Modus, um dich anzupassen.</string>
+    <string name="MatchTry">Matche exakt und zeige zusätzlich Tags, die du nicht magst, der andere aber mag. Nutze diesen Modus, um etwas Neues auszuprobieren.</string>
+    <string name="MatchOpen">Matche alle Tags, die beide entweder mögen oder nicht mögen. Nutze diesen Modus, um dich zu öffnen.</string>
+    <string name="MatchInformation">Match-Information\n\n1. Zeile: Daten über den anderen\n  • Name \n  • Geschlecht \n  • Alter \n  • Sprache \n  • Anzahl der Likes (%1$s)\n  • Anzahl der Dislikes (%2$s) \n  • Matching-Punkte \n\n2. Zeile: Daten über Dich\n  • Matching-Profil \n  • Beziehungstyp (%3$s) \n  • Matching-Modus (%4$s) \n  • Matching-Standort \n  • Matching-Uhrzeit \n\n\n(Transparent angezeigte Matches werden \nfür das Ergebnis nicht gezählt, da schon\nein Match mit dem selben Gegenüber\nam gleichen Tag bestätigt wurde)</string>
+    <string name="ILike">%1$s Mag Ich</string>
+    <string name="IDislike">%1$s Mag Ich Nicht</string>
+    <string name="ShowsTagsBothLike">Zeigt Tags für\nThemen, die\nihr beide mögt</string>
+    <string name="ShowsTagsBothDislike">Zeigt Tags für\nThemen, die ihr\nbeide nicht mögt</string>
+    <string name="ShowsTagsLikeDislike">Zeigt Tags für\nThemen, die du\nmagst, der andere\naber nicht mag</string>
+    <string name="ShowsTagsDislikeLike">Zeigt Tags für\nThemen, die du nicht\nmagst, der andere\naber mag</string>
+    <string name="DropTagsTopicsLike">Ziehe hierhin Tags für Themen, die du magst, beginnend mit dem besten.\n\nReihenfolge kann geändert werden.</string>
+    <string name="DropTagsTopicsDislike">Ziehe hierhin Tags für Themen, die du nicht magst, beginnend mit dem schlechtesten.\n\nReihenfolge kann geändert werden.</string>
+    <string name="ShowsTagsLike">Zeigt Tags für\nThemen, die\ndu magst</string>
+    <string name="ShowsTagsDislike">Zeigt Tags für\nThemen, die\ndu nicht magst</string>
+
+    <string name="MatchBasic_exchange">Matche nur Tags, die beide wollen. Nutze diesen Modus, um sich abzustimmen.</string>
+    <string name="MatchExact_exchange">Matche nur Tags, die beide wollen oder beide anbieten. Nutze diesen Modus, um Themen abzugleichen.</string>
+    <string name="MatchAdapt_exchange">Matche exakt und zeige zusätzlich Tags, die du willst und der andere anbietet. Nutze diesen Modus, um deinen Bedarf zu erfüllen.</string>
+    <string name="MatchTry_exchange">Matche exakt und zeige zusätzlich Tags, die du anbietest und der andere will. Nutze diesen Modus, um deine Angebote mitzuteilen.</string>
+    <string name="MatchOpen_exchange">Matche alle Tags, die beide entweder wollen oder anbieten. Nutze diesen Modus, um alle Aspekte abzudecken.</string>
+    <string name="MatchInformation_exchange">Match-Information\n\n1. Zeile: Daten über den anderen\n  • Name \n  • Geschlecht \n  • Alter \n  • Sprache \n  • Anzahl der Nachfrage (%1$s)\n  • Anzahl der Angebote (%2$s) \n  • Matching-Punkte \n\n2. Zeile: Daten über Dich\n  • Matching-Profil \n  • Beziehungstyp (%3$s) \n  • Matching-Modus (%4$s) \n  • Matching-Standort  • Matching-Uhrzeit \n\n\n(Transparent angezeigte Matches werden \nfür das Ergebnis nicht gezählt, da schon\nein Match mit dem selben Gegenüber\nam gleichen Tag bestätigt wurde)</string>
+    <string name="ILike_exchange">%1$s Will Ich</string>
+    <string name="IDislike_exchange">%1$s Biete Ich</string>
+    <string name="ShowsTagsBothLike_exchange">Zeigt Tags für\nThemen, die\nihr beide wollt</string>
+    <string name="ShowsTagsBothDislike_exchange">Zeigt Tags für\nThemen, die ihr\nbeide anbietet</string>
+    <string name="ShowsTagsLikeDislike_exchange">Zeigt Tags für\nThemen, die du\nwillst und der \nandere anbietet</string>
+    <string name="ShowsTagsDislikeLike_exchange">Zeigt Tags für\nThemen, die du\nanbietest und der \nandere will</string>
+    <string name="DropTagsTopicsLike_exchange">Ziehe hierhin Tags für Themen, die du willst.\n\nReihenfolge kann geändert werden.</string>
+    <string name="DropTagsTopicsDislike_exchange">Ziehe hierhin Tags für Themen, die du anbietest.\n\nReihenfolge kann geändert werden.</string>
+    <string name="ShowsTagsLike_exchange">Zeigt Tags für\nThemen, die\ndu willst</string>
+    <string name="ShowsTagsDislike_exchange">Zeigt Tags für\nThemen, die\ndu anbietest</string>
+
+    <string name="MatchBasic_generic">Matche nur Tags, die beide \'%1$s\' zugewiesen haben.</string>
+    <string name="MatchExact_generic">Matche nur Tags, die beide \'%1$s\' oder beide \'%2$s\' zugewiesen haben.</string>
+    <string name="MatchAdapt_generic">Matche exakt und zeige zusätzlich Tags, die du \'%1$s\' zugewiesen hast und der andere \'%2$s\' zugewiesen hat.</string>
+    <string name="MatchTry_generic">Matche exakt und zeige zusätzlich Tags, die du \'%1$s\' zugewiesen hast und der andere \'%2$s\' zugewiesen hat.</string>
+    <string name="MatchOpen_generic">Matche alle Tags, die beide entweder \'%1$s\' oder \'%2$s\' zugewiesen haben.</string>
+    <string name="MatchInformation_generic">Match-Information\n\n1. Zeile: Daten über den anderen\n  • Name \n  • Geschlecht \n  • Alter \n  • Sprache \n  • Anzahl der Tags \'%1$s\' zugewiesen\n  • Anzahl der Tags \'%2$s\' zugewiesen \n  • Matching-Punkte \n\n2. Zeile: Daten über Dich\n  • Matching-Profil \n  • Beziehungstyp (%3$s) \n  • Matching-Modus (%4$s) \n  • Matching-Standort  • Matching-Uhrzeit \n(Transparent angezeigte Matches werden \nfür das Ergebnis nicht gezählt, da schon\nein Match mit dem selben Gegenüber\nam gleichen Tag bestätigt wurde)</string>
+    <string name="ILike_generic">%1$s</string>
+    <string name="IDislike_generic">%1$s</string>
+    <string name="ShowsTagsBothLike_generic">Zeigt Tags für\nThemen, die\nihr beide \'%1$s\' zugewiesen habt</string>
+    <string name="ShowsTagsBothDislike_generic">Zeigt Tags für\nThemen, die ihr\nbeide \'%1$s\' zugewiesen habt</string>
+    <string name="ShowsTagsLikeDislike_generic">Zeigt Tags für\nThemen, die du\n\'%1$s\' zugewiesen hast\nund der \nandere \'%2$s\' zugewiesen hat</string>
+    <string name="ShowsTagsDislikeLike_generic">Zeigt Tags für\nThemen, die du\n\'%1$s\' zugewiesen hast\nund der \nandere \'%2$s\' zugewiesen hat</string>
+    <string name="DropTagsTopicsLike_generic">Ziehe hierhin Tags für Themen, die du \'%1$s\' zuweisen willst.\n\nReihenfolge kann geändert werden.</string>
+    <string name="DropTagsTopicsDislike_generic">Ziehe hierhin Tags für Themen, die du \'%1$s\' zuweisen willst.\n\nReihenfolge kann geändert werden.</string>
+    <string name="ShowsTagsLike_generic">Zeigt Tags für\nThemen, die du \n\'%1$s\' zugewiesen hast</string>
+    <string name="ShowsTagsDislike_generic">Zeigt Tags für\nThemen, die du \n\'%1$s\' zugewiesen hast</string>
+
+    <string name="Help">Hilfe</string>
+    <string name="Edit">Bearbeiten</string>
+    <string name="Location">Standort</string>
+    <string name="Minus">-</string>
+    <string name="Plus">+</string>
+    <string name="Selected">Ausgewählt</string>
+    <string name="Refresh">Neu Laden</string>
+    <string name="FingerprintFor">Fingerabdruck für \"SAY Hi!\"</string>
+
+</resources>

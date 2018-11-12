@@ -1,0 +1,551 @@
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "00U-Dp-2Nq"; */
+"00U-Dp-2Nq.normalTitle" = "Abbrechen";
+
+/* Class = "UILabel"; text = "Create category in English\nfor matching reference"; ObjectID = "015-XK-qGj"; */
+"015-XK-qGj.text" = "Erstelle eine Kategorie\nin Englisch,\nals Matching-Referenz.";
+
+/* Class = "UILabel"; text = "Create new Tag"; ObjectID = "0xE-o1-c1R"; */
+"0xE-o1-c1R.text" = "Erstelle neuen Tag";
+
+/* Class = "UILabel"; text = "Write Invitation Mail"; ObjectID = "1Gm-ST-uia"; */
+"1Gm-ST-uia.text" = "Schreibe Einladungs-Mail";
+
+/* Class = "UISegmentedControl"; 31f-FG-Eab.segmentTitles[0] = "1. Exact"; ObjectID = "31f-FG-Eab"; */
+"31f-FG-Eab.segmentTitles[0]" = "1. Exakt";
+
+/* Class = "UISegmentedControl"; 31f-FG-Eab.segmentTitles[1] = "2. Adapt"; ObjectID = "31f-FG-Eab"; */
+"31f-FG-Eab.segmentTitles[1]" = "2. Anpassen";
+
+/* Class = "UISegmentedControl"; 31f-FG-Eab.segmentTitles[2] = "3. Try"; ObjectID = "31f-FG-Eab"; */
+"31f-FG-Eab.segmentTitles[2]" = "3. Versuch";
+
+/* Class = "UISegmentedControl"; 31f-FG-Eab.segmentTitles[3] = "4. Open"; ObjectID = "31f-FG-Eab"; */
+"31f-FG-Eab.segmentTitles[3]" = "4. Offen";
+
+/* Class = "UILabel"; text = "Show all \nprofiles"; ObjectID = "3fF-4b-pU7"; */
+"3fF-4b-pU7.text" = "Zeige\nalle Profile";
+
+/* Class = "UILabel"; text = "Show favorite tags, own tags \nor search for tags. \nFilter tags by category."; ObjectID = "4RX-RM-zb6"; */
+"4RX-RM-zb6.text" = "Zeige favorisierte Tags, eigene Tags \noder suche nach Tags. \nFiltere Tags nach Kategorie.";
+
+/* Class = "UIViewController"; title = "Data Privacy"; ObjectID = "4uV-Ro-gG6"; */
+"4uV-Ro-gG6.title" = "Datenschutzerklärung";
+
+/* Class = "UIButton"; normalTitle = "Test"; ObjectID = "5dO-Tg-OiP"; */
+"5dO-Tg-OiP.normalTitle" = "Test";
+
+/* Class = "UILabel"; text = "Hold devices\nfront facing\nto each other \nat distance\nof ca. 10\""; ObjectID = "5iW-M3-qHb"; */
+"5iW-M3-qHb.text" = "Haltet die Geräte\nzueinander zeigend in\neiner Distanz von ca. 25 cm";
+
+/* Class = "UILabel"; text = "Edit → More...\n • Copy profile \n • Rename profile\n • Set relation type\n • Override matching mode"; ObjectID = "5xe-tA-2WJ"; */
+"5xe-tA-2WJ.text" = "Bearbeiten → Mehr...\n • Kopiere Profil \n • Benenne Profil um \n • Setze Beziehungstyp\n • Überschreibe Matching-Modus";
+
+/* Class = "UILabel"; text = "Rate App in App Store"; ObjectID = "5z5-Y1-1FL"; */
+"5z5-Y1-1FL.text" = "Bewerte App im App Store";
+
+/* Class = "UINavigationItem"; title = "Profiles"; ObjectID = "6T1-Dg-hWJ"; */
+"6T1-Dg-hWJ.title" = "Profile";
+
+/* Class = "UILabel"; text = "i!"; ObjectID = "7BY-6N-tVe"; */
+"7BY-6N-tVe.text" = "i!";
+
+/* Class = "UILabel"; text = "Keep steady & parallel \nin same height for \nsome seconds until \nmatch is confirmed"; ObjectID = "7Ca-yv-B9j"; */
+"7Ca-yv-B9j.text" = "Haltet ruhig & parallel in\ngleicher Höhe für einige\nSekunden, bis der Match bestätigt ist";
+
+/* Class = "UILabel"; text = "Hints on recognition \nissues"; ObjectID = "7im-Do-emU"; */
+"7im-Do-emU.text" = "Hinweise zu Erkennungs-\nproblemen";
+
+/* Class = "UIButton"; normalTitle = "Other..."; ObjectID = "7xR-fn-FDa"; */
+"7xR-fn-FDa.normalTitle" = "Andere...";
+
+/* Class = "UILabel"; text = "Current Profile"; ObjectID = "7xT-e1-n3r"; */
+"7xT-e1-n3r.text" = "Aktuelles Profil";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "8Kd-8w-GE0"; */
+"8Kd-8w-GE0.text" = "Sprache";
+
+/* Class = "UILabel"; text = "Low"; ObjectID = "8Tz-S9-sci"; */
+"8Tz-S9-sci.text" = "Niedrig";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "8a0-Uf-z2f"; */
+"8a0-Uf-z2f.text" = "Englisch";
+
+/* Class = "UILabel"; text = "Shows tags for topics\nthat you don't like, but \nthe other one likes"; ObjectID = "8ea-yx-cSR"; */
+"8ea-yx-cSR.text" = "Zeigt Tags für\nThemen, die du nicht\nmagst, der andere\naber mag";
+
+/* Class = "UILabel"; text = "Send Invitation Message"; ObjectID = "9Ml-U2-7yO"; */
+"9Ml-U2-7yO.text" = "Schicke Einladungs-Nachricht";
+
+/* Class = "UIBarButtonItem"; title = "Use Own"; ObjectID = "9bJ-Ah-uqh"; */
+"9bJ-Ah-uqh.title" = "Eigener";
+
+/* Class = "UILabel"; text = "Play Voice"; ObjectID = "Aiy-jb-RIg"; */
+"Aiy-jb-RIg.text" = "Stimme abspielen";
+
+/* Class = "UILabel"; text = "Show tags  of\n current profile"; ObjectID = "B2m-1O-NbU"; */
+"B2m-1O-NbU.text" = "Zeige Tags des\n aktuellen Profils";
+
+/* Class = "UILabel"; text = "Match Information\n\n1st line: Data about other one\n  • Name \n  • Gender \n  • Age \n  • Language \n  • Number of likes\n  • Number of dislikes\n  • Matching Points \n\n2nd line: Data about you\n  • Matching profile \n  • Relation type\n  • Matching mode\n  • Matching location\n  • Matching time \n\n\n(Transparently displayed matches \nare not counted for score, as a match\nwith same counterpart was already\nconfirmed the same day)"; ObjectID = "B8X-yc-tM7"; */
+"B8X-yc-tM7.text" = "Match-Information\n\n1. Zeile: Daten über den anderen\n  • Name \n  • Geschlecht \n  • Alter \n  • Sprache \n  • Anzahl der Likes\n  • Anzahl der Dislikes\n  • Matching-Punkte \n\n2. Zeile: Daten über Dich\n  • Matching-Profil \n  • Beziehungstyp\n  • Matching-Modus\n  • Matching-Standort\n  • Matching-Uhrzeit \n\n\n(Transparent angezeigte Matches werden \nfür das Ergebnis nicht gezählt, da schon\nein Match mit dem selben Gegenüber\nam gleichen Tag bestätigt wurde)";
+
+/* Class = "UINavigationItem"; title = "Matches"; ObjectID = "BIM-dk-UMn"; */
+"BIM-dk-UMn.title" = "Matches";
+
+/* Class = "UITableViewSection"; footerTitle = "Provide personal status information to communicate during matching what's currently on your mind."; ObjectID = "BdR-By-SVx"; */
+"BdR-By-SVx.footerTitle" = "Gib persönliche Statusinformationen an, um während des Matchens mitzuteilen, was Dich aktuell bewegt.";
+
+/* Class = "UITableViewSection"; headerTitle = "You"; ObjectID = "BdR-By-SVx"; */
+"BdR-By-SVx.headerTitle" = "Du";
+
+/* Class = "UIViewController"; title = "Licenses"; ObjectID = "DU9-2e-3FK"; */
+"DU9-2e-3FK.title" = "Lizenzen";
+
+/* Class = "UITableViewSection"; footerTitle = "Shorter times are more secure."; ObjectID = "DxI-fK-KOB"; */
+"DxI-fK-KOB.footerTitle" = "Kürzere Zeiten sind sicherer. \n\nDeine Daten werden verschlüsselt und auf dem Gerät sicher gespeichert.";
+
+/* Class = "UITableViewSection"; headerTitle = "Security"; ObjectID = "DxI-fK-KOB"; */
+"DxI-fK-KOB.headerTitle" = "Sicherheit";
+
+/* Class = "UILabel"; text = "Long press and drag tags \nto the groups above. \n\nSearch or filter tags. \nDrop tags here to remove from above"; ObjectID = "F3D-Wi-p9f"; */
+"F3D-Wi-p9f.text" = "Drücke lange und ziehe Tags\nzu den obigen Gruppen. \n\nSuche oder filtere Tags. Ziehe Tags hierhin, um sie von oben zu entfernen.";
+
+/* Class = "UISegmentedControl"; Fdp-63-ZYF.segmentTitles[0] = "I Like"; ObjectID = "Fdp-63-ZYF"; */
+"Fdp-63-ZYF.segmentTitles[0]" = "Mag ich";
+
+/* Class = "UISegmentedControl"; Fdp-63-ZYF.segmentTitles[1] = "I Don't Like"; ObjectID = "Fdp-63-ZYF"; */
+"Fdp-63-ZYF.segmentTitles[1]" = "Mag ich nicht";
+
+/* Class = "UILabel"; text = "Choose from"; ObjectID = "GVM-6y-OLA"; */
+"GVM-6y-OLA.text" = "Wähle aus";
+
+/* Class = "UILabel"; text = "Drop tags for topics that you like, starting with the best. \n\nOrder can be \nchanged."; ObjectID = "GqF-gK-iaV"; */
+"GqF-gK-iaV.text" = "Ziehe hierhin Tags für Themen, die du magst, beginnend mit dem besten.\n\nReihenfolge kann geändert werden.";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "ISn-v0-qyW"; */
+"ISn-v0-qyW.text" = "Kategorie";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "JGH-is-PAa"; */
+"JGH-is-PAa.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "KM8-D7-39E"; */
+"KM8-D7-39E.text" = "Geschlecht";
+
+/* Class = "UILabel"; text = "German"; ObjectID = "KTr-du-5CV"; */
+"KTr-du-5CV.text" = "Deutsch";
+
+/* Class = "UILabel"; text = "Shows your \ncurrent status, \ntap to change"; ObjectID = "KeU-ac-Jjz"; */
+"KeU-ac-Jjz.text" = "Zeigt deinen \naktuellen Status, \nzum Ändern tippen";
+
+/* Class = "UILabel"; text = "Content Language"; ObjectID = "Khd-Jx-aIf"; */
+"Khd-Jx-aIf.text" = "Inhaltssprache";
+
+/* Class = "UILabel"; text = "Select category of tag"; ObjectID = "Kmi-sb-jMt"; */
+"Kmi-sb-jMt.text" = "Wähle die Kategorie des Tags";
+
+/* Class = "UILabel"; text = "Not Selected"; ObjectID = "KzC-E4-lI2"; */
+"KzC-E4-lI2.text" = "Nicht Gewählt";
+
+/* Class = "UIButton"; normalTitle = "SAY Hi!"; ObjectID = "Kza-nK-eUZ"; */
+"Kza-nK-eUZ.normalTitle" = "SAY Hi!";
+
+/* Class = "UILabel"; text = "Shows tags for topics\nthat you like"; ObjectID = "MI5-BC-hSI"; */
+"MI5-BC-hSI.text" = "Zeigt Tags für\nThemen, die\ndu magst";
+
+/* Class = "UISegmentedControl"; NhK-Kg-Mcy.segmentTitles[0] = "Male"; ObjectID = "NhK-Kg-Mcy"; */
+"NhK-Kg-Mcy.segmentTitles[0]" = "Männlich";
+
+/* Class = "UISegmentedControl"; NhK-Kg-Mcy.segmentTitles[1] = "Female"; ObjectID = "NhK-Kg-Mcy"; */
+"NhK-Kg-Mcy.segmentTitles[1]" = "Weiblich";
+
+/* Class = "UILabel"; text = "Shows tags for topics\nthat you like, but the \nother one likes not "; ObjectID = "Nzq-6p-sfv"; */
+"Nzq-6p-sfv.text" = "Zeigt Tags für\nThemen, die du\nmagst, der andere\naber nicht mag";
+
+/* Class = "UILabel"; text = "Use Touch ID"; ObjectID = "OnP-tj-cSA"; */
+"OnP-tj-cSA.text" = "Benutze Touch ID";
+
+/* Class = "UILabel"; text = "n/a"; ObjectID = "PMW-AO-2Nn"; */
+"PMW-AO-2Nn.text" = "k.A.";
+
+/* Class = "UILabel"; text = "Create new profile"; ObjectID = "PVn-Sg-y1G"; */
+"PVn-Sg-y1G.text" = "Erstelle neues Profil";
+
+/* Class = "UISegmentedControl"; Prv-Rk-Zus.segmentTitles[0] = "Suggested"; ObjectID = "Prv-Rk-Zus"; */
+"Prv-Rk-Zus.segmentTitles[0]" = "Empfohlen";
+
+/* Class = "UISegmentedControl"; Prv-Rk-Zus.segmentTitles[1] = "Popular"; ObjectID = "Prv-Rk-Zus"; */
+"Prv-Rk-Zus.segmentTitles[1]" = "Beliebt";
+
+/* Class = "UISegmentedControl"; Prv-Rk-Zus.segmentTitles[2] = "All"; ObjectID = "Prv-Rk-Zus"; */
+"Prv-Rk-Zus.segmentTitles[2]" = "Alle";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "Qhp-s2-rPX"; */
+"Qhp-s2-rPX.text" = "Sprache";
+
+/* Class = "UILabel"; text = "Displays your \nmatching score"; ObjectID = "QkH-Hv-3Ji"; */
+"QkH-Hv-3Ji.text" = "Zeigt dein Matching-\nErgebnis, tippe \nfür den Zugriff \nauf die Highscore";
+
+/* Class = "UILabel"; normalTitle = "Matching History"; ObjectID = "EEO-ZX-mDa"; */
+"EEO-ZX-mDa.text" = "Matching-Historie";
+
+/* Class = "UILabel"; text = "Drop tags for topics that you don't like, starting with the worst.\n\nOrder can be \nchanged."; ObjectID = "ROJ-eY-5G7"; */
+"ROJ-eY-5G7.text" = "Ziehe hierhin Tags für Themen, die du nicht magst, beginnend mit dem schlechtesten.\n\nReihenfolge kann geändert werden.";
+
+/* Class = "UILabel"; text = "Change correction \nlevel in case of QR code\nrecognition issues"; ObjectID = "RR7-Tq-cTv"; */
+"RR7-Tq-cTv.text" = "Ändere die Korrektur-\nstufe, im Falle von QR-Code\nErkennungsproblemen";
+
+/* Class = "UINavigationItem"; title = "Similar Tags"; ObjectID = "SK8-Kt-Dic"; */
+"SK8-Kt-Dic.title" = "Ähnliche Tags";
+
+/* Class = "UILabel"; text = "Shows the other's status \nat time of matching"; ObjectID = "SPs-EN-fWg"; */
+"SPs-EN-fWg.text" = "Zeigt den Status\ndes anderen, zum\nZeitpunkt des Matchens";
+
+/* Class = "UILabel"; text = "Display \nmatching \nlocation"; ObjectID = "tBL-KZ-5XW"; */
+"tBL-KZ-5XW.text" = "Zeige\nMatching-\nStandort";
+
+/* Class = "UILabel"; text = "Like (0)"; ObjectID = "STo-LG-emz"; */
+"STo-LG-emz.text" = "Like (0)";
+
+/* Class = "UIButton"; normalTitle = "Test"; ObjectID = "SXZ-Aq-5jb"; */
+"SXZ-Aq-5jb.normalTitle" = "Test";
+
+/* Class = "UILabel"; text = "Handshake"; ObjectID = "Sqd-8f-EIO"; */
+"Sqd-8f-EIO.text" = "Handschlag";
+
+/* Class = "UILabel"; text = "Vibrate"; ObjectID = "Srj-Lu-h1L"; */
+"Srj-Lu-h1L.text" = "Vibrieren";
+
+/* Class = "UILabel"; text = "Like|Dislike (0/0|0)"; ObjectID = "TZx-ed-Rop"; */
+"TZx-ed-Rop.text" = "Like|Dislike (0/0|0)";
+
+/* Class = "UILabel"; text = "Select from already existing\nsimilar tags, instead \nof creating a new one"; ObjectID = "UMd-ee-hH9"; */
+"UMd-ee-hH9.text" = "Wähle aus bereits vorhandenen,\nähnlichen Tags, anstatt einen neuen anzulegen";
+
+/* Class = "UINavigationItem"; title = "Set Relation Type"; ObjectID = "Uh9-S4-svR"; */
+"Uh9-S4-svR.title" = "Setze Beziehungstyp";
+
+/* Class = "UILabel"; text = "Mode"; ObjectID = "Vu5-Y5-Hjx"; */
+"Vu5-Y5-Hjx.text" = "Modus";
+
+/* Class = "UINavigationItem"; title = "Profile"; ObjectID = "W7U-ji-sr9"; */
+"W7U-ji-sr9.title" = "Profil";
+
+/* Class = "UILabel"; text = "If 'handshake' is \nactive on at least \none side, the QR \ncode on each side \nneeds to be recognized \nto confirm a match"; ObjectID = "Wnc-j1-FS0"; */
+"Wnc-j1-FS0.text" = "\nWenn 'Handschlag' \nauf mind. einer der \nSeiten aktiv ist, muss \nder QR-Code von \njeder Seite erkannt \nwerden, um den Match \nzu bestätigen";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "Wvj-e7-phD"; */
+"Wvj-e7-phD.placeholder" = "Vorname";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "X7J-Fz-brJ"; */
+"X7J-Fz-brJ.placeholder" = "Vorname";
+
+/* Class = "UILabel"; text = "Matching is prepared.\nEnsure connection to Internet."; ObjectID = "XXB-rJ-7PB"; */
+"XXB-rJ-7PB.text" = "Matchen wird vorbereitet.\nStelle die Verbindung zum Internet sicher.";
+
+/* Class = "UITableViewSection"; headerTitle = "Details"; ObjectID = "XfS-cL-b2m"; */
+"XfS-cL-b2m.headerTitle" = "Details";
+
+/* Class = "UILabel"; text = "Change \nsettings"; ObjectID = "Xsd-5s-iaH"; */
+"Xsd-5s-iaH.text" = "Ändere \nEinstellungen";
+
+/* Class = "UILabel"; text = "Choose your content language.\nIt is used for choosing tags."; ObjectID = "YzO-wF-jS6"; */
+"YzO-wF-jS6.text" = "Wähle die Inhaltssprache.\nRelevant für Auswahl der Tags.";
+
+/* Class = "UILabel"; text = "Select currently \nactive profile"; ObjectID = "ZH2-rc-kfj"; */
+"ZH2-rc-kfj.text" = "Wähle das aktuelle\naktive Profil";
+
+/* Class = "UINavigationItem"; title = "Content Language"; ObjectID = "ZIF-FM-0h3"; */
+"ZIF-FM-0h3.title" = "Inhaltssprache";
+
+/* Class = "UINavigationItem"; title = "Match"; ObjectID = "ZNe-A4-46b"; */
+"ZNe-A4-46b.title" = "Match";
+
+/* Class = "UINavigationItem"; title = "Matching Location"; ObjectID = "R56-aA-ipZ"; */
+"R56-aA-ipZ.title" = "Matching-Standort";
+
+/* Class = "UILabel"; text = "Choose the side of assignment"; ObjectID = "ZRa-7G-Ibk"; */
+"ZRa-7G-Ibk.text" = "Wähle die Seite der Zuordnung";
+
+/* Class = "UILabel"; text = "Show tags of\n current profile"; ObjectID = "Ziy-A0-F1Y"; */
+"Ziy-A0-F1Y.text" = "Zeige Tags des\naktuellen Profils";
+
+/* Class = "UIBarButtonItem"; title = "Profiles"; ObjectID = "Zko-VK-8Ho"; */
+"Zko-VK-8Ho.title" = "Profile";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "Zz8-SR-sFS"; */
+"Zz8-SR-sFS.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "After 5 minutes"; ObjectID = "ZzY-aS-AtI"; */
+"ZzY-aS-AtI.text" = "Nach 5 Minutes";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "a5G-Uo-uhH"; */
+"a5G-Uo-uhH.text" = "Kategorie";
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "aow-eP-djd"; */
+"aow-eP-djd.text" = "Willkommen";
+
+/* Class = "UITableViewSection"; footerTitle = "Provide corresponding tag for English language. Accurate information improves matching results."; ObjectID = "bP6-vj-PXy"; */
+"bP6-vj-PXy.footerTitle" = "Gib den entsprechenden Tag in englischer Sprache an. Genaue Angaben verbessern die Matching-Ergebnisse.";
+
+/* Class = "UITableViewSection"; headerTitle = "English Equivalent"; ObjectID = "bP6-vj-PXy"; */
+"bP6-vj-PXy.headerTitle" = "Englische Entsprechung";
+
+/* Class = "UILabel"; text = "Group tag labeling:\nmatch count / your count | other's count"; ObjectID = "bP9-ei-udb"; */
+"bP9-ei-udb.text" = "Gruppen Tag-Beschriftung:\n\nMatch-Anzahl / deine Tag-Anzahl |\nTag-Anzahl des anderen";
+
+/* Class = "UILabel"; text = "Voice"; ObjectID = "bYN-kC-qG1"; */
+"bYN-kC-qG1.text" = "Stimme";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "bbJ-w2-AKt"; */
+"bbJ-w2-AKt.text" = "Sprache";
+
+/* Class = "UILabel"; text = "Select from already existing\n similar categories, instead \nof creating a new one"; ObjectID = "bcL-Wh-4Qh"; */
+"bcL-Wh-4Qh.text" = "Wähle aus bereits vorhandenen,\nähnlichen Kategorien, anstatt eine neue anzulegen";
+
+/* Class = "UINavigationItem"; title = "New Category"; ObjectID = "c1C-1t-cfh"; */
+"c1C-1t-cfh.title" = "Neue Kategorie";
+
+/* Class = "UILabel"; text = "SAY Hi!"; ObjectID = "c6r-Gj-9dI"; */
+"c6r-Gj-9dI.text" = "SAY Hi!";
+
+/* Class = "UILabel"; text = "Ignore similar categories\nand create your own"; ObjectID = "cDF-QT-rKy"; */
+"cDF-QT-rKy.text" = "Ignoriere ähnliche Kategorien und erstelle\ndeine eigene";
+
+/* Class = "UITableViewSection"; footerTitle = "Provide corresponding category for English language. Accurate information improves matching results."; ObjectID = "cM9-2i-IBy"; */
+"cM9-2i-IBy.footerTitle" = "Gib die entsprechende Kategorie in englischer Sprache. Genaue Angaben verbessern die Matching-Ergebnisse.";
+
+/* Class = "UITableViewSection"; headerTitle = "English Equivalent"; ObjectID = "cM9-2i-IBy"; */
+"cM9-2i-IBy.headerTitle" = "Englische Entsprechung";
+
+/* Class = "UILabel"; text = "Correction\nLevel"; ObjectID = "cj2-hi-un9"; */
+"cj2-hi-un9.text" = "Korrektur-\nstufe";
+
+/* Class = "UILabel"; text = "Create tag in English\for matching reference"; ObjectID = "d1V-zV-fzV"; */
+"d1V-zV-fzV.text" = "Erstelle einen Tag in Englisch,\nals Matching-Referenz";
+
+/* Class = "UILabel"; text = "Show matching \nresult details"; ObjectID = "dSs-ud-cyI"; */
+"dSs-ud-cyI.text" = "Zeige Match\nErgebnisdetails";
+
+/* Class = "UILabel"; text = "Live Preview\n(QR code completely & clearly visible)"; ObjectID = "duU-TK-a10"; */
+"4w9-01-imF.text" = "Live Vorschau\n(QR-Code komplett und klar sichtbar)";
+
+/* Class = "UILabel"; text = "Dislike|Dislike (0/0|0)"; ObjectID = "dvy-0f-N8u"; */
+"dvy-0f-N8u.text" = "Dislike|Dislike (0/0|0)";
+
+/* Class = "UILabel"; text = "German"; ObjectID = "eeV-iV-6M9"; */
+"eeV-iV-6M9.text" = "Deutsch";
+
+/* Class = "UILabel"; text = "Like|Like (0/0|0)"; ObjectID = "eiD-9Q-zAY"; */
+"eiD-9Q-zAY.text" = "Like|Like (0/0|0)";
+
+/* Class = "UILabel"; text = "Shows tags for topics\nthat you don't like"; ObjectID = "em7-XR-Sqb"; */
+"em7-XR-Sqb.text" = "Zeigt Tags für\nThemen, die\ndu nicht magst";
+
+/* Class = "UILabel"; text = "Request Authentication"; ObjectID = "gOJ-ae-UvX"; */
+"gOJ-ae-UvX.text" = "Authentisierung anfordern";
+
+/* Class = "UILabel"; text = "Feedback & Support"; ObjectID = "gc0-9U-tat"; */
+"gc0-9U-tat.text" = "Feedback & Support";
+
+/* Class = "UILabel"; text = "Show and maintain active \nprofile used for matching"; ObjectID = "gu4-g2-jwi"; */
+"gu4-g2-jwi.text" = "Aktives Profil, das beim Matchen \nbenutzt wird, anzeigen und pflegen";
+
+/* Class = "UILabel"; text = "Select your gender.\nIt influences the matching voice."; ObjectID = "h0s-gO-rmD"; */
+"h0s-gO-rmD.text" = "Wähle dein Geschlecht.\nBeeinflusst die Matching-Stimme.";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "h2M-L9-Obw"; */
+"h2M-L9-Obw.text" = "Sprache";
+
+/* Class = "UITableViewSection"; headerTitle = "Miscellaneous"; ObjectID = "hlS-GF-5mI"; */
+"hlS-GF-5mI.headerTitle" = "Sonstiges";
+
+/* Class = "UILabel"; text = "Dislike|Like (0/0|0)"; ObjectID = "hx2-tN-B89"; */
+"hx2-tN-B89.text" = "Dislike|Like (0/0|0)";
+
+/* Class = "UIButton"; normalTitle = "Next >"; ObjectID = "ifa-Qn-ZSN"; */
+"ifa-Qn-ZSN.normalTitle" = "Weiter >";
+
+/* Class = "UINavigationItem"; title = "Licenses"; ObjectID = "j2E-Pa-96V"; */
+"j2E-Pa-96V.title" = "Lizenzen";
+
+/* Class = "UILabel"; text = "Synthesized"; ObjectID = "j3u-M6-ehY"; */
+"j3u-M6-ehY.text" = "Synthetisch";
+
+/* Class = "UILabel"; text = "Start \nMatching \n\"SAY Hi!\""; ObjectID = "jY0-ZR-9oE"; */
+"jY0-ZR-9oE.text" = "Starte \nMatching \n\"SAY Hi!\"";
+
+/* Class = "UILabel"; text = "Data Privacy"; ObjectID = "ji2-72-d0A"; */
+"ji2-72-d0A.text" = "Datenschutzerklärung";
+
+/* Class = "UILabel"; text = "Show previous matches"; ObjectID = "k2y-4q-N8V"; */
+"k2y-4q-N8V.text" = "Vorherige Matches anzeigen";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "lAt-Ab-4ka"; */
+"lAt-Ab-4ka.text" = "Englisch";
+
+/* Class = "UILabel"; text = "Provide your year of birth\nIt gives more matching context."; ObjectID = "m3E-3p-dTH"; */
+"m3E-3p-dTH.text" = "Gib dein Geburtsjahr an.\nGibt Kontext beim Matchen.";
+
+/* Class = "UILabel"; text = "Licenses"; ObjectID = "n2o-Hv-ceQ"; */
+"n2o-Hv-ceQ.text" = "Lizenzen";
+
+/* Class = "UILabel"; text = "QR codes \ncan also be \nscanned \nsuccessively \n\nOnly one QR \ncode needs to be \nrecognized, \nif 'handshake' is \ninactive on both sides"; ObjectID = "nOZ-dq-kT7"; */
+"nOZ-dq-kT7.text" = "QR-Codes \nkönnen auch \nnacheinander \ngescannt werden \n\nNur ein QR-Code \nmuss erkannt werden, \nwenn 'Handschlag' auf \nbeiden Seiten \n inaktiv ist";
+
+/* Class = "UINavigationItem"; title = "Similar Categories"; ObjectID = "oyO-6A-QaW"; */
+"oyO-6A-QaW.title" = "Ähnliche Kategorien";
+
+/* Class = "UITableViewController"; title = "Languages"; ObjectID = "p0X-Ip-pvU"; */
+"p0X-Ip-pvU.title" = "Sprachen";
+
+/* Class = "UILabel"; text = "Search for existing Categories"; ObjectID = "pbj-XK-Gmt"; */
+"pbj-XK-Gmt.text" = "Suche nach vorhandenen Kategorien";
+
+/* Class = "UILabel"; text = "Ignore similar tags\nand create your own"; ObjectID = "ppg-7u-bVn"; */
+"ppg-7u-bVn.text" = "Ignoriere ähnliche\nTags und erstelle\ndeinen eigenen";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "q7M-e4-rVF"; */
+"q7M-e4-rVF.text" = "Kategorie";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "qPN-G7-I2A"; */
+"qPN-G7-I2A.placeholder" = "Suche";
+
+/* Class = "UILabel"; text = "Shows tags for topics\nthat you both don't like"; ObjectID = "qTj-FV-Dqn"; */
+"qTj-FV-Dqn.text" = "Zeigt Tags für\nThemen, die ihr\nbeide nicht mögt";
+
+/* Class = "UILabel"; text = "Enter name of the category\n(max. 30 characters)"; ObjectID = "qTx-fY-xMM"; */
+"qTx-fY-xMM.text" = "Gib den Namen der Kategorie ein\n(max. 30 Zeichen)";
+
+/* Class = "UILabel"; text = "Tag"; ObjectID = "raC-3b-4c0"; */
+"raC-3b-4c0.text" = "Tag";
+
+/* Class = "UINavigationItem"; title = "New Tag"; ObjectID = "rgp-v7-Zd6"; */
+"rgp-v7-Zd6.title" = "Neuer Tag";
+
+/* Class = "UILabel"; text = "Shows tags for topics\nthat you both like"; ObjectID = "rsJ-Rd-zMK"; */
+"rsJ-Rd-zMK.text" = "Zeigt Tags für\nThemen, die\nihr beide mögt";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "rvC-w2-ymb"; */
+"rvC-w2-ymb.title" = "Einstellungen";
+
+/* Class = "UILabel"; text = "Enter name of the tag\n(max. 30 characters)"; ObjectID = "s31-1v-oAZ"; */
+"s31-1v-oAZ.text" = "Gib den Namen des Tags ein\n(max. 30 Zeichen)";
+
+/* Class = "UILabel"; text = "Birth Year"; ObjectID = "s9b-JH-Ngr"; */
+"s9b-JH-Ngr.text" = "Geburtsjahr";
+
+/* Class = "UITextField"; placeholder = "Status"; ObjectID = "sS8-7y-sZM"; */
+"sS8-7y-sZM.placeholder" = "Status";
+
+/* Class = "UILabel"; text = "Shows your current status"; ObjectID = "tBS-bi-xA9"; */
+"tBS-bi-xA9.text" = "Zeigt deinen aktuellen Status";
+
+/* Class = "UITableViewSection"; headerTitle = "Tag Matching"; ObjectID = "tcf-pJ-1VZ"; */
+"tcf-pJ-1VZ.headerTitle" = "Tag-Matching";
+
+/* Class = "UITableViewSection"; headerTitle = "Details"; ObjectID = "uHm-jO-0Jl"; */
+"uHm-jO-0Jl.headerTitle" = "Details";
+
+/* Class = "UINavigationItem"; title = "Search Category"; ObjectID = "w3P-DM-Gke"; */
+"w3P-DM-Gke.title" = "Suche Kategorie";
+
+/* Class = "UILabel"; text = "Display and \nmaintain a profile."; ObjectID = "w4e-n2-Pev"; */
+"w4e-n2-Pev.text" = "Ein Profil anzeigen\nund pflegen";
+
+/* Class = "UILabel"; text = "i!"; ObjectID = "w9M-ba-BRO"; */
+"w9M-ba-BRO.text" = "i!";
+
+/* Class = "UIBarButtonItem"; title = "Use Own"; ObjectID = "wB1-id-sug"; */
+"wB1-id-sug.title" = "Eigene";
+
+/* Class = "UILabel"; text = "Enter your first name.\nIt is used for matching."; ObjectID = "wHG-W8-Rti"; */
+"wHG-W8-Rti.text" = "Gib deinen Vornamen ein.\nWird für das Matchen verwendet.";
+
+/* Class = "UIBarButtonItem"; title = "i!"; ObjectID = "wha-Fe-oVZ"; */
+"wha-Fe-oVZ.title" = "i!";
+
+/* Class = "UISegmentedControl"; wuf-O9-XI3.segmentTitles[0] = "n/a"; ObjectID = "wuf-O9-XI3"; */
+"wuf-O9-XI3.segmentTitles[0]" = "k.A.";
+
+/* Class = "UISegmentedControl"; wuf-O9-XI3.segmentTitles[1] = "Male"; ObjectID = "wuf-O9-XI3"; */
+"wuf-O9-XI3.segmentTitles[1]" = "Männlich";
+
+/* Class = "UISegmentedControl"; wuf-O9-XI3.segmentTitles[2] = "Female"; ObjectID = "wuf-O9-XI3"; */
+"wuf-O9-XI3.segmentTitles[2]" = "Weiblich";
+
+/* Class = "UINavigationItem"; title = "Data Privacy"; ObjectID = "ww9-4N-yce"; */
+"ww9-4N-yce.title" = "Datenschutzerklärung";
+
+/* Class = "UISegmentedControl"; x60-ga-g9O.segmentTitles[0] = "English"; ObjectID = "x60-ga-g9O"; */
+"x60-ga-g9O.segmentTitles[0]" = "Englisch";
+
+/* Class = "UISegmentedControl"; x60-ga-g9O.segmentTitles[1] = "German"; ObjectID = "x60-ga-g9O"; */
+"x60-ga-g9O.segmentTitles[1]" = "Deutsch";
+
+/* Class = "UITableViewSection"; headerTitle = "Assignment"; ObjectID = "x9V-df-vBn"; */
+"x9V-df-vBn.headerTitle" = "Zuordnung";
+
+/* Class = "UILabel"; text = "Dislike (0)"; ObjectID = "xJJ-hM-CGY"; */
+"xJJ-hM-CGY.text" = "Dislike (0)";
+
+/* Class = "UILabel"; text = "Applied if active on one side"; ObjectID = "xYB-4p-QFk"; */
+"xYB-4p-QFk.text" = "Angewendet, wenn auf einer Seite aktiv";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "xzi-Vc-Orq"; */
+"xzi-Vc-Orq.text" = "Englisch";
+
+/* Class = "UILabel"; text = "Create new Category"; ObjectID = "y75-My-C7Y"; */
+"y75-My-C7Y.text" = "Erstelle neue Kategorie";
+
+/* Class = "UINavigationItem"; title = "i!"; ObjectID = "yjn-0F-Uhu"; */
+"yjn-0F-Uhu.title" = "i!";
+
+/* Class = "UILabel"; text = "QR Code \nrecognition\nis active"; ObjectID = "zQr-Fl-8re"; */
+"zQr-Fl-8re.text" = "QR-Code\nErkennung\nist aktiv";
+
+/* Class = "UIViewController"; title = "Match"; ObjectID = "zaF-5B-DMW"; */
+"zaF-5B-DMW.title" = "Match";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "zaQ-nE-Rwe"; */
+"zaQ-nE-Rwe.placeholder" = "Suche";
+
+/* Class = "UILabel"; text = "Your personal \nmatching information"; ObjectID = "Uj9-zx-1fG"; */
+"Uj9-zx-1fG.text" = "Deine persönliche \nMatching-Information";
+
+/* Class = "UILabel"; text = "Matching settings"; ObjectID = "gn9-1G-Nxw"; */
+"gn9-1G-Nxw.text" = "Matching Einstellungen";
+
+/* Class = "UILabel"; text = "Device vibrates \non a match "; ObjectID = "2f5-Fk-Hga"; */
+"2f5-Fk-Hga.text" = "Gerät vibriert bei\neinem Match";
+
+/* Class = "UILabel"; text = "Matching voice is \nplayed on a match"; ObjectID = "1HX-hD-BTB"; */
+"1HX-hD-BTB.text" = "Matching-Stimme\nwird bei einem\nMatch abgespielt";
+
+/* Class = "UILabel"; text = "Both QR codes \nmust be exchanged \nduring matching"; ObjectID = "L6e-hQ-p1S"; */
+"L6e-hQ-p1S.text" = "Beide QR-Codes müssen \nwährend des Matchens \nausgetauscht werden";
+
+/* Class = "UILabel"; text = "Most spoken languages"; ObjectID = "cp2-Tg-uY9"; */
+"cp2-Tg-uY9.text" = "Meistgesprochene Sprachen";
+
+/* Class = "UILabel"; text = "Languages, for \nwhich the most \ncontent is available"; ObjectID = "9Rx-Md-Fbv"; */
+"9Rx-Md-Fbv.text" = "Sprachen, für die \nder meiste Inhalt \nverfügbar ist";
+
+/* Class = "UILabel"; text = "All languages \navailable on \nthe device"; ObjectID = "3sg-mn-RgX"; */
+"3sg-mn-RgX.text" = "Alle auf dem\nGerät verfügbaren\nSprachen";
+
+/* Class = "UILabel"; text = "Camera\is not\active"; ObjectID = "hqp-9n-291"; */
+"hqp-9n-291.text" = "Kamera\nist nicht\naktiv";
+
+/* Class = "UILabel"; text = "Space"; ObjectID = "hqp-9n-291"; */
+"eZp-mG-hyV.text" = "Bereich";
+
+/* Class = "UINavigationItem"; title = "Highscore"; ObjectID = "QCg-Cx-xeY"; */
+"QCg-Cx-xeY.title" = "Highscore";
+
+/* Class = "UILabel"; text = "App currently \nnot available. \nTry again later."; ObjectID = "JOM-jV-viW"; */
+"JOM-jV-viW.text" = "Die App ist aktuell \nnicht verfügbar. \nVersuche es später noch einmal.";
+
+/* Class = "UILabel"; text = "Counted matches \nand achieved \nmatching score"; ObjectID = "gSh-wF-H7a"; */
+"gSh-wF-H7a.text" = "Gezählte Matches \n und erzieltes \n Matching-Ergebnis";
+
+

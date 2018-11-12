@@ -1,0 +1,60 @@
+* Future Tasks (Extensions)
+    * Chat Functionality
+	* Contact other via confirmed match
+	* Push Notifications?
+	* Share location
+    * Presentation Mode
+    * Matching Points abbreviation (1K, 1M)
+    * Data Privacy => From settings (Language Dependent)
+    * Disable Profile (Settings)
+	* Creation, Edit Mode
+    * Make white/black brand-able
+    * Add Firebase Highscore rank
+	* Large Scale Ranking: https://groups.google.com/forum/#!topic/firebase-talk/T7LWxIjNzJg
+	* Hacking issue
+    * Add City/Country to Settings
+	* Derive from location service...
+    * Add more Gamification elements
+        * Matching Rate: Matching Points / Matching Count
+	* Upload Matching Points / Rate to Game Center
+    * Switch camera (front/back)
+        * No handshake possible anymore
+    * Restrict not more pos tags as neg tags 
+        * In mode > Exact, why?
+    * Match Attachment
+        * Assign Photo from Camera, Photo Library to match after matching 
+    * Profile image, add to settings
+        * Profile picker/camera access
+        * Match: Set after first handshake, photographed by other side... and added as match image...
+        * Set instead of QR Code after matching
+    * Secure Store
+        * Store profiles/matches extra?
+        * Also encrypt cache?
+    * Profile Migration (mail, zip, password, import)
+        * Export Password
+    * Stage Batch Activation
+	* Leverage Firebase Cloud Functions
+        * Node.js Job
+        * Protect stage with time limit (greater some period)
+        * Restrict to x updates per time frame
+            * Securtiy rule (https://www.firebase.com/docs/security/quickstart.html)
+    * Fuzzy Search (stage & active)
+        * Build up search index for name
+        * Build up favorite index for tags
+    * Similar Tags/Categories (check at creation)
+        * Similarity search => Replace similar characters
+        * Store soundex representation
+        * Levenshtein
+    * Lazy loading search, categories
+        * Page tags in categories for paging (group)
+    * Refers
+        * Firebase Invite
+        * Facebook/Twitter integration
+    * Category Definition
+        * Color picker (https://github.com/johankasperi/SwiftHSVColorPicker)
+        * Icon picker/definition
+        * How to handle: Different people choose different colors
+    * Make locale editable in settings like language
+    * Placeholder tag for drag & drop (dashed)
+    * Tag drag & drop during list scrolling
+    * Dark vs. Light Theme - Switch black white colors

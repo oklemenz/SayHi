@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="45dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/ProvideBirthYearContext"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/setupBirthYearPicker"
+        style="@style/NumberPicker"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center|center_vertical"
+        android:gravity="center"
+        app:np_dividerColor="@color/colorPrimary"
+        app:np_dividerDistance="18dp"
+        app:np_dividerThickness="0.5dp"
+        app:np_textColor="@color/colorAccent"
+        app:np_textSize="16dp"
+        app:np_wheelItemCount="3"
+        app:np_wrapSelectorWheel="false" />
+
+</LinearLayout>

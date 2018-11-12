@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fingerprint_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="4dp"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/fingerprintIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/AccessYourData"
+            android:src="@drawable/ic_fp_40px" />
+
+        <TextView
+            android:id="@+id/fingerprintStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fingerprintIcon"
+            android:layout_alignTop="@+id/fingerprintIcon"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/fingerprintIcon"
+            android:gravity="center_vertical"
+            android:textSize="17sp"
+            android:text="@string/AccessYourData"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+</LinearLayout>

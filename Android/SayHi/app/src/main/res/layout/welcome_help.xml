@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help"
+    style="@style/HelpDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/arrowUpMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_u" />
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrowUpMiddle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"
+        android:gravity="center"
+        android:text="@string/DisplaysMatchingScore"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id='@+id/arrowUpLeft'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_u" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/arrowUpLeft"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-5dp"
+        android:text="@string/ChangeSettings"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/arrowUpRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_u" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/arrowUpRight"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="-5dp"
+        android:gravity="end"
+        android:text="@string/ShowAllProfiles"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/arrowDownMiddle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_d" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/arrowDownMiddle1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-5dp"
+        android:text="@string/ActiveProfileUsedMatching"
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/currentQRPreview"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/arrowDownMiddle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/currentQRPreview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-34dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_d" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/arrowDownMiddle2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-5dp"
+        android:text="@string/ShowPreviousMatches"
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp">
+
+        <ImageView
+            android:id="@+id/arrowTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/Help"
+            android:src="@drawable/arrow_ur" />
+
+        <TextView
+            android:id="@+id/startMatching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/arrowTopRight"
+            android:layout_marginTop="-5dp"
+            android:gravity="start"
+            android:text="@string/StartMatching"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/arrowBottomRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startMatching"
+            android:layout_marginTop="-5dp"
+            android:contentDescription="@string/Help"
+            android:src="@drawable/arrow_br" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="131dp">
+
+        <ImageView
+            android:id="@+id/arrowTopLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="13dp"
+            android:contentDescription="@string/Help"
+            android:src="@drawable/arrow_ul" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/arrowTopLeft"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="-10dp"
+            android:gravity="start"
+            android:text="@string/ShowCurrentStatus"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

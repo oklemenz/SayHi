@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help"
+    style="@style/HelpDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/selectCategoryArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_r" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_toStartOf="@id/selectCategoryArrow"
+        android:gravity="end"
+        android:text="@string/ShowTagsCurrentProfile"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/topContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/topContainerLeft"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id='@+id/showsTagsBothLikeArrow'
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:contentDescription="@string/Help"
+                    android:src="@drawable/arrow_u" />
+
+                <TextView
+                    android:id="@+id/showsTagsBothLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/showsTagsBothLikeArrow"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center"
+                    android:maxWidth="200dp"
+                    android:text="@string/ShowsTagsBothLike"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/topContainerRight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/showsTagsBothDislikeArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:contentDescription="@string/Help"
+                    android:src="@drawable/arrow_u" />
+
+                <TextView
+                    android:id="@+id/showsTagsBothDislike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/showsTagsBothDislikeArrow"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center"
+                    android:maxWidth="200dp"
+                    android:text="@string/ShowsTagsBothDislike"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/leftContainer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/showsTagsLikeDislikeArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:contentDescription="@string/Help"
+                    android:src="@drawable/arrow_u" />
+
+                <TextView
+                    android:id="@+id/showsTagsLikeDislike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/showsTagsLikeDislikeArrow"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center"
+                    android:maxWidth="200dp"
+                    android:text="@string/ShowsTagsLikeDislike"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rightContainer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/showsTagsDislikeLikeArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:contentDescription="@string/Help"
+                    android:src="@drawable/arrow_u" />
+
+                <TextView
+                    android:id="@+id/showsTagsDislikeLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/showsTagsDislikeLikeArrow"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center"
+                    android:maxWidth="200dp"
+                    android:text="@string/ShowsTagsDislikeLike"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/GroupTagLabeling"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/statusHelpArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_bl" />
+
+    <TextView
+        android:id="@+id/statusHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/statusHelpArrow"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="-30dp"
+        android:layout_toEndOf="@id/statusHelpArrow"
+        android:gravity="start"
+        android:text="@string/ShowsOthersStatus"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/locationHelpArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_d" />
+
+    <TextView
+        android:id="@+id/locationHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/locationHelpArrow"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="-50dp"
+        android:layout_toStartOf="@id/locationHelpArrow"
+        android:gravity="end"
+        android:text="@string/DisplayMatchingLocation"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>export</key>
+	<array>
+		<dict>
+			<key>date</key>
+			<string>Dienstag, 29. August 2017 um 09:36:28 Mitteleuropäische Sommerzeit</string>
+			<key>fullDate</key>
+			<date>2017-08-29T07:36:28Z</date>
+			<key>resultStr</key>
+			<array>
+				<string>/Users/d045365/Downloads/SAY Hi! (DE: iPhone).mp4</string>
+			</array>
+			<key>sourceFP</key>
+			<string>kIC9v1IkSiqj95aXe5t6kw - 2017-08-16 13:18:24 +0000</string>
+		</dict>
+		<dict>
+			<key>date</key>
+			<string>Dienstag, 29. August 2017 um 10:08:03 Mitteleuropäische Sommerzeit</string>
+			<key>fullDate</key>
+			<date>2017-08-29T08:08:03Z</date>
+			<key>resultStr</key>
+			<array>
+				<string>/Users/d045365/Downloads/SAY Hi! (DE: iPhone).mp4</string>
+			</array>
+			<key>sourceFP</key>
+			<string>kIC9v1IkSiqj95aXe5t6kw - 2017-08-29 07:41:03 +0000</string>
+		</dict>
+	</array>
+</dict>
+</plist>

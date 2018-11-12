@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient"
+    tools:context="de.oklemenz.sayhi.activity.QRCodeActivity">
+
+    <RelativeLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <Button
+            android:id="@+id/doneButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif"
+            android:gravity="center|center_vertical"
+            android:minWidth="0dp"
+            android:onClick="onDonePressed"
+            android:text="@string/Done"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/infoButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@id/doneButton"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/Help"
+            android:onClick="onInfoPressed"
+            android:src="@drawable/info" />
+
+        <TextView
+            android:id="@+id/titleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:maxLines="2"
+            android:maxWidth="200dp"
+            android:text="@string/Hi"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="normal|bold" />
+
+        <ImageButton
+            android:id="@+id/helpButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/tagButton"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/Help"
+            android:onClick="onHelpPressed"
+            android:src="@drawable/help" />
+
+        <ImageButton
+            android:id="@+id/tagButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/Profile"
+            android:onClick="onCurrentProfilePressed"
+            android:src="@drawable/tag" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/previewContainer"
+        android:layout_below="@id/navBar"
+        android:layout_marginTop="-5dp"
+        app:layout_aspectRatio="100%"
+        app:layout_widthPercent="100%">
+
+        <ImageView
+            android:id="@+id/qrCodeImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/qr_shape"
+            android:contentDescription="@string/QRCodeRecognition"
+            android:padding="0dp" />
+
+        <ProgressBar
+            android:id="@+id/activityIndicator"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateOnly="true"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/activityLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/activityIndicator"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:gravity="center"
+            android:text="@string/MatchingIsPrepared"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/previewContainer"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/cameraPreviewArea">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/CorrectionLevel"
+                    android:textColor="@android:color/white" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|center_vertical">
+
+                    <Button
+                        android:id="@+id/correctionLevelPlus"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="-1dp"
+                        android:layout_marginStart="-1dp"
+                        android:background="@drawable/stepper_end"
+                        android:enabled="false"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:minWidth="0dp"
+                        android:onClick="onPlusPressed"
+                        android:padding="0dp"
+                        android:tag="ignoreApplyColors"
+                        android:text="@string/Plus"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/correctionLevelMinus"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:layout_toStartOf="@id/correctionLevelPlus"
+                        android:background="@drawable/stepper_start"
+                        android:enabled="false"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:minWidth="0dp"
+                        android:onClick="onMinusPressed"
+                        android:padding="0dp"
+                        android:tag="ignoreApplyColors"
+                        android:text="@string/Minus"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/correctionLevelLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center|top"
+                    android:text="@string/Low"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/cameraPreviewArea"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:layout_aspectRatio="56.25%"
+            app:layout_heightPercent="100%">
+
+            <RelativeLayout
+                android:id="@+id/cameraPreviewContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/preview_shape">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/cameraPreviewArea">
+
+            <View
+                android:id="@+id/pulseView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/pulse_shape" />
+
+            <TextView
+                android:id="@+id/pulseLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/pulseView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/CameraNotActive"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

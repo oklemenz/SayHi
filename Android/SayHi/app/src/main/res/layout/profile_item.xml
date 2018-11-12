@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/activeProfileButton"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/cellIndent"
+        android:background="?android:selectableItemBackground"
+        android:onClick="onItemActivePressed"
+        android:src="@drawable/circle"
+        android:tint="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/moreButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_margin="0dp"
+        android:layout_toStartOf="@id/deleteButton"
+        android:background="@color/colorMore"
+        android:fontFamily="sans-serif"
+        android:gravity="center|center_vertical"
+        android:minWidth="0dp"
+        android:onClick="onItemMorePressed"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="@string/More"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="0dp"
+        android:background="@color/colorDelete"
+        android:fontFamily="sans-serif"
+        android:gravity="center|center_vertical"
+        android:minWidth="0dp"
+        android:onClick="onItemDeletePressed"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="@string/Delete"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <ImageButton
+        android:id="@+id/profileDetailButton"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="@dimen/cellDedent"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/Details"
+        android:gravity="end|center_vertical"
+        android:onClick="onProfileDetailPressed"
+        android:src="@drawable/arrow_right" />
+
+    <TextView
+        android:id="@+id/textLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/activeProfileButton"
+        android:layout_toStartOf="@id/editButton"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

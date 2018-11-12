@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FFSegmentStoreEncodedHeight</key>
+	<integer>270</integer>
+	<key>FFSegmentStoreEncodedWidth</key>
+	<integer>152</integer>
+	<key>FFSegmentStoreFieldOrder</key>
+	<integer>-1</integer>
+	<key>FFSegmentStoreFileFrameCount</key>
+	<integer>1024</integer>
+	<key>FFSegmentStoreFirstSample</key>
+	<integer>0</integer>
+	<key>FFSegmentStorePixelTransformArray</key>
+	<array>
+		<array>
+			<real>0.20266666666666666</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>76</real>
+			<real>0.0</real>
+			<real>-0.20239880059970014</real>
+			<real>0.0</real>
+			<real>135</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>1</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>1</real>
+		</array>
+	</array>
+	<key>FFSegmentStoreRenderProps</key>
+	<string>FFRenderPropsThumbnail</string>
+	<key>FFSegmentStoreSegmentStoreMD5</key>
+	<data>
+	XzLtYOLJCMw01Rry/TTNLA==
+	</data>
+	<key>FFSegmentStoreStoredFrameIndexes</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGHyBYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
+	AAGGoKUHCA8TGlUkbnVsbNMJCgsMDQ5cTlNSYW5nZUNvdW50ViRjbGFzc1tOU1Jhbmdl
+	RGF0YRB/gASAAtIQChESV05TLmRhdGFPEQF7HwFeAZ0BAbYBAcMBAc8BAdwBAekBAfUB
+	AYICAY4CAZsCAagCAbQCAcECAc0CAdoCAecCAfMCAYADAYwDAZkDAaYDAbIDAcsDAdgD
+	AeUDAfEDAf4DAYoEAZcEAaMEAbAEAb0EAckEAdYEAeIEAbsFAccFAdMFAuAFAe0FAfoF
+	AYYGAZIGAp8GAawGAZAHAaoHAbcHAcMHAc8HAtwHAekHAfYHAYIIAY4IApsIAagIAf4J
+	AYoKApcKAaQKAbEKAb0KAckKAtYKAeMKAfAKAfwKAYgLAscLAtQLAeELAe4LAvoLAYYM
+	ApMMAbkMAcUMAtIMAd8MAesMAfgMAYQNAcMNAdANAd0NAekNAfYNAYMOAY8OAecOAfQO
+	AYAPAo0PAZoPAaYPAbMPAb8PAswPAdkPAeUPAf4PAfMUAYEVAY4VAZoVAacVAbIVAsAV
+	Ac0VAdkVAeYVAfEVAv8VAYwWAZgWAaUWAbAWAr4WAcsWAdcWAeQWAe8WAv0WAYoXAYAD
+	0hQVFhdaJGNsYXNzbmFtZVgkY2xhc3Nlc11OU011dGFibGVEYXRhoxYYGVZOU0RhdGFY
+	TlNPYmplY3TSFBUbHF8QEU5TTXV0YWJsZUluZGV4U2V0ox0eGV8QEU5TTXV0YWJsZUlu
+	ZGV4U2V0Wk5TSW5kZXhTZXRfEA9OU0tleWVkQXJjaGl2ZXLRISJUcm9vdIABAAgAEQAa
+	ACMALQAyADcAPQBDAEoAVwBeAGoAbABuAHAAdQB9AfwB/gIDAg4CFwIlAikCMAI5Aj4C
+	UgJWAmoCdQKHAooCjwAAAAAAAAIBAAAAAAAAACMAAAAAAAAAAAAAAAAAAAKR
+	</data>
+</dict>
+</plist>

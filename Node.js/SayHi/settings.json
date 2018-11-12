@@ -1,0 +1,15 @@
+{
+  "admin": true,
+  "anonymously": false,
+  "space": "standard",
+  "username": "oklemenz@web.de",
+  "password": "j9wwte",
+  "primaryLanguage": "en",
+  "categoryActiveThreshold": 100,
+  "tagActiveThreshold": 100,
+  "queryLimit": 100,
+  "languages": [
+    "en",
+    "de"
+  ]
+}

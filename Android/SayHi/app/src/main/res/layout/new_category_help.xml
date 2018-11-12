@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help"
+    style="@style/HelpDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/arrowLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="131dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_l" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/arrowLeft"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/arrowLeft"
+        android:text="@string/EnterNameOfTag"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/primaryRefHelpArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="262dp"
+        android:contentDescription="@string/Help"
+        android:scaleType="center"
+        android:src="@drawable/arrow_r" />
+
+    <TextView
+        android:id="@+id/primaryRefHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/primaryRefHelpArrow"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/primaryRefHelpArrow"
+        android:gravity="end"
+        android:text="@string/CreatePrimaryLangCategory"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

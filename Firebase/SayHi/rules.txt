@@ -1,0 +1,220 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "$space": {
+      ".write": "auth.uid === 'admin' || root.child($space).child('meta/admins').hasChild(auth.token.email.replace('.', '%2E')) || (!root.child($space).exists() && auth.token.email.length > 0)",
+      ".read": "auth.uid === 'admin' || root.child($space).child('meta/admins').hasChild(auth.token.email.replace('.', '%2E'))",
+      "meta": {
+      	".read": "auth != null",
+        ".validate": "auth.uid === 'admin' || newData.child('admins').hasChild(auth.token.email.replace('.', '%2E'))",  
+        "admins": {
+          ".validate": "auth.uid === 'admin' || newData.hasChild(auth.token.email.replace('.', '%2E'))"  
+        }        
+      },
+      "protection": {
+      	"$access_code": {
+          ".read": "auth != null"
+      	}
+      },
+      "settings": {
+        ".read": "auth != null",
+      },
+      "icons": {
+        ".read": "auth != null",
+        ".indexOn": ["date"],
+				"$icon": {
+        	".validate": "newData.hasChildren(['data', 'date'])",
+          "data": {
+          	".validate": "newData.isString()"
+        	},
+        	"date": {
+          	".validate": "newData.val() === now"
+	        }
+        }
+      },
+      "analytics": {
+        ".indexOn": ["year", "cluster"],
+        "$entry": {
+          ".write": "auth != null && !data.exists()"
+        }
+      },
+      "data": {
+        "$lang": {
+          "active": {
+            "categories": {
+              ".read": "auth != null",
+              ".indexOn": ["name", "search", "primaryLangKey", "favorite"]
+            },
+            "tags": {
+              ".read": "auth != null",
+              ".indexOn": ["name", "search", "categoryKey", "primaryLangKey", "favorite", "categoryStaged"]
+            }
+          },
+          "stage": {
+            "categories": {
+              ".read": "auth != null",
+              ".indexOn": ["name", "search", "hash", "counter"],
+              "$category": {
+                ".write": "auth != null && (!data.exists() || newData.exists()) && (!root.child($space).child('settings/allowNewCategories').exists() || root.child($space).child('settings/allowNewCategories').val() === true)",
+                ".validate": "newData.hasChildren(['name', 'language', 'search', 'icon', 'primaryLangKey', 'hash', 'counter', 'createdAt', 'changedAt']) && newData.child('hash').val() === '#C:' + newData.child('name').val() + '#P:' + newData.child('primaryLangKey').val()",
+                "name": {
+                  ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+                },
+                "language": {
+                  ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+                },
+                "search": {
+                  ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+                },
+                "icon": {
+                  ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+                },
+                "primaryLangKey": {
+                  ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+                },
+                "hash": {
+                  ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+                },
+                "counter": {
+                  ".validate": "(!data.exists() && newData.val() === 1) || newData.val() === data.val() || newData.val() === data.val() + 1"
+                },
+                "createdAt": {
+                  ".validate": "(!data.exists() && newData.val() === now) || data.val() === newData.val()"
+                },
+                "changedAt": {
+                  ".validate": "newData.val() === now"
+                },
+                "$other": {
+                    ".validate": false
+                }
+              }
+            },
+            "tags": {
+              ".read": "auth != null",              
+              ".indexOn": ["name", "search", "hash", "counter"],
+              "$tag": {
+                ".write": "auth != null && (!data.exists() || newData.exists()) && (!root.child($space).child('settings/allowNewTags').exists() || root.child($space).child('settings/allowNewTags').val() === true)",
+                ".validate": "newData.hasChildren(['name', 'language', 'search', 'categoryKey', 'categoryName', 'primaryLangKey', 'hash', 'counter', 'createdAt', 'changedAt']) && newData.child('hash').val() === '#T:' + newData.child('name').val() + '#C:' + newData.child('categoryKey').val() + '#P:' + newData.child('primaryLangKey').val()",
+                "name": {
+                    ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+                },
+                "language": {
+                    ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+                },
+                "search": {
+                    ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+                },
+                "categoryKey": {
+                    ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+                },
+                "categoryName": {
+                    ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+                },
+                "primaryLangKey": {
+                    ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+                },
+                "hash": {
+                    ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+                },
+                "counter": {
+                    ".validate": "(!data.exists() && newData.val() === 1) || newData.val() === data.val() || newData.val() === data.val() + 1"
+                },
+                "createdAt": {
+                    ".validate": "(!data.exists() && newData.val() === now) || data.val() === newData.val()"
+                },
+                "changedAt": {
+                    ".validate": "newData.val() === now"
+                },
+                "$other": {
+                  ".validate": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "messages": {
+        ".indexOn": ["date"],
+        "$message": {
+          ".read": "auth != null",
+          ".write": "auth != null && (!data.exists() || !newData.exists())",
+          ".validate": "newData.hasChildren(['content', 'match', 'date'])",
+          "content": {
+          	".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"	
+          },            
+          "match": {
+            ".write": "auth != null",
+            ".validate": "(!data.exists() && newData.val() === '') || (data.exists() && newData.isString())"
+          },
+          "date": {
+          	".validate": "(!data.exists() && newData.val() === now) || data.val() === newData.val()"
+          },
+          "$other": {
+          	".validate": false
+          }
+        }
+      },
+    	"matches": {
+        ".indexOn": ["date"],
+        "$match": {
+          ".read": "auth != null",
+          ".write": "auth != null",
+          ".validate": "newData.hasChildren(['date'])",
+          "first": {
+            ".write": "auth != null && !data.exists()",
+          	".validate": "newData.hasChildren(['active', 'session'])",
+          	"active": {
+              ".validate": "newData.isBoolean()"
+            },
+            "session": {
+              ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+            },
+            "$other": {
+              ".validate": false
+          	}
+          },
+          "second": {
+          	".write": "auth != null && !data.exists()",
+          	".validate": "newData.hasChildren(['active', 'session'])",
+          	"active": {
+              ".validate": "newData.isBoolean()"
+            },
+            "session": {
+              ".validate": "(!data.exists() && newData.isString()) || data.val() === newData.val()"
+            },
+            "$other": {
+              ".validate": false
+          	}
+          },
+          "date": {
+          	".validate": "newData.val() === now"
+          },
+          "$other": {
+          	".validate": false
+          }
+        }
+      },
+      "scores": {
+        ".read": "auth != null",
+        ".indexOn": ["value", "count"],
+        "$entry": {
+          ".write": "auth != null && newData.exists()",
+          ".validate": "newData.hasChildren(['alias', 'value', 'count'])",
+          "alias": {
+          	".validate": "newData.isString()"
+          },
+          "value": {
+          	".validate": "(!data.exists() && newData.isNumber() && newData.val() > 0) || newData.val() >= data.val()"
+          },
+          "count": {
+          	".validate": "(!data.exists() && newData.isNumber() && newData.val() > 0) || newData.val() >= data.val()"
+          },
+          "$other": {
+          	".validate": false
+          }
+        }
+      }
+    }
+  }
+}

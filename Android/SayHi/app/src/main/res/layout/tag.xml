@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:paddingBottom="0dp"
+    android:paddingEnd="0dp"
+    android:paddingStart="0dp"
+    android:paddingTop="0dp"
+    tools:context="de.oklemenz.sayhi.activity.TagActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <Button
+            android:id="@+id/backButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif"
+            android:gravity="center|center_vertical"
+            android:minWidth="0dp"
+            android:onClick="onBackPressed"
+            android:text="@string/NavBack"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/titleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:maxLines="2"
+            android:maxWidth="200dp"
+            android:text="@string/Profile"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <ImageButton
+            android:id="@+id/helpButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/addButton"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/Help"
+            android:onClick="onHelpPressed"
+            android:src="@drawable/help" />
+
+        <ImageButton
+            android:id="@+id/addButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/hiButton"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/CreateNewTag"
+            android:onClick="onCreateTagPressed"
+            android:src="@drawable/plus" />
+
+        <Button
+            android:id="@+id/hiButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="34dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:minWidth="0dp"
+            android:onClick="onSayHiPressed"
+            android:text="@string/Hi"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/topContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/topLeftContainer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/posTagLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorDivider" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/posTagView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    tools:listitem="@layout/tag_view" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/topDividerLine"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorDivider" />
+
+            <LinearLayout
+                android:id="@+id/topRightContainer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/negTagLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorDivider" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/negTagView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    tools:listitem="@layout/tag_view" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:id="@+id/tagLabel"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:text="@string/ChooseFromDots"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <SearchView
+                android:id="@+id/tagSearch"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:queryBackground="@android:color/transparent"
+                android:queryHint="@string/Search"
+                tools:targetApi="21" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/tagView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    tools:listitem="@layout/tag_view" />
+
+                <ProgressBar
+                    android:id="@+id/tagActivityIndicator"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="44dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:indeterminate="false"
+                    android:padding="5dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomContainer"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/colorBottomBar">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/categoryView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                tools:listitem="@layout/category_view" />
+
+            <TextView
+                android:id="@+id/statusLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/Marks"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/categoryActivityIndicator"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:indeterminateOnly="true"
+                android:padding="5dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FFSegmentStoreEncodedHeight</key>
+	<integer>135</integer>
+	<key>FFSegmentStoreEncodedWidth</key>
+	<integer>76</integer>
+	<key>FFSegmentStoreFieldOrder</key>
+	<integer>-1</integer>
+	<key>FFSegmentStoreFileFrameCount</key>
+	<integer>1024</integer>
+	<key>FFSegmentStoreFirstSample</key>
+	<integer>0</integer>
+	<key>FFSegmentStorePixelTransformArray</key>
+	<array>
+		<array>
+			<real>0.10133333333333333</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>38</real>
+			<real>0.0</real>
+			<real>-0.10119940029985007</real>
+			<real>0.0</real>
+			<real>67.5</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>1</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>1</real>
+		</array>
+	</array>
+	<key>FFSegmentStoreRenderProps</key>
+	<string>FFRenderPropsThumbnail</string>
+	<key>FFSegmentStoreSegmentStoreMD5</key>
+	<data>
+	c9/36boCP5HSKGDCzszM0Q==
+	</data>
+	<key>FFSegmentStoreStoredFrameIndexes</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGHyBYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
+	AAGGoKUHCA8TGlUkbnVsbNMJCgsMDQ5cTlNSYW5nZUNvdW50ViRjbGFzc1tOU1Jhbmdl
+	RGF0YRBTgASAAtIQChESV05TLmRhdGFPEPQMASQBPAFVAW0BhQEBnQEBtgEBzgEB5gEB
+	/wEBlwIBrwIBxwIB4AIB+AIBkAMBqQMBwQMB6wQBgwUBmwUBtAUBzAUB5AUB/QUBlQYB
+	jgcBpwcBvwcB1wcB8AcBiAgBoAgBuAgB0QgBsgkBygkB4gkBtwwBzwwB3AwByA0B4Q0B
+	+Q0BkQ4BqQ4Bwg4B2g4B8g4Biw8Bow8Buw8B0w8B7A8B9xEBjxIBqBIBoRMBuRMB0hMB
+	6hMBghQBmhQBsxQByxQB4xQB/BQBlBUBrBUBxBUB3RUB9RUBjRYBphYBvhYB1hYB7xYB
+	hxcBnxcBtxcB0BcB6BcBgAPSFBUWF1okY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJs
+	ZURhdGGjFhgZVk5TRGF0YVhOU09iamVjdNIUFRscXxARTlNNdXRhYmxlSW5kZXhTZXSj
+	HR4ZXxARTlNNdXRhYmxlSW5kZXhTZXRaTlNJbmRleFNldF8QD05TS2V5ZWRBcmNoaXZl
+	ctEhIlRyb290gAEACAARABoAIwAtADIANwA9AEMASgBXAF4AagBsAG4AcAB1AH0BdAF2
+	AXsBhgGPAZ0BoQGoAbEBtgHKAc4B4gHtAf8CAgIHAAAAAAAAAgEAAAAAAAAAIwAAAAAA
+	AAAAAAAAAAAAAgk=
+	</data>
+</dict>
+</plist>

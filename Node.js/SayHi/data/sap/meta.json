@@ -1,0 +1,9 @@
+{
+  "name": "sap",
+  "owner": "SAP SE",
+  "admins": {
+    "oklemenz@web%2Ede": "Oliver Klemenz"
+  },
+  "ignore": false,
+  "protected": true
+}

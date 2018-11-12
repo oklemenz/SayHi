@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>export</key>
+	<array>
+		<dict>
+			<key>date</key>
+			<string>Mittwoch, 16. August 2017 um 14:22:00 Mitteleuropäische Sommerzeit</string>
+			<key>fullDate</key>
+			<date>2017-08-16T12:22:00Z</date>
+			<key>resultStr</key>
+			<array>
+				<string>/Users/d045365/Downloads/SAY Hi! (EN: Pixel).mp4</string>
+			</array>
+			<key>sourceFP</key>
+			<string>8BIGaaa0TuCkdPy9dSes4A - 2017-08-16 12:10:54 +0000</string>
+		</dict>
+		<dict>
+			<key>date</key>
+			<string>Dienstag, 29. August 2017 um 09:35:08 Mitteleuropäische Sommerzeit</string>
+			<key>fullDate</key>
+			<date>2017-08-29T07:35:08Z</date>
+			<key>resultStr</key>
+			<array>
+				<string>/Users/d045365/Downloads/SAY Hi! (EN: Pixel).mp4</string>
+			</array>
+			<key>sourceFP</key>
+			<string>8BIGaaa0TuCkdPy9dSes4A - 2017-08-16 12:13:14 +0000</string>
+		</dict>
+		<dict>
+			<key>date</key>
+			<string>Dienstag, 29. August 2017 um 10:08:41 Mitteleuropäische Sommerzeit</string>
+			<key>fullDate</key>
+			<date>2017-08-29T08:08:41Z</date>
+			<key>resultStr</key>
+			<array>
+				<string>/Users/d045365/Downloads/SAY Hi! (EN: Pixel).mp4</string>
+			</array>
+			<key>sourceFP</key>
+			<string>8BIGaaa0TuCkdPy9dSes4A - 2017-08-16 12:13:14 +0000</string>
+		</dict>
+	</array>
+</dict>
+</plist>

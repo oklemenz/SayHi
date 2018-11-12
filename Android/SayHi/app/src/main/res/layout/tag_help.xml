@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help"
+    style="@style/HelpDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/addNewTagArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="-4dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_r" />
+
+    <TextView
+        android:id="@+id/addNewTagLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginTop="11dp"
+        android:layout_toStartOf="@id/addNewTagArrow"
+        android:gravity="end"
+        android:text="@string/CreateNewTag"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/arrowTopRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="21dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_ur" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrowTopRight"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginTop="-20dp"
+        android:layout_toStartOf="@id/arrowTopRight"
+        android:gravity="end"
+        android:text="@string/SayHi"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/topContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/topContainerLeft"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/dropTagsTopicsLikeArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:contentDescription="@string/Help"
+                    android:src="@drawable/arrow_u" />
+
+                <TextView
+                    android:id="@+id/dropTagsTopicsLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dropTagsTopicsLikeArrow"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center"
+                    android:maxWidth="200dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/DropTagsTopicsLike"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/topContainerRight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/dropTagsTopicsDislikeArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:contentDescription="@string/Help"
+                    android:src="@drawable/arrow_u" />
+
+                <TextView
+                    android:id="@+id/dropTagsTopicsDislike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dropTagsTopicsDislikeArrow"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center"
+                    android:maxWidth="200dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:text="@string/DropTagsTopicsDislike"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/middleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/arrowMiddleUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:contentDescription="@string/Help"
+                android:src="@drawable/arrow_u" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/arrowMiddleUp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-5dp"
+                android:gravity="center"
+                android:maxWidth="250dp"
+                android:text="@string/LongPressDragToGroup"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arrowBottomLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_bl" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/arrowBottomLeft"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_toEndOf="@id/statusHelpArrow"
+        android:gravity="start"
+        android:text="@string/ShowFavoriteTags"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

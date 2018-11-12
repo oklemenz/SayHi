@@ -1,0 +1,272 @@
+/* 
+  Localizable.strings
+  SayHi
+  
+  Export Command:
+  egrep -roh '".*?".localized' . | sort | uniq | sed 's|\(".*"\)\.localized|\1 = \1;|g'
+ 
+  Created by Klemenz, Oliver on 17.11.16.
+  Copyright © 2016 Klemenz, Oliver. All rights reserved.
+*/
+"L" = "Low";
+"M" = "Medium";
+"Q" = "Quartile";
+"H" = "High";
+
+"m" = "male";
+"m_short" = "m.";
+"f" = "female";
+"f_short" = "f.";
+
+"basic" = "Basic";
+"Basic" = "Basic";
+"basic_1" = "1. Basic";
+"exact" = "Exact";
+"Exact" = "Exact";
+"exact_2" = "2. Exact";
+"adapt" = "Adapt";
+"Adapt" = "Adapt";
+"adapt_3" = "3. Adapt";
+"tries" = "Try";
+"Tries" = "Try";
+"tries_4" = "4. Try";
+"open" = "Open";
+"Open" = "Open";
+"open_5" = "5. Open";
+
+"min0" = "Immediately";
+"min1" = "After 1 minute";
+"min5" = "After 5 minutes";
+"min10" = "After 10 minutes";
+
+"None" = "None";
+"Date" = "Date";
+"Single" = "Single";
+"Family" = "Family";
+"Partner" = "Partner";
+"Wife" = "Wife";
+"Husband" = "Husband";
+"Parent" = "Parent";
+"Father" = "Father";
+"Mother" = "Mother";
+"Child" = "Child";
+"Son" = "Son";
+"Daugther" = "Daugther";
+"Sibling" = "Sibling";
+"Brother" = "Brother";
+"Sister" = "Sister";
+"Grandparent" = "Grandparent";
+"Grandfather" = "Grandfather";
+"Grandmother" = "Grandmother";
+"Grandchild" = "Grandchild";
+"Grandson" = "Grandson";
+"Granddaughter" = "Granddaughter";
+"Relative" = "Relative";
+"Uncle" = "Uncle";
+"Aunt" = "Aunt";
+"Cousins" = "Cousins";
+"Cousin" = "Cousin (m)";
+"Cousine" = "Cousin (f)";
+"Nephew" = "Nephew";
+"Niece" = "Niece";
+"Friend" = "Friend";
+"Boyfriend" = "Boyfriend";
+"Girlfriend" = "Girlfriend";
+"Colleague" = "Colleague";
+"Boss" = "Boss";
+"Manager" = "Manager";
+"Employee" = "Employee";
+"Peer" = "Peer";
+"Other" = "Other";
+
+"ChooseFromFavorites" = "Choose from favorites";
+"ChooseFromSearch" = "Choose from search result";
+"ChooseFromOwn" = "Choose from own tags";
+"ChooseFromUncategorized" = "Choose from uncategorized tags";
+"ChooseFromCategory" = "Choose from '%@'";
+"ChooseFromDots" = "Choose from ...";
+
+"MatchExplanation" = "The lower match mode of both will be used during matching. Matching mode can be overridden on profile level.";
+"MatchForce" = "Matching mode on profile level is overridden.";
+
+"ActivateMultipleProfiles" = "Activate multiple profiles.";
+"ProvideBirthYear" = "Provide your year of birth first.";
+"ActivateOwnTags" = "Activate own tags.";
+"InviteFriends1" = "Invite two people first. Send first of two invitations.";
+"InviteFriends2" = "Invite two people first. Send second of two invitations.";
+
+"CameraError" = "This App needs the front camera to work properly. Allow camera in device settings for the App.";
+"MicrophoneError" = "This App needs the microphone to work properly. Allow microphone in device settings for the App.";
+"LocationError" = "This App can determine your location during matching. To enable this feature, allow location services in device settings for the App.";
+"MailNotConfigured" = "Device is not configured to send mails.";
+"MessageNotConfigured" = "Device is not configured to send messages.";
+
+"ContactMail" = "contact@sayhi-app.com";
+"ContactSubject" = "SAY Hi! - Feedback & Support (iOS)";
+"ContactBody" = "
+<p>Hi!</p>
+<p>
+I have feedback or need help!
+<br>
+<br>
+</p>
+<p>Thanks!</p>
+<p>%@</p>";
+
+"InviteSubject" = "Invite to SAY Hi!";
+"InviteBody" = "
+<p>Hi!</p>
+<p>
+I use the app SAY Hi! and I really love it!
+<br>
+If you also get it, we could use it together.
+</p>
+<p>
+You can download the app from here:
+</p>
+<p>
+iOS:
+<br>
+<a href='%@'>%@</a>
+<p>
+<p>
+Android:
+<br>
+<a href='%@'>%@</a>
+</p>
+Bye!
+</p>
+<p>%@</p>";
+"InviteMessage" = "Hi!\nI'm using SAY Hi!. Loving it.\n\niOS: %@\n\nAndroid: %@\n\n%@";
+
+"ConfigurationAdjusted" = "Configuration has been successfully adjusted";
+"SettingsConfiguration" = "App configuration can be adjusted anytime, accessible via the top left settings icon.";
+"NoActiveProfile" = "No active profile selected.";
+"DeleteProfile" = "Do you really want to delete the profile '%@'?";
+"DeleteMatch" = "Do you really want to delete the match?";
+"DeleteAllMatches" = "Do you really want to delete all matches?";
+"InvalidQR" = "Last recognized QR Code is not valid for the app.";
+"DifferentSpace" = "Matching in different spaces is not possible. Switch to same space in settings and try again.";
+"MatchModeNotOpen" = "Matching mode is not active on other side.";
+"AlreadyMatched" = "Last QR Code was already successfully matched. Check matching history.";
+"QRCodeImageNotAvailable" = "QR Code is not available with this correction level. Fallback to last available version.";
+"QRCodeRecognitionActive" = "QR Code recognition is active";
+"QRCodeRecognitionNotActive" = "QR Code recognition is NOT active";
+"MatchIsProcessed" = "Match is currently processed. Please wait a moment.";
+"WaitingForOtherSide" = "Match needs to be confirmed on other side. Keep holding devices front facing to each other.";
+"UnexpectedErrorOccurred" = "An unexpected error occurred. Check network connection or try again later.";
+"NoTagsForLanguage" = "No tags are existing for current selected language. Create new tags or switch to different content language.";
+"MisspelledWordsDetected" = "Name seems to contain misspelled words. Do you want to continue?";
+
+"TagAlreadyExists" = "Tag '%@' already exists in category '%@'.";
+"SimilarTagsExist" = "Similar Tags already exist. How do you want to proceed?";
+"CategoryAlreadyExists" = "Category '%@' already exists.";
+"SimilarCategoriesExist" = "Similar Categories exist. How do you want to proceed?";
+"UseExistingTag" = "Use Existing";
+"UseExistingCategory" = "Use Existing";
+
+"DisplaysMatchingScore" = "Displays your \nmatching score";
+"DisplaysMatchingScoreHighscore" = "Displays your \nmatching score, tap \nto access \nhighscore";
+"ShareOrShowHighscore" = "Share your score or show the highscore.";
+"ShareMatchingPoint" = "Share %i matching point";
+"ShareMatchingPoints" = "Share %i matching points";
+"ShareMatchingMatch" = "(%i match)";
+"ShareMatchingMatches" = "(%i matches)";
+"ProvideAliasShare" = "Provide an alias to share your matching score.";
+"ScoreShared" = "Your matching score was shared.";
+"PlayingRecording" = "Playing Recording...";
+"DeviceNotMuted" = "(Device should not be muted)";
+"MatchingDetails" = "Matching Details";
+"MatchingDifferentLanguage" = "Matching was performed based on different content languages (%@ / %@).\n\nTags without english equivalent were not considered during matching.";
+
+"AppStoreUrlIOS" = "https://itunes.apple.com/us/app/say-hi/id1224255479?l=de&ls=1&mt=8";
+"AppStoreUrlAndroid" = "https://play.google.com/store/apps/details?id=de.oklemenz.sayhi";
+
+"SpaceSwitchedSuccessfully." = "Space switched successfully. Space can be changed again in settings.";
+
+"ILike" = "%@ I Like";
+"IDislike" = "%@ I Don't Like";
+"LikeNum" = "%@ (%i)";
+"DislikeNum" = "%@ (%i)";
+"LikeDislikeNum" = "%@%i %@%i";
+"DislikeLikeNum" = "%@%i %@%i";
+"BothLikeNum" = "%@|%@ (%i/%i|%i)";
+"OnlyLikeNum" = "%@|%@ (%i/%i|%i)";
+"OnlyDislikeNum" = "%@|%@ (%i/%i|%i)";
+"BothDislikeNum" = "%@|%@ (%i/%i|%i)";
+
+"ModeIcon" = "Modus %@";
+"OverrideMatchingMode" = "Override Matching Mode %@";
+"SetRelationType" = "Set Relation Type %@";
+"ProfileEdit" = "Edit → More...
+• Copy profile
+• Rename profile
+• Set relation type %@
+• Override matching mode %@";
+"MatchInformation" = "Match information
+
+1st line: Data about other one
+• Name
+• Gender
+• Age
+• Number of likes (%@)
+• Number of dislikes (%@)
+• Matching points
+
+2nd line: Data about you
+• Matching profile
+• Relation type (%@)
+• Matching mode (%@)
+• Matching time";
+
+"MatchBasic" = "Match only tags, which both like. Use this mode to synchronize each other.";
+"MatchExact" = "Match only tags, which both like or both don't like. Use this mode to only disclose what both want.";
+"MatchAdapt" = "Match exactly and additionally show tags you like, but the other one likes not. Use this mode to adapt to the other.";
+"MatchTry" = "Match exactly and additionally show tags you don't like, but the other one likes. Use this mode to try out something new.";
+"MatchOpen" = "Match all tags, which both either like or don't like. Use this mode to open yourself.";
+"MatchInformation" = "Match information\n\n1st line: Data about other one\n  • Name \n  • Gender \n  • Age \n  • Language \n  • Number of likes (%@)\n  • Number of dislikes (%@) \n  • Matching points \n\n2nd line: Data about you\n  • Matching profile \n  • Relation type (%@) \n  • Matching mode (%@) \n  • Matching location\n  • Matching time \n\n\n(Transparently displayed matches \nare not counted for score, as a match\nwith same counterpart was already\nconfirmed the same day)";
+"ILike" = "%@ I Like";
+"IDislike" = "%@ I Don't Like";
+"ShowsTagsBothLike" = "Shows tags for \ntopics that you\nboth like";
+"ShowsTagsBothDislike" = "Shows tags for \ntopics that you \nboth don't like";
+"ShowsTagsLikeDislike" = "Shows tags for \ntopics that you\nlike, but the other\none likes not";
+"ShowsTagsDislikeLike" = "Shows tags for\ntopics that you don't \nlike, but the other\none likes";
+"DropTagsTopicsLike" = "Drop tags for topics that you like, starting with the best. \n\nOrder can be \nchanged.";
+"DropTagsTopicsDislike" = "Drop tags for topics that you don't like, starting with the worst.\n\nOrder can be \nchanged.";
+"ShowsTagsLike" = "Shows tags for \ntopics that \nyou like";
+"ShowsTagsDislike" = "Shows tags for \ntopics that \nyou don't like";
+
+"MatchBasic_exchange" = "Match only tags, which both want. Use this mode to synchronize each other.";
+"MatchExact_exchange" = "Match only tags, which both want or both offer. Use this mode to align on topics.";
+"MatchAdapt_exchange" = "Match exactly and additionally show tags you want, and the other one offers. Use this mode to fulfill your needs.";
+"MatchTry_exchange" = "Match exactly and additionally show tags you offer, and the other one wants. Use this mode to provide your offers.";
+"MatchOpen_exchange" = "Match all tags, which both either want or offer. Use this mode to cover all aspects.";
+"MatchInformation_exchange" = "Match information\n\n1st line: Data about other one\n  • Name \n  • Gender \n  • Age \n  • Language \n  • Number of wants (%@)\n  • Number of offers (%@) \n  • Matching points \n\n2nd line: Data about you\n  • Matching profile \n  • Relation type (%@) \n  • Matching mode (%@) \n  • Matching location\n  • Matching time \n\n\n(Transparently displayed matches \nare not counted for score, as a match\nwith same counterpart was already\nconfirmed the same day)";
+"ILike_exchange" = "%@ I Want";
+"IDislike_exchange" = "%@ I Offer";
+"ShowsTagsBothLike_exchange" = "Shows tags for \ntopics that you\nboth want";
+"ShowsTagsBothDislike_exchange" = "Shows tags for \ntopics that you \nboth offer";
+"ShowsTagsLikeDislike_exchange" = "Shows tags for \ntopics that you\nwant, and the other\none offers";
+"ShowsTagsDislikeLike_exchange" = "Shows tags for\ntopics that you offer, and the other\none wants";
+"DropTagsTopicsLike_exchange" = "Drop tags for topics that you want. \n\nOrder can be \nchanged.";
+"DropTagsTopicsDislike_exchange" = "Drop tags for topics that you offer.\n\nOrder can be \nchanged.";
+"ShowsTagsLike_exchange" = "Shows tags for \ntopics that \nyou want";
+"ShowsTagsDislike_exchange" = "Shows tags for \ntopics that \nyou offer";
+
+"MatchBasic_generic" = "Match only tags, which both assigned to '%@'.";
+"MatchExact_generic" = "Match only tags, which both assigned to '%@' or both assigned to '%@'.";
+"MatchAdapt_generic" = "Match exactly and additionally show tags you assigned to '%@', and the other one assigned to '%@'.";
+"MatchTry_generic" = "Match exactly and additionally show tags you assigned to '%@', and the other one assigned to '%@'.";
+"MatchOpen_generic" = "Match all tags, which both either assigned to '%@' or '%@'.";
+"MatchInformation_generic" = "Match information\n\n1st line: Data about other one\n  • Name \n  • Gender \n  • Age \n  • Language \n  • Number of tags assigned to '%@'\n  • Number of tags assigned to '%@' \n  • Matching points \n\n2nd line: Data about you\n  • Matching profile \n  • Relation type (%@) \n  • Matching mode (%@) \n  • Matching location\n  • Matching time \n\n\n(Transparently displayed matches \nare not counted for score, as a match\nwith same counterpart was already\nconfirmed the same day)";
+"ILike_generic" = "%@";
+"IDislike_generic" = "%@";
+"ShowsTagsBothLike_generic" = "Shows tags for \ntopics that you\nboth assigned to '%@'";
+"ShowsTagsBothDislike_generic" = "Shows tags for \ntopics that you \nboth assigned to '%@'";
+"ShowsTagsLikeDislike_generic" = "Shows tags for \ntopics that you \nassigned to '%@', and the other\none assigned to '%@'";
+"ShowsTagsDislikeLike_generic" = "Shows tags for \ntopics that you \nassigned to '%@', and the other\none assigned to '%@'";
+"DropTagsTopicsLike_generic" = "Drop tags for topics that you want to assign to '%@'. \n\nOrder can be \nchanged.";
+"DropTagsTopicsDislike_generic" = "Drop tags for topics that you want to assign to '%@'. \n\nOrder can be \nchanged.";
+"ShowsTagsLike_generic" = "Shows tags for \ntopics that you \nassigned to '%@'";
+"ShowsTagsDislike_generic" = "Shows tags for \ntopics that you \nassigned to '%@'";
+

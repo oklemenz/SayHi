@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient"
+    tools:context="de.oklemenz.sayhi.activity.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bar_shape">
+
+        <Button
+            android:id="@+id/backButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif"
+            android:gravity="center|center_vertical"
+            android:minWidth="0dp"
+            android:onClick="onBackPressed"
+            android:text="@string/NavBack"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/titleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:maxLines="2"
+            android:maxWidth="200dp"
+            android:paddingEnd="50dp"
+            android:paddingStart="0dp"
+            android:text="@string/Profiles"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/editButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/helpButton"
+            android:fontFamily="sans-serif"
+            android:gravity="center|center_vertical"
+            android:minWidth="0dp"
+            android:onClick="onEditPressed"
+            android:text="@string/Edit"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/helpButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/addButton"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/Help"
+            android:onClick="onHelpPressed"
+            android:src="@drawable/help" />
+
+        <ImageButton
+            android:id="@+id/addButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/CreateNewProfile"
+            android:onClick="onAddProfilePressed"
+            android:src="@drawable/plus" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/profileList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp"
+        android:clickable="true"
+        android:divider="@drawable/profile_list_divider"
+        android:dividerHeight="1dp" />
+
+</RelativeLayout>

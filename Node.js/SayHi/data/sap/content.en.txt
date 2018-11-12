@@ -1,0 +1,11 @@
+Database*(#9896a4): HANA*, Vora*, PostgreSQL, MongoDB, NoSQL, Redis, RabbitMQ
+User Experience*(#91a8d0): Fiori*, UI5*, Build, Responsive Design, Angular 2, Bootstrap, Material Design, ReactJS
+Cloud*(#068cc9): Cloud Platform*, Cloud Foundry, AWS, Kubernetes
+Mobile*(#f7ba6b): iOS*, Android*, Hybrid*, Web App, Cordova, Phonegap
+Machine Learning*(#b18f6a): Leonardo ML*, Speech Recognition, Text Recognition, Image Recognition, Speech Synthesis, Face Detection, Human Parsing
+Innovation*(#7cb82f): sap.io*, Intrapreneurship, Innovation Management
+Big Data*(#fae03b): Spark, Hadoop, Swift, S3
+IOT*(#a487ba): Leonardo*, Raspberry Pi, Arduino
+Application*(#f38a78): S/4 HANA*, Analytics Cloud*, Digital Boardroom*, ByDesign, SuccessFactors, FieldGlass, Concur, Hybris, Ariba, BW/4HANA, Jam
+Technology*(#07aeb3): XS Advanced (XSA)*, CDS*, OData*, XS Classic (XSC), Tomcat, Node.js, Gateway, AOF
+Programming Language*(#e68521): Java, Javascript, HTML, ABAP, Python, Scala, Go

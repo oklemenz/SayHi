@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="de.oklemenz.sayhi">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="false" />
+
+    <application
+        android:name="AppDelegate"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:supportsRtl">
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/SayHi">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:label="@string/SayHi">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="sayhi.com"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter android:label="@string/SayHi">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sayhi" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/Settings" />
+        <activity
+            android:name=".activity.SettingsLanguageActivity"
+            android:label="@string/ContentLanguage" />
+        <activity
+            android:name=".activity.DataPrivacyActivity"
+            android:label="@string/DataPrivacy" />
+        <activity
+            android:name=".activity.LicenseActivity"
+            android:label="@string/Licenses" />
+        <activity
+            android:name=".activity.TagActivity"
+            android:label="@string/Profile" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:label="@string/Profiles" />
+        <activity
+            android:name=".activity.HighscoreActivity"
+            android:label="@string/Highscore" />
+        <activity
+            android:name=".activity.HistoryActivity"
+            android:label="@string/MatchingHistory" />
+        <activity
+            android:name=".activity.MatchActivity"
+            android:label="@string/Match" />
+        <activity
+            android:name=".activity.NewTagActivity"
+            android:label="@string/CreateNewTag" />
+        <activity
+            android:name=".activity.NewCategoryActivity"
+            android:label="@string/CreateNewCategory" />
+        <activity
+            android:name=".activity.SearchCategoryActivity"
+            android:label="@string/SearchCategory" />
+        <activity
+            android:name=".activity.SimilarCategoriesActivity"
+            android:label="@string/SimilarCategories" />
+        <activity
+            android:name=".activity.SimilarTagsActivity"
+            android:label="@string/SimilarTags" />
+        <activity
+            android:name=".activity.QRCodeActivity"
+            android:label="@string/Hi" />
+        <activity
+            android:name=".activity.LocationActivity"
+            android:label="@string/Location" />
+        <activity
+            android:name=".activity.RelationTypeActivity"
+            android:label="@string/SetRelationType" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FFSegmentStoreEncodedHeight</key>
+	<integer>135</integer>
+	<key>FFSegmentStoreEncodedWidth</key>
+	<integer>100</integer>
+	<key>FFSegmentStoreFieldOrder</key>
+	<integer>-1</integer>
+	<key>FFSegmentStoreFileFrameCount</key>
+	<integer>1024</integer>
+	<key>FFSegmentStoreFirstSample</key>
+	<integer>0</integer>
+	<key>FFSegmentStorePixelTransformArray</key>
+	<array>
+		<array>
+			<real>0.083333333333333329</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>50</real>
+			<real>0.0</real>
+			<real>-0.084375000000000006</real>
+			<real>0.0</real>
+			<real>67.5</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>1</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>1</real>
+		</array>
+	</array>
+	<key>FFSegmentStoreRenderProps</key>
+	<string>FFRenderPropsThumbnail</string>
+	<key>FFSegmentStoreSegmentStoreMD5</key>
+	<data>
+	wZjR3uVnCRrjXGc/KZ4sKQ==
+	</data>
+	<key>FFSegmentStoreStoredFrameIndexes</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGHyBYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
+	AAGGoKUHCA8TGlUkbnVsbNMJCgsMDQ5cTlNSYW5nZUNvdW50ViRjbGFzc1tOU1Jhbmdl
+	RGF0YRBzgASAAtIQChESV05TLmRhdGFPEQFTFQIvAUABQgFrAW4BlwEBmwEBwgEBxwEB
+	7QEB8wEBmAIBoAIBwwIBzAIB7gIB+AIBmQMBpQMBxQMB0QMB8AMB/gMBlAQBmwQBqgQB
+	xgQB0AQB1gQB8QQBgwUBnAUBrwUByAUB2wUB8wUBiAYBngYBtAYByQYB3gYB4AYB9AYB
+	jQcCnwcBuQcBygcB4AcB5QcB9gcBkggBoQgBvggBzAgB6ggB9wgBlwkBogkBwwkBzQkB
+	7wkB+AkBnAoBpAoBrAoByAoBzwoB9QoB+goBoQsBpQsBzQsB0AsB+gsCpgwC0gwB/QwB
+	/wwBqA0Bqw0B0w0B1w0B/g0BhA4BqQ4BsA4B1Q4B3A4BgA8BiQ8Bqw8BtQ8B1g8B4Q8B
+	gRABjhABrBABuhAB2BAB5hABgxEBkxEBrhEBvxEB2REB7BEBhBIBmBIBrxIBxBIB2hIB
+	8RIBhhMBnRMBgAPSFBUWF1okY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJsZURhdGGj
+	FhgZVk5TRGF0YVhOU09iamVjdNIUFRscXxARTlNNdXRhYmxlSW5kZXhTZXSjHR4ZXxAR
+	TlNNdXRhYmxlSW5kZXhTZXRaTlNJbmRleFNldF8QD05TS2V5ZWRBcmNoaXZlctEhIlRy
+	b290gAEACAARABoAIwAtADIANwA9AEMASgBXAF4AagBsAG4AcAB1AH0B1AHWAdsB5gHv
+	Af0CAQIIAhECFgIqAi4CQgJNAl8CYgJnAAAAAAAAAgEAAAAAAAAAIwAAAAAAAAAAAAAA
+	AAAAAmk=
+	</data>
+</dict>
+</plist>

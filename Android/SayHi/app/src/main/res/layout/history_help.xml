@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help"
+    style="@style/HelpDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/arrowUpRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="0dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_ur" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/arrowUpRight"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="55dp"
+        android:gravity="end"
+        android:text="@string/CountedMatches"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/showMatchingResultDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="85dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_r" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/showMatchingResultDetails"
+        android:layout_alignEnd="@+id/showMatchingResultDetails"
+        android:layout_alignTop="@+id/showMatchingResultDetails"
+        android:layout_marginEnd="45dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/ShowMatchingResults"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/matchInformationArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_u" />
+
+    <TextView
+        android:id="@+id/matchInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/matchInformationArrow"
+        android:layout_alignStart="@+id/matchInformationArrow"
+        android:layout_alignTop="@+id/matchInformationArrow"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/MatchInformation"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6D6D72</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#385B7D</color>
+    <color name="colorGradient1">#89BDAB</color>
+    <color name="colorGradient2">#E8DFB3</color>
+    <color name="colorBottomBar">#565656</color>
+    <color name="colorBarDivider">#AAFFFFFF</color>
+    <color name="colorDivider">#44FFFFFF</color>
+    <color name="colorSection">#33FFFFFF</color>
+    <color name="colorMore">#C7C7C7</color>
+    <color name="colorDelete">#FE3C2F</color>
+</resources>

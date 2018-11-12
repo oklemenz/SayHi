@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FFSegmentStoreEncodedHeight</key>
+	<integer>135</integer>
+	<key>FFSegmentStoreEncodedWidth</key>
+	<integer>76</integer>
+	<key>FFSegmentStoreFieldOrder</key>
+	<integer>-1</integer>
+	<key>FFSegmentStoreFileFrameCount</key>
+	<integer>1024</integer>
+	<key>FFSegmentStoreFirstSample</key>
+	<integer>0</integer>
+	<key>FFSegmentStorePixelTransformArray</key>
+	<array>
+		<array>
+			<real>0.10555555555555556</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>38</real>
+			<real>0.0</real>
+			<real>-0.10546875</real>
+			<real>0.0</real>
+			<real>67.5</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>1</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>1</real>
+		</array>
+	</array>
+	<key>FFSegmentStoreRenderProps</key>
+	<string>FFRenderPropsThumbnail</string>
+	<key>FFSegmentStoreSegmentStoreMD5</key>
+	<data>
+	JPuh0mOyrgkGS9znJWrQdQ==
+	</data>
+	<key>FFSegmentStoreStoredFrameIndexes</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGHyBYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
+	AAGGoKUHCA8TGlUkbnVsbNMJCgsMDQ5cTlNSYW5nZUNvdW50ViRjbGFzc1tOU1Jhbmdl
+	RGF0YRBNgASAAtIQChESV05TLmRhdGFPEOIMASQBPQFVAW0BhgEBngEBtwEBzwEB5wEB
+	gAIBmAIBsQIByQIB+gIBkgMBqwMBwwMB3AMB9AMBjQQBpQQBvQQB1gQB7gQBhwUBnwUB
+	twUB0AUBgQYBhAYBmQYBnQYBsgYBtwYBygYB0AYB4gYB9QcBjQgBpggBvggB1wgB7ggC
+	hwkBoAkBuAkB0QkB6QkBggoBygoC4woC/AoClAsBlgsBjgwBpwwBvwwB1wwB8AwBiA0B
+	oQ0BuQ0BlQ8Bqg8BrQ8Bww8Bxg8B3Q8C9g8CjxABpxABqRABwBABwhAB2BAB8RABgAPS
+	FBUWF1okY2xhc3NuYW1lWCRjbGFzc2VzXU5TTXV0YWJsZURhdGGjFhgZVk5TRGF0YVhO
+	U09iamVjdNIUFRscXxARTlNNdXRhYmxlSW5kZXhTZXSjHR4ZXxARTlNNdXRhYmxlSW5k
+	ZXhTZXRaTlNJbmRleFNldF8QD05TS2V5ZWRBcmNoaXZlctEhIlRyb290gAEACAARABoA
+	IwAtADIANwA9AEMASgBXAF4AagBsAG4AcAB1AH0BYgFkAWkBdAF9AYsBjwGWAZ8BpAG4
+	AbwB0AHbAe0B8AH1AAAAAAAAAgEAAAAAAAAAIwAAAAAAAAAAAAAAAAAAAfc=
+	</data>
+</dict>
+</plist>

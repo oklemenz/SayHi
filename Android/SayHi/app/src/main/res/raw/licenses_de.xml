@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <title></title>
+        <meta
+            content="text/html; charset=UTF-8"
+            http-equiv="Content-Type" />
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0.0" />
+        <style>
+            .section {
+            font-family: sans-serif; font-size: 17;
+            font-weight: bold;
+            }
+
+            .content {
+            font-family: sans-serif; font-size: 15;
+            }
+
+            .link {
+            font-family: sans-serif; font-size: 15;
+            color: #000000;
+            }
+
+            .space {
+            height: 25px
+            }
+        </style>
+    </head>
+    <body>
+        <p class="section">Butterknife</p>
+        <div class="content">
+            Copyright 2013 Jake Wharton
+            <br />
+            <br />
+            Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            You may obtain a copy of the License at
+            <br />
+            <br />
+            http://www.apache.org/licenses/LICENSE-2.0
+            <br />
+            <br />
+            Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License.
+            <br />
+            <br />
+            <a
+                class="link"
+                href="https://github.com/JakeWharton/butterknife">Link zu Butterknife
+            </a>
+        </div>
+        <div class="space"></div>
+        <p class="section">CircleIndicator</p>
+        <div class="content">
+            Copyright (C) 2014 relex
+            <br />
+            <br />
+            Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            You may obtain a copy of the License at
+            <br />
+            <br />
+            http://www.apache.org/licenses/LICENSE-2.0
+            <br />
+            <br />
+            Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License.
+            <br />
+            <br />
+            <a
+                class="link"
+                href="https://github.com/ongakuer/CircleIndicator">Link zu CircleIndicator
+            </a>
+        </div>
+        <div class="space"></div>
+        <p class="section">FlowLayoutManager</p>
+        <div class="content">
+            Copyright 2016 Xiaofeng Han
+            <br />
+            <br />
+            Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            You may obtain a copy of the License at
+            <br />
+            <br />
+            http://www.apache.org/licenses/LICENSE-2.0
+            <br />
+            <br />
+            Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License.
+            <br />
+            <br />
+            <a
+                class="link"
+                href="https://github.com/JakeWharton/butterknife">Link zu FlowLayoutManager
+            </a>
+        </div>
+        <div class="space"></div>
+        <p class="section">Google Firebase</p>
+        <div class="content">
+            Copyright 2017 Google
+            <br />
+            <br />
+            <a
+                class="link"
+                href="https://firebase.google.com">Link zu Google Firebase
+            </a>
+        </div>
+        <div class="space"></div>
+        <p class="section">Icons8</p>
+        <div class="content">
+            Copyright 2017 Icons8
+            <br />
+            <br />
+            <a
+                class="link"
+                href="https://icons8.com">Link zu Icons8
+            </a>
+        </div>
+        <div class="space"></div>
+        <p class="section">JDeferred</p>
+        <div class="content">
+            Copyright 2013 Ray Tsang
+            <br />
+            <br />
+            Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            You may obtain a copy of the License at
+            <br />
+            <br />
+            http://www.apache.org/licenses/LICENSE-2.0
+            <br />
+            <br />
+            Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License.
+            <br />
+            <br />
+            <a
+                class="link"
+                href="http://jdeferred.org">Link zu JDeferred
+            </a>
+        </div>
+        <div class="space"></div>
+        <p class="section">NumberPicker</p>
+        <div class="content">
+            Copyright (C) 2016 ShawnLin013(Shawn Lin)
+            <br />
+            <br />
+            Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            You may obtain a copy of the License at
+            <br />
+            <br />
+            http://www.apache.org/licenses/LICENSE-2.0
+            <br />
+            <br />
+            Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License.
+            <br />
+            <br />
+            <a
+                class="link"
+                href="https://github.com/ShawnLin013/NumberPicker">Link zu NumberPicker
+            </a>
+        </div>
+        <div class="space"></div>
+        <p class="section">QRCodeReaderView</p>
+        <div class="content">
+            Copyright 2017 David Lázaro
+            <br />
+            <br />
+            Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            You may obtain a copy of the License at
+            <br />
+            <br />
+            http://www.apache.org/licenses/LICENSE-2.0
+            <br />
+            <br />
+            Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License.
+            <br />
+            <br />
+            <a
+                class="link"
+                href="https://github.com/dlazaro66/QRCodeReaderView">Link zu QRCodeReaderView
+            </a>
+        </div>
+        <div class="space"></div>
+        <p class="section">ZXing</p>
+        <div class="content">
+            Copyright 2014 ZXing Authors
+            <br />
+            <br />
+            Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            You may obtain a copy of the License at
+            <br />
+            <br />
+            http://www.apache.org/licenses/LICENSE-2.0
+            <br />
+            <br />
+            Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License.
+            <br />
+            <br />
+            <a
+                class="link"
+                href="https://github.com/zxing/zxing">Link zu ZXing
+            </a>
+        </div>
+    </body>
+</html>

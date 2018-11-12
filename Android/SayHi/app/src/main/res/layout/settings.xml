@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="de.oklemenz.sayhi.activity.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bar_shape">
+
+        <Button
+            android:id="@+id/doneButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif"
+            android:gravity="center|center_vertical"
+            android:maxLines="2"
+            android:minWidth="0dp"
+            android:onClick="onDonePressed"
+            android:text="@string/Done"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/titleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:maxLines="2"
+            android:maxWidth="200dp"
+            android:text="@string/Settings"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/helpButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/Help"
+            android:onClick="onHelpPressed"
+            android:src="@drawable/help" />
+
+    </RelativeLayout>
+
+    <de.oklemenz.sayhi.view.ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,2">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_span="3"
+                    android:background="@drawable/group_shape"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/You"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape">
+
+                <EditText
+                    android:id="@+id/nameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_span="3"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/Name"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName|textCapSentences|textAutoCorrect"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:clickable="true"
+                android:onClick="onBirthYearCellPressed">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/BirthYear"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/birthYearDetailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_span="2"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellIndent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/NA"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/birthYearPickerCell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/picker_shape"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/birthYearPickerContainer"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_span="3"
+                    android:gravity="center|center_horizontal">
+
+                    <com.shawnlin.numberpicker.NumberPicker
+                        android:id="@+id/birthYearPicker"
+                        style="@style/NumberPicker"
+                        android:layout_width="300dp"
+                        android:layout_height="120dp"
+                        android:gravity="center|center_horizontal"
+                        app:np_dividerColor="@color/colorPrimary"
+                        app:np_dividerDistance="18dp"
+                        app:np_dividerThickness="0.5dp"
+                        app:np_textColor="@android:color/white"
+                        app:np_textSize="18dp"
+                        app:np_wheelItemCount="6"
+                        app:np_wrapSelectorWheel="false" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/Gender"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_span="2"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp">
+
+                    <ToggleButton
+                        android:id="@+id/setupGenderFemale"
+                        android:layout_width="60dp"
+                        android:layout_height="27dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="0dp"
+                        android:background="@drawable/segmented_end"
+                        android:onClick="onGenderPressed"
+                        android:padding="0dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/toggle_text_color"
+                        android:textOff="@string/Female"
+                        android:textOn="@string/Female"
+                        android:textSize="12sp" />
+
+                    <ToggleButton
+                        android:id="@+id/setupGenderMale"
+                        android:layout_width="60dp"
+                        android:layout_height="27dp"
+                        android:layout_marginEnd="-1dp"
+                        android:layout_marginStart="-1dp"
+                        android:layout_toStartOf="@id/setupGenderFemale"
+                        android:background="@drawable/segmented_middle"
+                        android:checked="false"
+                        android:onClick="onGenderPressed"
+                        android:textAllCaps="false"
+                        android:textColor="@color/toggle_text_color"
+                        android:textOff="@string/Male"
+                        android:textOn="@string/Male"
+                        android:textSize="12sp" />
+
+                    <ToggleButton
+                        android:id="@+id/genderNA"
+                        android:layout_width="60dp"
+                        android:layout_height="27dp"
+                        android:layout_margin="0dp"
+                        android:layout_toStartOf="@id/setupGenderMale"
+                        android:background="@drawable/segmented_start"
+                        android:checked="true"
+                        android:onClick="onGenderPressed"
+                        android:padding="0dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/toggle_text_color"
+                        android:textOff="@string/NA"
+                        android:textOn="@string/NA"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:clickable="true"
+                android:onClick="onContentLanguageCellPressed">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_span="2"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/ContentLanguage"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/languageValueLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_toStartOf="@+id/languageDetailButton"
+                        android:gravity="center_vertical"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="@dimen/cellIndent"
+                        android:text="@string/NA"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/languageDetailButton"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end|center_vertical"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="@string/Details"
+                        android:gravity="end|center_vertical"
+                        android:onClick="onContentLanguageCellPressed"
+                        android:paddingEnd="@dimen/cellDedent"
+                        android:paddingStart="@dimen/cellDedent"
+                        android:src="@drawable/arrow_right" />
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape">
+
+                <EditText
+                    android:id="@+id/statusEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_span="3"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/Status"
+                    android:imeOptions="actionDone"
+                    android:inputType="text|textCapSentences|textAutoCorrect"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_span="3"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/ProvidePersonalStatus"
+                    android:textSize="12.5sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_span="3"
+                    android:background="@drawable/group_shape"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/TagMatching"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_span="2"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/Vibrate"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/matchVibrateSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:checked="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_span="2"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/PlayVoice"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/matchGreetingPlaySwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:clickable="true"
+                android:onClick="onVoiceCellPressed">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_span="2"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/Voice"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/matchRecordGreetingValueLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellIndent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/Synthesized"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="3dp"
+                        android:paddingEnd="@dimen/cellDedent"
+                        android:paddingStart="@dimen/cellIndent"
+                        android:text="@string/Handshake"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="0dp"
+                        android:maxLines="1"
+                        android:paddingEnd="@dimen/cellDedent"
+                        android:paddingStart="@dimen/cellIndent"
+                        android:text="@string/AppliedActiveSide"
+                        android:textSize="12.5sp" />
+
+                    <Switch
+                        android:id="@+id/matchHandshakeSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="end|center_vertical"
+                        android:paddingEnd="@dimen/cellDedent"
+                        android:paddingStart="@dimen/cellIndent" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:clickable="true"
+                android:onClick="onMatchModeCellPressed">
+
+                <TextView
+                    android:id="@+id/matchModeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/Mode"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/matchModeDetailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_span="2"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellIndent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/Exact"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/matchModePickerCell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/picker_shape"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/matchModePickerContainer"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_span="3"
+                    android:gravity="center|center_horizontal">
+
+                    <com.shawnlin.numberpicker.NumberPicker
+                        android:id="@+id/matchModePicker"
+                        style="@style/NumberPicker"
+                        android:layout_width="300dp"
+                        android:layout_height="120dp"
+                        android:gravity="center|center_horizontal"
+                        app:np_dividerColor="@color/colorPrimary"
+                        app:np_dividerDistance="18dp"
+                        app:np_dividerThickness="0.5dp"
+                        app:np_textColor="@android:color/white"
+                        app:np_textSize="18dp"
+                        app:np_wheelItemCount="6"
+                        app:np_wrapSelectorWheel="false" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/modeHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_span="3"
+                    android:gravity="top"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/MatchExplanation"
+                    android:textSize="12.5sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_span="3"
+                    android:background="@drawable/group_shape"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/Security"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:clickable="true"
+                android:onClick="onSpaceCellPressed">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/Space"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/spaceValueLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_span="2"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellIndent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/Standard"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_alignParentStart="true"
+                        android:gravity="center_vertical"
+                        android:paddingEnd="@dimen/cellDedent"
+                        android:paddingStart="@dimen/cellIndent"
+                        android:text="@string/UseFingerprint"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/fingerprintSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_alignParentEnd="true"
+                        android:checked="false"
+                        android:gravity="center_vertical"
+                        android:paddingEnd="@dimen/cellDedent"
+                        android:paddingStart="@dimen/cellIndent" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:clickable="true"
+                android:onClick="onRequestAuthCellPressed">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_alignParentStart="true"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:paddingEnd="@dimen/cellDedent"
+                        android:paddingStart="@dimen/cellIndent"
+                        android:text="@string/RequestAuth"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/requestAuthDetailLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end|center_vertical"
+                        android:gravity="center_vertical"
+                        android:paddingEnd="@dimen/cellIndent"
+                        android:paddingStart="@dimen/cellIndent"
+                        android:text="@string/After5Minutes"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/requestAuthPickerCell"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/picker_shape"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/requestAuthPickerContainer"
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_span="3"
+                    android:gravity="center|center_horizontal">
+
+                    <com.shawnlin.numberpicker.NumberPicker
+                        android:id="@+id/requestAuthPicker"
+                        style="@style/NumberPicker"
+                        android:layout_width="300dp"
+                        android:layout_height="120dp"
+                        android:gravity="center|center_horizontal"
+                        app:np_dividerColor="@color/colorPrimary"
+                        app:np_dividerDistance="18dp"
+                        app:np_dividerThickness="0.5dp"
+                        app:np_textColor="@android:color/white"
+                        app:np_textSize="18dp"
+                        app:np_wheelItemCount="6"
+                        app:np_wrapSelectorWheel="false" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/DataIsEncrypted"
+                    android:textSize="12.5sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_span="3"
+                    android:background="@drawable/group_shape"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/Miscellaneous"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:clickable="true"
+                android:onClick="onWriteMailPressed">
+
+                <Button
+                    android:id="@+id/writeMailButton"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_span="3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:minWidth="0dp"
+                    android:onClick="onWriteMailPressed"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/WriteInvitationMail"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:clickable="true"
+                android:onClick="onSendMessagePressed">
+
+                <Button
+                    android:id="@+id/sendMessageButton"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_span="3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:minWidth="0dp"
+                    android:onClick="onSendMessagePressed"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/SendInvitationMessage"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:clickable="true"
+                android:onClick="onRateAppPressed">
+
+                <Button
+                    android:id="@+id/rateAppButton"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_span="3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:minWidth="0dp"
+                    android:onClick="onRateAppPressed"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/RateApp"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:clickable="true"
+                android:onClick="onDataPrivacyPressed">
+
+                <Button
+                    android:id="@+id/dataPrivacyButton"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_span="2"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:minWidth="0dp"
+                    android:onClick="onDataPrivacyPressed"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/DataPrivacy"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageButton
+                        android:id="@+id/dataPrivacyDetailButton"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end|center_vertical"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="@string/Details"
+                        android:fontFamily="sans-serif"
+                        android:gravity="end|center_vertical"
+                        android:onClick="onDataPrivacyPressed"
+                        android:paddingEnd="@dimen/cellDedent"
+                        android:paddingStart="@dimen/cellDedent"
+                        android:src="@drawable/arrow_right"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:clickable="true"
+                android:onClick="onLicensesPressed">
+
+                <Button
+                    android:id="@+id/licensesButton"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_span="2"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:minWidth="0dp"
+                    android:onClick="onLicensesPressed"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/Licenses"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageButton
+                        android:id="@+id/licensesDetailButton"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end|center_vertical"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="@string/Details"
+                        android:gravity="end|center_vertical"
+                        android:onClick="onLicensesPressed"
+                        android:paddingEnd="@dimen/cellDedent"
+                        android:paddingStart="@dimen/cellDedent"
+                        android:src="@drawable/arrow_right"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cell_shape"
+                android:clickable="true"
+                android:onClick="onFeedbackPressed">
+
+                <Button
+                    android:id="@+id/feedbackButton"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_span="3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:minWidth="0dp"
+                    android:onClick="onFeedbackPressed"
+                    android:paddingEnd="@dimen/cellDedent"
+                    android:paddingStart="@dimen/cellIndent"
+                    android:text="@string/FeedbackSupport"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </de.oklemenz.sayhi.view.ScrollView>
+
+</LinearLayout>

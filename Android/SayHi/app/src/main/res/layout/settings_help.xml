@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/help"
+    style="@style/HelpDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/arrowLeft1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="46dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_l" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/arrowLeft1"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/arrowLeft1"
+        android:text="@string/YourPersonalMatchingInformation"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/arrowLeft2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="356dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_l" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/arrowLeft2"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/arrowLeft2"
+        android:text="@string/MatchingSettings"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/arrowLeft3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="396dp"
+        android:contentDescription="@string/Help"
+        android:src="@drawable/arrow_l" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/arrowLeft3"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/arrowLeft3"
+        android:text="@string/DeviceVibratesOnMatch"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/arrowLeft4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="459dp"
+        android:contentDescription="@string/Help"
+        android:scaleType="center"
+        android:src="@drawable/arrow_l" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/arrowLeft4"
+        android:layout_marginTop="-2dp"
+        android:layout_toEndOf="@+id/arrowLeft4"
+        android:text="@string/MatchingVoicePlayedOnMatch"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/arrowLeft5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="531dp"
+        android:contentDescription="@string/Help"
+        android:scaleType="center"
+        android:src="@drawable/arrow_l" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/arrowLeft5"
+        android:layout_marginTop="-2dp"
+        android:layout_toEndOf="@+id/arrowLeft5"
+        android:text="@string/BothQRCodesExchanged"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

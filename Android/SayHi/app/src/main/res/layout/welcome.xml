@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:paddingBottom="0dp"
+    android:paddingEnd="0dp"
+    android:paddingStart="0dp"
+    android:paddingTop="0dp"
+    tools:context="de.oklemenz.sayhi.activity.WelcomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/Settings"
+            android:onClick="onSettingsPressed"
+            android:src="@drawable/settings" />
+
+        <ImageButton
+            android:id="@+id/helpButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="-5dp"
+            android:layout_toStartOf="@+id/profilesButton"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/Help"
+            android:onClick="onHelpPressed"
+            android:src="@drawable/help" />
+
+        <Button
+            android:id="@+id/profilesButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif"
+            android:gravity="center|center_vertical"
+            android:minWidth="0dp"
+            android:onClick="onProfilesPressed"
+            android:text="@string/Profiles"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/scoreLabel"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:onClick="onScorePressed"
+        android:text="@string/MatchingPoints"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="16.5sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/nameButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-light"
+        android:minWidth="0dp"
+        android:onClick="onQRPressed"
+        android:text="@string/SayHi"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="50sp" />
+
+    <de.oklemenz.sayhi.view.EditText
+        android:id="@+id/statusEditText"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-15dp"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:fontFamily="sans-serif"
+        android:imeOptions="actionDone"
+        android:inputType="text|textCapSentences|textNoSuggestions"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:text="@string/Marks"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/logoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/Hi"
+        android:textColor="@android:color/white"
+        android:textSize="180sp" />
+
+    <ImageButton
+        android:id="@+id/currentQRPreview"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/SayHi"
+        android:onClick="onQRPressed" />
+
+    <TextView
+        android:id="@+id/currentQRPreviewIcon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/icon_shape"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center|center_vertical"
+        android:paddingBottom="5dp"
+        android:text="@string/Hi"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/currentQRPreviewLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/SayHi"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/setupContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/setupContainerDialogView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/setup_shape">
+
+            <TextView
+                android:id="@+id/setupWelcomeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/Welcome"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/setupContainerPageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/setupCancelButton"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="45dp"
+                android:fontFamily="sans-serif"
+                android:gravity="bottom|center"
+                android:minWidth="0dp"
+                android:onClick="onSetupCancelPressed"
+                android:text="@string/Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/setupNextButton"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="45dp"
+                android:fontFamily="sans-serif"
+                android:gravity="bottom|center"
+                android:minWidth="0dp"
+                android:onClick="onSetupNextPressed"
+                android:text="@string/Next"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/setupContainerPageIndicatorView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/setupContainerDialogView"
+            android:layout_marginBottom="-45dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/matchingHistoryButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentQRPreview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:fontFamily="sans-serif"
+        android:minWidth="0dp"
+        android:onClick="onMatchHistoryPressed"
+        android:text="@string/MatchingHistory"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/currentProfileButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif"
+        android:minWidth="0dp"
+        android:onClick="onCurrentProfilePressed"
+        android:text="@string/CurrentProfile"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

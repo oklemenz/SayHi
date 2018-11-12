@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>export</key>
+	<array>
+		<dict>
+			<key>date</key>
+			<string>Dienstag, 29. August 2017 um 09:36:46 Mitteleuropäische Sommerzeit</string>
+			<key>fullDate</key>
+			<date>2017-08-29T07:36:46Z</date>
+			<key>resultStr</key>
+			<array>
+				<string>/Users/d045365/Downloads/SAY Hi! (DE: Pixel).mp4</string>
+			</array>
+			<key>sourceFP</key>
+			<string>CLGRT6urQ3uMZ/sZlWoO1w - 2017-08-29 07:32:41 +0000</string>
+		</dict>
+		<dict>
+			<key>date</key>
+			<string>Dienstag, 29. August 2017 um 10:07:43 Mitteleuropäische Sommerzeit</string>
+			<key>fullDate</key>
+			<date>2017-08-29T08:07:43Z</date>
+			<key>resultStr</key>
+			<array>
+				<string>/Users/d045365/Downloads/SAY Hi! (DE: Pixel).mp4</string>
+			</array>
+			<key>sourceFP</key>
+			<string>CLGRT6urQ3uMZ/sZlWoO1w - 2017-08-29 07:32:41 +0000</string>
+		</dict>
+		<dict>
+			<key>date</key>
+			<string>Mittwoch, 28. Februar 2018 um 12:11:39 Mitteleuropäische Normalzeit</string>
+			<key>fullDate</key>
+			<date>2018-02-28T11:11:39Z</date>
+			<key>resultStr</key>
+			<array>
+				<string>/Users/d045365/Downloads/SAY Hi! (DE: Pixel).mp4</string>
+			</array>
+			<key>sourceFP</key>
+			<string>CLGRT6urQ3uMZ/sZlWoO1w - 2018-02-28 11:07:08 +0000</string>
+		</dict>
+		<dict>
+			<key>date</key>
+			<string>Mittwoch, 28. Februar 2018 um 12:16:59 Mitteleuropäische Normalzeit</string>
+			<key>fullDate</key>
+			<date>2018-02-28T11:16:59Z</date>
+			<key>resultStr</key>
+			<array>
+				<string>/Users/d045365/Downloads/SAY Hi! (DE: Pixel).mp4</string>
+			</array>
+			<key>sourceFP</key>
+			<string>CLGRT6urQ3uMZ/sZlWoO1w - 2018-02-28 11:13:25 +0000</string>
+		</dict>
+	</array>
+</dict>
+</plist>

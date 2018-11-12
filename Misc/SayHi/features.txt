@@ -1,0 +1,67 @@
+Main Features:
+==============
+
+* Tag Matching
+	* QR Code generation and recognition
+		* Camera Support
+		* QR Code exchange mechanism
+	* QR Exchange
+		* Encrypted Secures QR Message exchange
+		* Handshake: Exchange of two QR Codes
+	* Match Generation
+	* Four different Matching Modes
+		* Exact: Match tags, both like, or both don't like
+		* Fit: Match exact + show tags you like, but other doesn’t like
+		* Adjust: Match exact + show tags you don't like, but other likes
+		* Open: Match all tags both either like or don't like
+	* Vibration
+	* Voice 
+		* Synthesis
+		* Custom Voice via Audio Recoding
+	* Location Awareness
+		* Link Location to Match
+* Multiple content language
+	* Content language interoperability
+	* All devices languages are supported
+	* Pre-defined content for suggested languages
+* Multiple Profiles
+	* Overwrite Match Mode
+	* Set Relation Type
+	* Copy Profiles
+	* Rename Profiles
+* Profile Maintenance
+	* Tag Assignment (Like/Dislike) per Drag&Drop
+	* Advanced Search
+	* Filtering support
+* Content Creation
+	* Adding own Tags
+	* Adding own Categories
+	* Establish primary language reference
+	* Re-use Categories (Category Search)
+	* Spell Checking
+	* Similarity Hints	
+* Matching History
+	* List of previous matches
+* Personalization
+	* First Name
+	* Birth Year
+	* Gender
+	* Status information
+* User Data Protection
+	* Authentication support
+	* Touch ID/Fingerprint support
+	* Automatic Encryption
+* Gamification
+	* Matching Points
+	* Highscore	
+	* Local Highscore
+* Enterprise Readiness
+	* Spaces (Passcode Secured)
+	* Settings Configuration
+	* URL Configuration
+	* Customizing
+	* Branding
+	* Theming
+	* Terminology
+	* Maintenance
+* Context-aware app help

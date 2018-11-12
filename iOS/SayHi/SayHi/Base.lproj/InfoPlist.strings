@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  SayHi
+
+  Created by Klemenz, Oliver on 07.12.16.
+  Copyright © 2016 Klemenz, Oliver. All rights reserved.
+*/
+"NSCameraUsageDescription" = "Used to scan matching QR code.";
+"NSMicrophoneUsageDescription" = "Used to record matching voice.";
+"NSLocationUsageDescription" = "Used to determine location during matching (optional).";
+"NSLocationWhenInUseUsageDescription" = "Used to determine location during matching (optional).";
+"NSLocationAlwaysUsageDescription" = "Used to determine location during matching (optional).";

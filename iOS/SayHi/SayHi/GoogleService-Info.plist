@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>728751111415-i8dsjiqejor4n6hpp0bhplsl0hehu7nn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.728751111415-i8dsjiqejor4n6hpp0bhplsl0hehu7nn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB4JS9400XnCOx4LUHU_A86dGLNyV5GMHE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>728751111415</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>de.oklemenz.SayHi</string>
+	<key>PROJECT_ID</key>
+	<string>sayhi-12315</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sayhi-12315.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:728751111415:ios:42f85cebb069bde7</string>
+	<key>DATABASE_URL</key>
+	<string>https://sayhi-12315.firebaseio.com</string>
+</dict>
+</plist>

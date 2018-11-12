@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <title></title>
+        <meta
+            content="text/html; charset=UTF-8"
+            http-equiv="Content-Type" />
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0.0" />
+        <style>
+            .section {
+            font-family: sans-serif; font-size: 17;
+            font-weight: bold;
+            }
+
+            .subsection {
+            font-family: sans-serif; font-size: 15;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            }
+
+            .content {
+            font-family: sans-serif; font-size: 15;
+            }
+
+            .link {
+            font-family: sans-serif; font-size: 15;
+            color: #000000;
+            }
+
+            .space {
+            height: 25px
+            }
+
+            .footer {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            font-family: sans-serif; font-size: 13;
+            font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="section">Data Privacy Declaration</p>
+        <div class="content">
+            Every time the application "SAY Hi!" (hereinafter "App") and/or associated Services are
+            used, data about your mobile end device are automatically collected, processed, and
+            used. Protection of your privacy when you use the App and/or Services is important to
+            us. Therefore, we would like to inform you below which of your personal data will be
+            collected when you use the App and/or Services and how these data are handled.
+        </div>
+        <div class="space"></div>
+        <p class="section">Automated data collection</p>
+        <div class="content">
+            When you access the App and/or Services data are automatically sent to our server, for
+            technical reasons. The following data are stored separately from other data that you
+            send to us in these circumstances:
+            <br />
+            <ul>
+                <li>
+                    <b>App Store:</b>
+                    The store from which the App was downloaded and installed
+                </li>
+                <li>
+                    <b>App Version:</b>
+                    The versionName (Android) or the Bundle version (iOS)
+                </li>
+                <li>
+                    <b>Country:</b>
+                    The country the user resides in
+                </li>
+                <li>
+                    <b>Device Brand:</b>
+                    The brand name of the mobile device
+                </li>
+                <li>
+                    <b>Device Category:</b>
+                    The category of the mobile device (e.g. mobile or tablet)
+                </li>
+                <li>
+                    <b>Device Model:</b>
+                    The mobile device model name
+                </li>
+                <li>
+                    <b>First Open Time:</b>
+                    The time (in microseconds, UTC) at which the user first opened the App, rounded
+                    up to the next hour
+                </li>
+                <li>
+                    <b>Language:</b>
+                    The language setting of the device OS
+                </li>
+                <li>
+                    <b>New/Established:</b>
+                    First opened the App within the last 7 days
+                </li>
+                <li>
+                    <b>Established:</b>
+                    First opened the App more than 7 days ago
+                </li>
+                <li>
+                    <b>OS Version:</b>
+                    The version of the device OS
+                </li>
+            </ul>
+            <br />
+            To use the App, neither a Google account nor any other social login is required. The App
+            only authenticates anonymously and explicitely does not use Advertsing Identifiers
+            (IDFA) functionality (via Google AdSupport). Therefore the following data is NOT
+            collected automatically:
+            <br />
+            <ul>
+                <li>Age</li>
+                <li>Gender</li>
+                <li>Interest Properties</li>
+            </ul>
+        </div>
+        <p class="section">Data Released or Entered by Users</p>
+        <div class="content">
+            When you use the App and/or Services additional data is entered by you. The following
+            data are stored that you send to us in these circumstances:
+            <div class="subsection">First App Start</div>
+            <div>The App is free of registration, but the App gives you the option to personalize
+                your user data. You can enter the following initial information:
+            </div>
+            <ul>
+                <li>First Name</li>
+                <li>Gender</li>
+                <li>Birth Year</li>
+                <li>Content Language</li>
+            </ul>
+            <div class="subsection">Settings</div>
+            <div>The App gives you the option to personalize your user data in the settings. You can
+                enter the following additional information in the settings dialog:
+            </div>
+            <ul>
+                <li>First Name</li>
+                <li>Gender</li>
+                <li>Birth Year</li>
+                <li>Content Language</li>
+                <li>Personal Status</li>
+                <li>Voice Recording</li>
+                <li>Space</li>
+            </ul>
+            <div class="subsection">Profiles</div>
+            <div>The App gives you the option to add profiles. You can enter the following data:
+            </div>
+            <ul>
+                <li>Topics you like</li>
+                <li>Topics you don't like</li>
+                <li>Relation Type</li>
+            </ul>
+            <div>The App gives you the option to add own tags and categories. You can enter the
+                following data:
+            </div>
+            <ul>
+                <li>Tag name</li>
+                <li>Category name</li>
+            </ul>
+            <div class="subsection">Profile Matching</div>
+            <div>The App gives you the option to match your profiles with other users. The following
+                data is exchanged during matching between you and the other user:
+            </div>
+            <ul>
+                <li>First name</li>
+                <li>Gender</li>
+                <li>Birth year</li>
+                <li>Personal status</li>
+                <li>Voice Recording (optional)</li>
+                <li>Topics you like/dislike of your active profile, depending on the chosen matching
+                    mode
+                </li>
+            </ul>
+        </div>
+        <p class="section">Local Personal Data</p>
+        <div class="content">
+            The App supports encryption of all your personal user data on the device. The following
+            personal data will never be stored as plain data on a central server:
+            <ul>
+                <li>First Name</li>
+                <li>Personal Status</li>
+                <li>Voice Recording</li>
+                <li>Profile Names</li>
+            </ul>
+        </div>
+        <div class="space"></div>
+        <p class="section">Logged Application Events</p>
+        <div class="content">
+            In addition to the automatically collected events by the Google Firebase platform, the
+            following events are logged for system analysis purposes:
+            <ul>
+                <li>First App start</li>
+                <li>Creation of new profile</li>
+                <li>Change of profile information</li>
+                <li>Deletion of a profile</li>
+                <li>Liking of a topic</li>
+                <li>Disliking of a topic</li>
+                <li>Discard liking or disliking of a topic</li>
+                <li>Profile matching</li>
+                <li>Creation of new tag</li>
+                <li>Creation of new category</li>
+                <li>Rating of App</li>
+                <li>Writing of support mail</li>
+                <li>Recording of voice</li>
+                <li>Deletion of recorded voice</li>
+                <li>Space switch</li>
+            </ul>
+            Logged events can contain data as mentioned in the sections before. In addition the
+            "Profile
+            matching" event contains the location, in case location services have been allowed for
+            the App.
+        </div>
+        <div class="space"></div>
+        <p class="section">Device Feature Access</p>
+        <div class="content">
+            To function correctly, the App needs access to the following device features:
+            <ul>
+                <li>
+                    <b>Internet:</b>
+                    Connection to application server to read and write application content data
+                </li>
+                <li>
+                    <b>Camera:</b>
+                    Used to scan QR codes for profile matching
+                </li>
+                <li>
+                    <b>Microphone:</b>
+                    Used to record profile matching voice (optional)
+                </li>
+                <li>
+                    <b>Location:</b>
+                    Used to determine location during matching (optional)
+                </li>
+            </ul>
+        </div>
+        <div class="space"></div>
+        <p class="section">Data Disclosure</p>
+        <div class="content">
+            Generally data is not shared on an disaggregated level with any third party.
+            Data aggregations may be shared with third parties for marketing purposes or analytical
+            evaluations.
+            <br />
+            <br />
+            By the usage of the App you agree to this data privacy declaration.
+        </div>
+        <div class="footer">As of July 2017</div>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="50dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/SelectGender"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center|center_vertical">
+
+        <ImageButton
+            android:id="@+id/setupTestButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:tag="applyColors"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/Test"
+            android:onClick="onSetupTestPressed"
+            android:src="@drawable/play"/>
+
+        <ToggleButton
+            android:id="@+id/setupGenderFemale"
+            android:layout_width="60dp"
+            android:layout_height="27dp"
+            android:layout_margin="0dp"
+            android:layout_toStartOf="@id/setupTestButton"
+            android:background="@drawable/segmented_end"
+            android:onClick="onSetupGenderFemalePressed"
+            android:padding="0dp"
+            android:textAllCaps="false"
+            android:textColor="@color/toggle_text_color"
+            android:textOff="@string/Female"
+            android:textOn="@string/Female"
+            android:textSize="12sp" />
+
+        <ToggleButton
+            android:id="@+id/setupGenderMale"
+            android:layout_width="60dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginStart="-1dp"
+            android:layout_toStartOf="@id/setupGenderFemale"
+            android:background="@drawable/segmented_start"
+            android:checked="false"
+            android:onClick="onSetupGenderMalePressed"
+            android:textAllCaps="false"
+            android:textColor="@color/toggle_text_color"
+            android:textOff="@string/Male"
+            android:textOn="@string/Male"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</LinearLayout>
