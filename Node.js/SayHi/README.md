@@ -125,7 +125,7 @@ npm run pgsql
 ### Stop Postgres DB
 
 ````
-npm run pgstart
+npm run pgstop
 ````
 
 ## Scores
