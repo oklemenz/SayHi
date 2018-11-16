@@ -20,7 +20,7 @@ extension UICollectionViewLayoutAttributes {
 class TagFlowLayout: UICollectionViewFlowLayout {
     
     override func awakeFromNib() {
-        self.sectionInset = UIEdgeInsetsMake(4, 4, 4, 4)
+        self.sectionInset = UIEdgeInsets.init(top: 4, left: 4, bottom: 4, right: 4)
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {

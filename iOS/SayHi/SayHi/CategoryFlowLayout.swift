@@ -12,6 +12,6 @@ import UIKit
 class CategoryFlowLayout: UICollectionViewFlowLayout {
     
     override func awakeFromNib() {
-        self.sectionInset = UIEdgeInsetsMake(4, 4, 4, 4)
+        self.sectionInset = UIEdgeInsets.init(top: 4, left: 4, bottom: 4, right: 4)
     }
 }

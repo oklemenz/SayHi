@@ -78,12 +78,12 @@ class HistoryTableController : ListViewController {
         let text = NSMutableAttributedString(
             string: String(format: UserData.instance.scoreMatchCount == 1 ?
                 "%i Match".localized : "%i Matches".localized, UserData.instance.scoreMatchCount),
-            attributes: [NSAttributedStringKey.foregroundColor: AccentColor])
+            attributes: [NSAttributedString.Key.foregroundColor: AccentColor])
         text.append(NSMutableAttributedString(
             string: "\n" +
                 String(format: UserData.instance.matchScore == 1 ? "%i Matching Point".localized : "%i Matching Points".localized, UserData.instance.matchScore),
-            attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                         NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                         NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
         titleLabel.attributedText = text
     }
     
@@ -158,22 +158,22 @@ class HistoryTableController : ListViewController {
             string: "  " +
                 String(format: "LikeDislikeNum".aliasLocalized, Emoji.like, match.messagePosTagCount, Emoji.dislike, match.messageNegTagCount) +
                     "  ",
-            attributes: [NSAttributedStringKey.foregroundColor: AccentColor,
-                         NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+            attributes: [NSAttributedString.Key.foregroundColor: AccentColor,
+                         NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
         
-        var ptsAttributes: [NSAttributedStringKey:Any] = [
-            NSAttributedStringKey.foregroundColor: AccentColor,
-            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]
+        var ptsAttributes: [NSAttributedString.Key:Any] = [
+            NSAttributedString.Key.foregroundColor: AccentColor,
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]
         if !match.counted {
-            ptsAttributes[NSAttributedStringKey.strikethroughColor] = AccentColor
-            ptsAttributes[NSAttributedStringKey.baselineOffset] = 0
+            ptsAttributes[NSAttributedString.Key.strikethroughColor] = AccentColor
+            ptsAttributes[NSAttributedString.Key.baselineOffset] = 0
         }
         let ptsText = NSMutableAttributedString(
             string: String(format: match.score == 1 ? "(%i pt.)".localized : "(%i pts.)".localized, match.score),
             attributes: ptsAttributes)
         if !match.counted {
             ptsText.addAttributes([
-                NSAttributedStringKey.strikethroughStyle: 1
+                NSAttributedString.Key.strikethroughStyle: 1
             ], range: NSMakeRange(0, ptsText.length))
         }
         text.append(ptsText)
@@ -183,32 +183,32 @@ class HistoryTableController : ListViewController {
         
         let detailText = NSMutableAttributedString(
             string: match.profileName,
-            attributes: [NSAttributedStringKey.foregroundColor: UIColor.black])
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
         if match.relationType != .none {
             detailText.append(NSMutableAttributedString(
                 string: SeparatorString + Emoji.relationType +
                     match.relationType.rawValue.codeLocalized,
-                attributes: [NSAttributedStringKey.foregroundColor: UIColor.black]))
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]))
         }
         detailText.append(NSMutableAttributedString(
             string: SeparatorString + Emoji.matchMode +
                 match.mode.description.codeLocalized,
-            attributes: [NSAttributedStringKey.foregroundColor: UIColor.black]))
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]))
         var separator = "  "
         if !match.locationCity.isEmpty {
             detailText.append(NSMutableAttributedString(
                 string:  separator +
                 match.locationCity,
-                attributes: [NSAttributedStringKey.foregroundColor: AccentColor,
-                             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]
+                attributes: [NSAttributedString.Key.foregroundColor: AccentColor,
+                             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]
             ))
             separator = ", "
         }
         detailText.append(NSMutableAttributedString(
             string: separator +
                 timeFormatter.string(from: match.date),
-            attributes: [NSAttributedStringKey.foregroundColor: AccentColor,
-                         NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]
+            attributes: [NSAttributedString.Key.foregroundColor: AccentColor,
+                         NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]
         ))
         cell.detailTextLabel?.attributedText = detailText
         cell.detailTextLabel?.lineBreakMode = .byTruncatingMiddle
@@ -266,8 +266,8 @@ class HistoryTableController : ListViewController {
         return true
     }
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == UITableViewCellEditingStyle.delete {            
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {            
             self.matchDelete(indexPath)
         }
     }

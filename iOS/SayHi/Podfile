@@ -7,14 +7,14 @@ target 'SayHi' do
 
   # Pods for SayHi
   
-  pod 'Firebase/Core'
-  pod 'Firebase/Auth'
-  pod 'Firebase/Database'
+  pod 'Firebase/Core', '~> 4.5.0'
+  pod 'Firebase/Auth', '~> 4.5.0'
+  pod 'Firebase/Database', '~> 4.5.0'
   
-  pod 'SwiftyJSON'
-  pod 'KeychainAccess'
-  pod 'PromiseKit'
-  pod 'SQLite.swift'
+  pod 'SwiftyJSON', '~> 3.1.4'
+  pod 'KeychainAccess', '~> 3.1.0'
+  pod 'PromiseKit', '~> 4.4.3'
+  pod 'SQLite.swift', '~> 0.11.4'
   
   post_install do |installer|
       installer.pods_project.targets.each do |target|

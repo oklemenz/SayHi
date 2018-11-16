@@ -114,22 +114,22 @@ class TagViewController: PlainController, DragAndDropCollectionViewDataSource, N
             
             let text = NSMutableAttributedString(
                 string: profile.name,
-                attributes: [NSAttributedStringKey.foregroundColor: AccentColor])
+                attributes: [NSAttributedString.Key.foregroundColor: AccentColor])
            
             var separator = "\n"
             if profile.relationType != .none {
                 text.append(NSMutableAttributedString(
                     string: separator + Emoji.relationType + profile.relationType.rawValue.codeLocalized,
-                    attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                                 NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+                    attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                                 NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
                 separator = SeparatorString
             }
             
             if let matchMode = profile.matchMode {
                 text.append(NSMutableAttributedString(
                     string: separator + Emoji.matchMode + matchMode.description.codeLocalized,
-                    attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                                 NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+                    attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                                 NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
             }
             let label = UILabel(frame: CGRect(x:0, y:0, width:200, height:50))
             label.backgroundColor = UIColor.clear
@@ -166,10 +166,10 @@ class TagViewController: PlainController, DragAndDropCollectionViewDataSource, N
             edgeInsetTop = InfoBarHeight
         }
         
-        matchButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont.systemFont(ofSize: 23.0)], for: .normal)
-        matchButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont.systemFont(ofSize: 23.0)], for: .highlighted)
-        matchButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont.systemFont(ofSize: 23.0)], for: .disabled)
-        matchButton.setTitleTextAttributes([NSAttributedStringKey.font: UIFont.systemFont(ofSize: 23.0)], for: .selected)
+        matchButton.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 23.0)], for: .normal)
+        matchButton.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 23.0)], for: .highlighted)
+        matchButton.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 23.0)], for: .disabled)
+        matchButton.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 23.0)], for: .selected)
         
         if isIPhoneX() {
             headerViewHeightConstraint.constant = StatusBarHeight + NavBarHeight + InfoBarHeight
@@ -241,14 +241,14 @@ class TagViewController: PlainController, DragAndDropCollectionViewDataSource, N
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     deinit {
@@ -321,21 +321,21 @@ class TagViewController: PlainController, DragAndDropCollectionViewDataSource, N
         
         let text = NSMutableAttributedString(
             string: profile.name,
-            attributes: [NSAttributedStringKey.foregroundColor: AccentColor])
+            attributes: [NSAttributedString.Key.foregroundColor: AccentColor])
         
         var separator = "\n"
         if profile.relationType != .none {
             text.append(NSMutableAttributedString(
                 string: separator + Emoji.relationType + profile.relationType.rawValue.codeLocalized,
-                attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
             separator = SeparatorString
         }
         
         text.append(NSMutableAttributedString(
             string: separator + Emoji.matchMode + profile.effectiveMatchMode.description.codeLocalized,
-            attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                         NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                         NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
         
         let label = UILabel(frame: CGRect(x:0, y:0, width:200, height:50))
         label.backgroundColor = UIColor.clear
@@ -589,7 +589,7 @@ class TagViewController: PlainController, DragAndDropCollectionViewDataSource, N
                 return CGSize(width: ContentSize + 2 * 4, height: ContentSize)
             } else {
                 self.categorySizingCell?.categoryView.button.setTitle(category.name + IconPlaceholder, for: .normal)
-                return CGSize(width: self.categorySizingCell!.categoryView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).width, height: ContentSize)
+                return CGSize(width: self.categorySizingCell!.categoryView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).width, height: ContentSize)
             }
         } else {
             var maxWidth = TagMaxWidth
@@ -600,7 +600,7 @@ class TagViewController: PlainController, DragAndDropCollectionViewDataSource, N
             if indexPath.item < tags.count {
                 let tag = tags[indexPath.item]
                 self.tagSizingCell?.tagView.button.setTitle(tag.name + IconPlaceholder, for: .normal)
-                return CGSize(width: min(self.tagSizingCell!.tagView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).width, maxWidth), height: ContentSize)
+                return CGSize(width: min(self.tagSizingCell!.tagView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).width, maxWidth), height: ContentSize)
             }
             return .zero
         }
@@ -804,8 +804,8 @@ class TagViewController: PlainController, DragAndDropCollectionViewDataSource, N
     // MARK: Keyboard Notifications
     @objc func keyboardWillShow(sender: NSNotification) {
         let info = sender.userInfo!
-        let duration: TimeInterval = (info[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
-        let keyboardSize = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.height
+        let duration: TimeInterval = (info[UIResponder.keyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
+        let keyboardSize = (info[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.height
         viewBottomConstraint.constant = keyboardSize - bottomLayoutGuide.length
         if isIPhoneX() {
             self.tagCollectionView.contentInset = UIEdgeInsets(top: InfoBarHeight + NavBarHeight - BarSpace, left: 0, bottom: BottomBarHeightX, right: 0)
@@ -817,7 +817,7 @@ class TagViewController: PlainController, DragAndDropCollectionViewDataSource, N
     
     @objc func keyboardWillHide(sender: NSNotification) {
         let info = sender.userInfo!
-        let duration: TimeInterval = (info[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
+        let duration: TimeInterval = (info[UIResponder.keyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
         if isIPhoneX() {
             self.tagCollectionView.contentInset = UIEdgeInsets(top: InfoBarHeight + NavBarHeight - BarSpace, left: 0, bottom: BottomBarHeight, right: 0)
         }
@@ -865,12 +865,12 @@ class TagViewController: PlainController, DragAndDropCollectionViewDataSource, N
                 navigationBarBackground.alpha = alpha
             }
         }
+        let _contentOffsetYPos = posTagCollectionView.contentSize.height + posTagCollectionView.contentInset.bottom -
+            posTagCollectionView.contentOffset.y - posTagCollectionView.frame.size.height
+        let _contentOffsetYNeg = negTagCollectionView.contentSize.height + negTagCollectionView.contentInset.bottom -
+            negTagCollectionView.contentOffset.y - negTagCollectionView.frame.size.height
         let contentOffsetY =
-            max(tagCollectionView.contentInset.top + tagCollectionView.contentOffset.y,
-                max(posTagCollectionView.contentSize.height + posTagCollectionView.contentInset.bottom -
-                    posTagCollectionView.contentOffset.y - posTagCollectionView.frame.size.height,
-                    negTagCollectionView.contentSize.height + negTagCollectionView.contentInset.bottom -
-                    negTagCollectionView.contentOffset.y - negTagCollectionView.frame.size.height))
+            max(tagCollectionView.contentInset.top + tagCollectionView.contentOffset.y, max(_contentOffsetYPos, _contentOffsetYNeg))
         var alpha = contentOffsetY / BlurAlphaRatio
         if alpha < 0 {
             alpha = 0

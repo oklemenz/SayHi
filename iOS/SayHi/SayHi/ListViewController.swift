@@ -43,7 +43,7 @@ class ListViewController: UITableViewController {
             _activityIndicator = newValue
             if activityIndicator {
                 if self.activityIndicatorView == nil {
-                    self.activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .white)
+                    self.activityIndicatorView = UIActivityIndicatorView(style: .white)
                     self.activityIndicatorView!.translatesAutoresizingMaskIntoConstraints = false
                     self.activityIndicatorView!.isHidden = true
                     self.view.addSubview(self.activityIndicatorView!)
@@ -114,7 +114,7 @@ class ListViewController: UITableViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = UIColor.clear
         
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: AccentColor]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: AccentColor]
         
         for view in self.navigationController!.view!.subviews {
             if let view = view as? UIVisualEffectView {

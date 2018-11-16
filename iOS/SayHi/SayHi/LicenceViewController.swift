@@ -33,8 +33,8 @@ class LicenceViewController: PlainController, UIWebViewDelegate {
         webView.stringByEvaluatingJavaScript(from: jsString)
     }
     
-    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-        if navigationType == UIWebViewNavigationType.linkClicked && request.url != nil {
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebView.NavigationType) -> Bool {
+        if navigationType == UIWebView.NavigationType.linkClicked && request.url != nil {
             UIApplication.shared.openURL(request.url!)
             return false
         }

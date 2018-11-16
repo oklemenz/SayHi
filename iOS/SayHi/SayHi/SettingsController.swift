@@ -327,11 +327,11 @@ class SettingsViewController: ListViewController, UITextFieldDelegate, UIPickerV
     //MARK: DatePicker Delegate
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
         if pickerView == birthYearPickerView {
-            return NSAttributedString(string: String(year - row), attributes: [NSAttributedStringKey.foregroundColor:UIColor.white])
+            return NSAttributedString(string: String(year - row), attributes: [NSAttributedString.Key.foregroundColor:UIColor.white])
         } else if pickerView == matchModePickerView {
-            return NSAttributedString(string: MatchMode.list[row].numberedDescription.codeLocalized, attributes: [NSAttributedStringKey.foregroundColor:UIColor.white])
+            return NSAttributedString(string: MatchMode.list[row].numberedDescription.codeLocalized, attributes: [NSAttributedString.Key.foregroundColor:UIColor.white])
         } else if pickerView == requestAuthPickerView {
-            return NSAttributedString(string: "\(PasscodeTimeout.list[row])".codeLocalized, attributes: [NSAttributedStringKey.foregroundColor:UIColor.white])
+            return NSAttributedString(string: "\(PasscodeTimeout.list[row])".codeLocalized, attributes: [NSAttributedString.Key.foregroundColor:UIColor.white])
         }
         return nil
     }
@@ -495,7 +495,7 @@ class SettingsViewController: ListViewController, UITextFieldDelegate, UIPickerV
                                 textField.isSecureTextEntry = true
                                 textField.text = ""
                                 textField.placeholder = "Access Code".localized
-                                NotificationCenter.default.addObserver(self, selector: #selector(self.handleTextFieldTextDidChangeNotification), name: NSNotification.Name.UITextFieldTextDidChange, object: textField)
+                                NotificationCenter.default.addObserver(self, selector: #selector(self.handleTextFieldTextDidChangeNotification), name: UITextField.textDidChangeNotification, object: textField)
                             }
                             
                             alertController.view?.tintColor = AccentColor
@@ -537,7 +537,7 @@ class SettingsViewController: ListViewController, UITextFieldDelegate, UIPickerV
             textField.autocapitalizationType = .none
             textField.text = ""
             textField.placeholder = "Name".localized
-            NotificationCenter.default.addObserver(self, selector: #selector(self.handleTextFieldTextDidChangeNotification), name: NSNotification.Name.UITextFieldTextDidChange, object: textField)
+            NotificationCenter.default.addObserver(self, selector: #selector(self.handleTextFieldTextDidChangeNotification), name: UITextField.textDidChangeNotification, object: textField)
         }
         
         alertController.view?.tintColor = AccentColor

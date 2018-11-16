@@ -60,13 +60,13 @@ PODS:
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
-  - Firebase/Auth
-  - Firebase/Core
-  - Firebase/Database
-  - KeychainAccess
-  - PromiseKit
-  - SQLite.swift
-  - SwiftyJSON
+  - Firebase/Auth (~> 4.5.0)
+  - Firebase/Core (~> 4.5.0)
+  - Firebase/Database (~> 4.5.0)
+  - KeychainAccess (~> 3.1.0)
+  - PromiseKit (~> 4.4.3)
+  - SQLite.swift (~> 0.11.4)
+  - SwiftyJSON (~> 3.1.4)
 
 SPEC CHECKSUMS:
   Firebase: d83d287bdb6b1c78320561482706d1fcfc8ddfc1
@@ -84,6 +84,6 @@ SPEC CHECKSUMS:
   SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 811687dfb30838af4af43e9d43a944da6b48b360
+PODFILE CHECKSUM: 4d5acab60b2c3e14efe3dea1c793ea42bfab6ea1
 
 COCOAPODS: 1.4.0

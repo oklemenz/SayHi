@@ -33,7 +33,7 @@ class ProfileTableController : ListViewController, RelationTypeTableControllerDe
     func showNewProfile() {
         self.addProfile(completion: { (index: Int) in
             let indexPath = IndexPath(row: index, section: 0)
-            self.tableView.insertRows(at: [indexPath], with: UITableViewRowAnimation.bottom)
+            self.tableView.insertRows(at: [indexPath], with: UITableView.RowAnimation.bottom)
             self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
         })
     }
@@ -105,8 +105,8 @@ class ProfileTableController : ListViewController, RelationTypeTableControllerDe
         let text = NSMutableAttributedString(string: profile.name)
         text.append(NSMutableAttributedString(
             string: "  \(dateTimeFormatter.string(from: profile.date))",
-            attributes: [NSAttributedStringKey.foregroundColor: AccentColor,
-                         NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+            attributes: [NSAttributedString.Key.foregroundColor: AccentColor,
+                         NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
         cell.textLabel?.attributedText = text
         
         let detailText = NSMutableAttributedString()
@@ -114,14 +114,14 @@ class ProfileTableController : ListViewController, RelationTypeTableControllerDe
         if profile.relationType != .none {
             detailText.append(NSMutableAttributedString(
                 string: Emoji.relationType + profile.relationType.rawValue.codeLocalized,
-                attributes: [NSAttributedStringKey.foregroundColor: UIColor.black]))
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]))
             separator = SeparatorString
         }
         
         if let matchMode = profile.matchMode {
             detailText.append(NSMutableAttributedString(
                 string: separator + Emoji.matchMode + matchMode.description.codeLocalized,
-                attributes: [NSAttributedStringKey.foregroundColor: UIColor.black]))
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]))
         }
         cell.detailTextLabel?.attributedText = detailText
         
@@ -160,7 +160,7 @@ class ProfileTableController : ListViewController, RelationTypeTableControllerDe
         let copyAction = UIAlertAction(title: "Copy Profile".localized, style: .default, handler: { (action : UIAlertAction) in
             self.isEditing = false
             self.copyProfile(profile, presenter: self, completion: { (index: Int) in
-                self.tableView.insertRows(at: [IndexPath(row: index, section: 0)], with: UITableViewRowAnimation.bottom)
+                self.tableView.insertRows(at: [IndexPath(row: index, section: 0)], with: UITableView.RowAnimation.bottom)
             })
         })
         alertController.addAction(copyAction)
@@ -168,7 +168,7 @@ class ProfileTableController : ListViewController, RelationTypeTableControllerDe
         let renameAction = UIAlertAction(title: "Rename Profile".localized, style: .default, handler: { (action : UIAlertAction) in
             self.isEditing = false
             self.renameProfile(profile, completion: { (index: Int) in
-                self.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: UITableViewRowAnimation.fade)
+                self.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: UITableView.RowAnimation.fade)
             })
         })
         alertController.addAction(renameAction)
@@ -192,7 +192,7 @@ class ProfileTableController : ListViewController, RelationTypeTableControllerDe
                                                     style: .default, handler: { (action : UIAlertAction) in
                                                         self.isEditing = false
                                                         self.changeMatchingModeProfile(profile, presenter: self, indexPath: indexPath, completion: {
-                                                            self.tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.fade)
+                                                            self.tableView.reloadRows(at: [indexPath], with: UITableView.RowAnimation.fade)
                                                         })
         })
         alertController.addAction(overrideMatchModeAction)
@@ -322,7 +322,7 @@ class ProfileTableController : ListViewController, RelationTypeTableControllerDe
     func didSelectRelationType(_ relationType: RelationType, at indexPath: IndexPath) {
         let profile = UserData.instance.profiles[indexPath.row]
         UserData.instance.changeRelationType(profile, relationType: relationType)
-        self.tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.fade)
+        self.tableView.reloadRows(at: [indexPath], with: UITableView.RowAnimation.fade)
     }
     
     func addEnterBirthYearAlert(completion : (() -> ())? = nil ) {
@@ -362,9 +362,9 @@ class ProfileTableController : ListViewController, RelationTypeTableControllerDe
         alertController.view.tintColor = AccentColor
         self.present(alertController, animated: true, completion: nil)
 
-        let width = NSLayoutConstraint(item: alertController.view, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 270)
+        let width = NSLayoutConstraint(item: alertController.view, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 270)
         alertController.view.addConstraint(width)
-        let height = NSLayoutConstraint(item: alertController.view, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: 295)
+        let height = NSLayoutConstraint(item: alertController.view, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 295)
         alertController.view.addConstraint(height)
         
         pickerView.selectRow(30, inComponent: 0, animated: false)
@@ -396,7 +396,7 @@ class ProfileTableController : ListViewController, RelationTypeTableControllerDe
             textField.spellCheckingType = .yes
             textField.autocapitalizationType = .sentences
             textField.placeholder = "Name".localized
-            NotificationCenter.default.addObserver(self, selector: #selector(self.handleTextFieldTextDidChangeNotification), name: NSNotification.Name.UITextFieldTextDidChange, object: textField)
+            NotificationCenter.default.addObserver(self, selector: #selector(self.handleTextFieldTextDidChangeNotification), name: UITextField.textDidChangeNotification, object: textField)
         }
         
         alertController.view?.tintColor = AccentColor
@@ -428,7 +428,7 @@ class ProfileTableController : ListViewController, RelationTypeTableControllerDe
             textField.autocapitalizationType = .sentences
             textField.text = profile.name
             textField.placeholder = "Name".localized
-            NotificationCenter.default.addObserver(self, selector: #selector(self.handleTextFieldTextDidChangeNotification), name: NSNotification.Name.UITextFieldTextDidChange, object: textField)
+            NotificationCenter.default.addObserver(self, selector: #selector(self.handleTextFieldTextDidChangeNotification), name: UITextField.textDidChangeNotification, object: textField)
         }
         
         alertController.view?.tintColor = AccentColor
@@ -460,7 +460,7 @@ class ProfileTableController : ListViewController, RelationTypeTableControllerDe
             textField.autocapitalizationType = .sentences
             textField.text = String(format: "%@*".localized, profile.name)
             textField.placeholder = "Name".localized
-            NotificationCenter.default.addObserver(self, selector: #selector(self.handleTextFieldTextDidChangeNotification), name: NSNotification.Name.UITextFieldTextDidChange, object: textField)
+            NotificationCenter.default.addObserver(self, selector: #selector(self.handleTextFieldTextDidChangeNotification), name: UITextField.textDidChangeNotification, object: textField)
         }
         
         alertController.view?.tintColor = AccentColor
@@ -534,7 +534,7 @@ class ProfileTableController : ListViewController, RelationTypeTableControllerDe
     
     //MARK: DatePicker Delegate
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        return NSAttributedString(string: String(year - row), attributes: [NSAttributedStringKey.foregroundColor:AccentColor])
+        return NSAttributedString(string: String(year - row), attributes: [NSAttributedString.Key.foregroundColor:AccentColor])
     }
     
     func pickerView(_ pickerView: UIPickerView,

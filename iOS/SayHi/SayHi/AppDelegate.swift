@@ -77,7 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     var settingsItems: [String: String]?
     var settingsSpaceSwitch: Bool = false
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         _ = DataService.instance
         _ = SecureStore.space
         FirebaseApp.configure()
@@ -100,7 +100,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let coverViewController = storyboard.instantiateViewController(withIdentifier: "coverView")
         self.coverView = coverViewController.view.subviews.first!
-        self.maintenanceLabel = self.coverView.viewWithTag(1) as! UILabel
+        self.maintenanceLabel = self.coverView.viewWithTag(1) as? UILabel
         
         NotificationCenter.default.addObserver(self, selector: #selector(dataServiceSetup), name: DataServiceSetupNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(settingsFetched), name: SettingsFetchedNotification, object: nil)
@@ -113,7 +113,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         NotificationCenter.default.removeObserver(self)
     }
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         spaceItems = url.queryItems
         configItems = url.queryItems
         
@@ -157,7 +157,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                 if let backgroundTaskIdentifier = self.backgroundTaskIdentifier {
                     application.endBackgroundTask(backgroundTaskIdentifier)
                 }
-                self.backgroundTaskIdentifier = UIBackgroundTaskInvalid
+                self.backgroundTaskIdentifier = UIBackgroundTaskIdentifier.invalid
             }
         }
         UserData.instance.touch(error: protect, completion: protect)
@@ -167,14 +167,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
         hideCover()
         
-        if self.backgroundTaskIdentifier != UIBackgroundTaskInvalid {
-            if let backgroundTaskIdentifier = self.backgroundTaskIdentifier {
+        if let backgroundTaskIdentifier = self.backgroundTaskIdentifier {
+            if backgroundTaskIdentifier != UIBackgroundTaskIdentifier.invalid {
                 UIApplication.shared.endBackgroundTask(backgroundTaskIdentifier)
+                self.backgroundTaskIdentifier = UIBackgroundTaskIdentifier.invalid
+                
+                self.clearTimer?.invalidate()
+                self.clearTimer = nil
             }
-            self.backgroundTaskIdentifier = UIBackgroundTaskInvalid
-            
-            self.clearTimer?.invalidate()
-            self.clearTimer = nil
         }
         
         if !UserData.instance.initialized || protectImmediately {
@@ -214,7 +214,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         GradientColor1 = UIColor.colorWithHexString(hexString: Settings.instance.gradientColor1, alpha: 1.0)
         GradientColor2 = UIColor.colorWithHexString(hexString: Settings.instance.gradientColor2, alpha: 1.0)
         
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: AccentColor]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: AccentColor]
         UISwitch.appearance().onTintColor = AccentColor
         UISegmentedControl.appearance().tintColor = AccentColor
         
@@ -436,7 +436,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         let okAction = UIAlertAction(title: "OK".localized, style: .default, handler: nil)
         alertController.addAction(okAction)
         let settingsAction = UIAlertAction(title: "Settings".localized, style: .default, handler: { (action: UIAlertAction) in
-            UIApplication.shared.openURL(NSURL(string:UIApplicationOpenSettingsURLString)! as URL)
+            UIApplication.shared.openURL(NSURL(string:UIApplication.openSettingsURLString)! as URL)
         })
         alertController.addAction(settingsAction)
         alertController.view?.tintColor = AccentColor

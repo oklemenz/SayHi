@@ -39,8 +39,8 @@ class TagView: UIView {
             self.button.setImage(tag.category?.iconImage ?? IconService.instance.icon(TagStagedIcon), for: .normal)
             self.button.imageView?.bounds = CGRect(x: 0, y: 0, width: ContentSize, height: ContentSize)
             self.button.imageView?.contentMode = .scaleAspectFit
-            self.button.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0)
-            self.button.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+            self.button.imageEdgeInsets = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
+            self.button.titleEdgeInsets = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
             self.button.contentHorizontalAlignment = .left
             UIView.setAnimationsEnabled(true)
         }

@@ -136,7 +136,7 @@ class QRCodeViewController : PlainController, UIScrollViewDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.stopReadQR()
-        if self.navigationController!.isBeingDismissed || self.navigationController!.isMovingFromParentViewController {
+        if self.navigationController!.isBeingDismissed || self.navigationController!.isMovingFromParent {
             self.destroySession()
         }
         UIApplication.shared.isIdleTimerDisabled = false

@@ -105,8 +105,8 @@ SettingsLanguageTableControllerDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(settingsFetched), name: SettingsFetchedNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(contentLanguageChanged), name: UserDataLangChangedNotification, object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         let dispatchTime = DispatchTime.now() + StayDelay
         DispatchQueue.main.asyncAfter(deadline: dispatchTime) {
@@ -227,7 +227,7 @@ SettingsLanguageTableControllerDelegate {
             setupLanguageSegmentedControl.selectedSegmentIndex = 1
             setupOtherLanguageButton.setTitle("Other...".localized, for: .normal)
         default:
-            setupLanguageSegmentedControl.selectedSegmentIndex = UISegmentedControlNoSegment
+            setupLanguageSegmentedControl.selectedSegmentIndex = UISegmentedControl.noSegment
             setupOtherLanguageButton.setTitle("\(Locale.current.localizedString(forIdentifier: UserData.instance.langCode) ?? "")", for: .normal)
         }
     }
@@ -393,43 +393,43 @@ SettingsLanguageTableControllerDelegate {
             let profile = UserData.instance.currentProfile {
             let scoreText = NSMutableAttributedString(
                 string: String(format: "%i", UserData.instance.shareScore),
-                attributes: [NSAttributedStringKey.foregroundColor: AccentColor,
-                             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.semibold)])
+                attributes: [NSAttributedString.Key.foregroundColor: AccentColor,
+                             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.semibold)])
             if UserData.instance.shareScore == 1 {
                 scoreText.append(NSMutableAttributedString(
                     string: "\n" +
                         "Matching Point".localized,
-                    attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                                 NSAttributedStringKey.font: UIFont.systemFont(ofSize: 13.0)]))
+                    attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                                 NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13.0)]))
             } else {
                 scoreText.append(NSMutableAttributedString(
                     string: "\n" +
                         "Matching Points".localized,
-                    attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                                 NSAttributedStringKey.font: UIFont.systemFont(ofSize: 13.0)]))
+                    attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                                 NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13.0)]))
             }
             self.scoreLabel.attributedText = scoreText
 
             var height : CGFloat = 60
             let currentProfileText = NSMutableAttributedString(
                 string: "Current Profile".localized + "\n",
-                attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
             currentProfileText.append(NSMutableAttributedString(
                 string: profile.name,
-                attributes: [NSAttributedStringKey.foregroundColor: AccentColor]))
+                attributes: [NSAttributedString.Key.foregroundColor: AccentColor]))
             var separator = "\n"
             if profile.relationType != .none {
                 currentProfileText.append(NSMutableAttributedString(
                     string: separator + Emoji.relationType + profile.relationType.rawValue.codeLocalized,
-                    attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                                 NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+                    attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                                 NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
                 separator = SeparatorString
             }
             if let matchMode = profile.matchMode {
                 currentProfileText.append(NSMutableAttributedString(
                     string: separator + Emoji.matchMode + matchMode.description.codeLocalized,
-                    attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                                 NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+                    attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                                 NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
 
             }
             if profile.relationType != .none || profile.matchMode != nil {
@@ -466,10 +466,10 @@ SettingsLanguageTableControllerDelegate {
             if SecureStore.appInitialized() && !UserData.instance.initialized {
                 let text = NSMutableAttributedString(
                     string: "Profile Locked".localized + "\n",
-                    attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
+                    attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
                 text.append(NSMutableAttributedString(
                     string: "[Press to Unlock]".localized,
-                    attributes: [NSAttributedStringKey.foregroundColor: AccentColor]))
+                    attributes: [NSAttributedString.Key.foregroundColor: AccentColor]))
                 self.currentProfileLabel.attributedText = text
             } else {
                 self.currentProfileLabel.text = ""
@@ -502,7 +502,7 @@ SettingsLanguageTableControllerDelegate {
     // MARK: Keyboard Notifications
     @objc func keyboardWillShow(sender: NSNotification) {
         let info = sender.userInfo!
-        let keyboardSize = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.height
+        let keyboardSize = (info[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.height
         setupContainerBottomConstraint.constant = keyboardSize - bottomLayoutGuide.length
         if !UserData.instance.initialized {
             if isIPhone5() {
@@ -511,7 +511,7 @@ SettingsLanguageTableControllerDelegate {
                 nameTopConstraint.constant = -10.0
             }
         }
-        let duration: TimeInterval = (info[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
+        let duration: TimeInterval = (info[UIResponder.keyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
         UIView.animate(withDuration: duration) {
             self.view.layoutIfNeeded()
         }
@@ -527,7 +527,7 @@ SettingsLanguageTableControllerDelegate {
                 nameTopConstraint.constant = 30.0
             }
         }
-        let duration: TimeInterval = (info[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
+        let duration: TimeInterval = (info[UIResponder.keyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
         UIView.animate(withDuration: duration) {
             self.view.layoutIfNeeded()
         }
@@ -632,7 +632,7 @@ SettingsLanguageTableControllerDelegate {
             textField.placeholder = "Alias".localized
             textField.text = alias
             okAction.isEnabled = !alias.isEmpty
-            NotificationCenter.default.addObserver(self, selector: #selector(self.handleTextFieldTextDidChangeNotification), name: NSNotification.Name.UITextFieldTextDidChange, object: textField)
+            NotificationCenter.default.addObserver(self, selector: #selector(self.handleTextFieldTextDidChangeNotification), name: UITextField.textDidChangeNotification, object: textField)
         }
         
         alertController.view?.tintColor = AccentColor
@@ -830,7 +830,7 @@ SettingsLanguageTableControllerDelegate {
     
     // MARK: DatePicker Delegate
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        return NSAttributedString(string: String(year - row), attributes: [NSAttributedStringKey.foregroundColor:  AccentColor])
+        return NSAttributedString(string: String(year - row), attributes: [NSAttributedString.Key.foregroundColor:  AccentColor])
     }
     
     func pickerView(_ pickerView: UIPickerView,

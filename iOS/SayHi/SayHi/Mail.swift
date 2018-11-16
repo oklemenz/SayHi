@@ -34,7 +34,7 @@ class Mail : NSObject, MFMailComposeViewControllerDelegate, MFMessageComposeView
             mail.setSubject("ContactSubject".aliasLocalized)
             let messageBody = String(format: "ContactBody".aliasLocalized, UserData.instance.firstName)
             mail.setMessageBody(messageBody, isHTML: true)
-            mail.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black]
+            mail.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
             self.presenter.present(mail, animated: true)
         } else {
             alertDeviceNoMail()
@@ -58,7 +58,7 @@ class Mail : NSObject, MFMailComposeViewControllerDelegate, MFMessageComposeView
                                      "AppStoreUrlAndroid".aliasLocalized,
                                      UserData.instance.firstName)
             mail.setMessageBody(messageBody, isHTML: true)
-            mail.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: AccentColor]
+            mail.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: AccentColor]
             self.presenter.present(mail, animated: true)
         } else {
             self.alertDeviceNoMail()

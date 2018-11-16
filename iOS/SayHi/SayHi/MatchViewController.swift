@@ -99,38 +99,38 @@ class MatchViewController: PlainController, UICollectionViewDataSource, UICollec
             
             let text = NSMutableAttributedString(
                 string: !match.firstName.isEmpty ? match.firstName : "?".localized,
-                attributes: [NSAttributedStringKey.foregroundColor: AccentColor])
+                attributes: [NSAttributedString.Key.foregroundColor: AccentColor])
             if match.gender != .none {
                 text.append(NSMutableAttributedString(
                     string: ", " +
                         String(format: "\(match.gender.rawValue)_short".codeLocalized),
-                    attributes: [NSAttributedStringKey.foregroundColor: AccentColor]))
+                    attributes: [NSAttributedString.Key.foregroundColor: AccentColor]))
             }
             if match.birthYear >= BaseYear {
                 text.append(NSMutableAttributedString(
                     string: ", " +
                         String(format: "~%i y.".localized, match.age),
-                    attributes: [NSAttributedStringKey.foregroundColor: AccentColor]))
+                    attributes: [NSAttributedString.Key.foregroundColor: AccentColor]))
             }
             text.append(NSMutableAttributedString(
                 string: ", \(match.langCode.uppercased())",
-                attributes: [NSAttributedStringKey.foregroundColor: AccentColor]))
+                attributes: [NSAttributedString.Key.foregroundColor: AccentColor]))
             text.append(NSMutableAttributedString(
                 string: "\n" +
                     match.profileName,
-                attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))                             
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))                             
             
             if match.relationType != .none {
                 text.append(NSMutableAttributedString(
                     string: SeparatorString + Emoji.relationType + match.relationType.rawValue.codeLocalized,
-                    attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                                 NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+                    attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                                 NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
             }
             text.append(NSMutableAttributedString(
                 string: SeparatorString + Emoji.matchMode + match.mode.description.codeLocalized,
-                attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
             
             let label = UILabel(frame: CGRect(x:0, y:0, width:200, height:50))
             label.backgroundColor = UIColor.clear
@@ -354,7 +354,7 @@ class MatchViewController: PlainController, UICollectionViewDataSource, UICollec
         }
         let tag = tagsForCollectionView(collectionView)[indexPath.item]
         self.tagSizingCell?.tagView.button.setTitle(tag.name + IconPlaceholder, for: .normal)
-        return CGSize(width: min(self.tagSizingCell!.tagView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).width, maxWidth), height: ContentSize)
+        return CGSize(width: min(self.tagSizingCell!.tagView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).width, maxWidth), height: ContentSize)
     }
 
     func updateLabels() {
@@ -390,13 +390,12 @@ class MatchViewController: PlainController, UICollectionViewDataSource, UICollec
                 navigationBarBackground.alpha = alpha
             }
         }
+        let contentOffsetYPos = bothPosTagCollectionView.contentSize.height + bothPosTagCollectionView.contentInset.bottom - bothPosTagCollectionView.contentOffset.y - bothPosTagCollectionView.frame.size.height
+        let contentOffsetYNeg = bothNegTagCollectionView.contentSize.height + bothNegTagCollectionView.contentInset.bottom - bothNegTagCollectionView.contentOffset.y - bothNegTagCollectionView.frame.size.height
         let contentOffsetY =
             max(max(onlyPosTagCollectionView.contentInset.top + onlyPosTagCollectionView.contentOffset.y,
                     onlyNegTagCollectionView.contentInset.top + onlyNegTagCollectionView.contentOffset.y),
-                max(bothPosTagCollectionView.contentSize.height + bothPosTagCollectionView.contentInset.bottom -
-                    bothPosTagCollectionView.contentOffset.y - bothPosTagCollectionView.frame.size.height,
-                    bothNegTagCollectionView.contentSize.height + bothNegTagCollectionView.contentInset.bottom -
-                    bothNegTagCollectionView.contentOffset.y - bothNegTagCollectionView.frame.size.height))
+                max(contentOffsetYPos, contentOffsetYNeg))
         var alpha = contentOffsetY / BlurAlphaRatio
         if alpha < 0 {
             alpha = 0

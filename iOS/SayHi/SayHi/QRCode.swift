@@ -114,7 +114,7 @@ class QRCode : NSObject, AVCaptureMetadataOutputObjectsDelegate {
                         }
                         if let qrCodeFrameView = self.qrCodeFrameView {
                             previewView.addSubview(qrCodeFrameView)
-                            previewView.bringSubview(toFront: qrCodeFrameView)
+                            previewView.bringSubviewToFront(qrCodeFrameView)
                         }
                         
                         self.captureSession?.startRunning()
@@ -144,7 +144,7 @@ class QRCode : NSObject, AVCaptureMetadataOutputObjectsDelegate {
         let okAction = UIAlertAction(title: "OK".localized, style: .default, handler: nil)
         alertController.addAction(okAction)
         let settingsAction = UIAlertAction(title: "Settings".localized, style: .default, handler: { (action : UIAlertAction) in
-            UIApplication.shared.openURL(NSURL(string:UIApplicationOpenSettingsURLString)! as URL)
+            UIApplication.shared.openURL(NSURL(string:UIApplication.openSettingsURLString)! as URL)
         })
         alertController.addAction(settingsAction)
         alertController.view?.tintColor = AccentColor

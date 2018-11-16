@@ -91,11 +91,11 @@ class NewCategoryTableController: ListViewController, UITextFieldDelegate, NewCa
             
             let text = NSMutableAttributedString(
                 string: "New Category".localized + "\n",
-                attributes: [NSAttributedStringKey.foregroundColor: AccentColor])
+                attributes: [NSAttributedString.Key.foregroundColor: AccentColor])
             text.append(NSMutableAttributedString(
                 string: Locale.current.localizedString(forIdentifier: contentLangCode) ?? "",
-                attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
             let label = UILabel(frame: CGRect(x:0, y:0, width:200, height:50))
             label.backgroundColor = UIColor.clear
             label.numberOfLines = 2

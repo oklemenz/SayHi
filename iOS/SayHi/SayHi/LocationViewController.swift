@@ -46,28 +46,28 @@ class LocationViewController: PlainController {
     func setLocationDescription(name: String, street: String, city: String, country: String) {
         let text = NSMutableAttributedString(
             string: name + "\n",
-            attributes: [NSAttributedStringKey.foregroundColor: AccentColor])
+            attributes: [NSAttributedString.Key.foregroundColor: AccentColor])
         
         var separator = ""
         if !street.isEmpty {
             text.append(NSMutableAttributedString(
                 string: separator + street,
-                attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
             separator = ", "
         }
         if !city.isEmpty {
             text.append(NSMutableAttributedString(
                 string: separator + city,
-                attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
             separator = ", "
         }
         if !country.isEmpty {
             text.append(NSMutableAttributedString(
                 string: separator + country,
-                attributes: [NSAttributedStringKey.foregroundColor: UIColor.black,
-                             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12.0)]))
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor.black,
+                             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12.0)]))
             separator = ", "
         }
         let label = UILabel(frame: CGRect(x:0, y:0, width:200, height:50))

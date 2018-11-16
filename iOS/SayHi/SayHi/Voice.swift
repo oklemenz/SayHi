@@ -82,7 +82,7 @@ class Voice : NSObject, AVAudioRecorderDelegate {
         audioPlayer = try? AVAudioPlayer(data: voice, fileTypeHint: "m4a")
         if let audioPlayer = audioPlayer {
             do {
-                try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
+                try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
                 audioPlayer.volume = 1.0
                 audioPlayer.prepareToPlay()
                 audioPlayer.play()
@@ -107,7 +107,11 @@ class Voice : NSObject, AVAudioRecorderDelegate {
         do {
             self.recordingSession = AVAudioSession.sharedInstance()
             self.recordCompletion = completion
-            try recordingSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+            if #available(iOS 10.0, *) {
+                try recordingSession.setCategory(.playAndRecord, mode: .default)
+            } else {
+                AVAudioSession.sharedInstance().perform(NSSelectorFromString("setCategory:error:"), with: AVAudioSession.Category.playback)
+            }
             try recordingSession.setActive(true)
             recordingSession.requestRecordPermission() { [unowned self] allowed in
                 DispatchQueue.main.async {
@@ -198,7 +202,7 @@ class Voice : NSObject, AVAudioRecorderDelegate {
         let okAction = UIAlertAction(title: "OK".localized, style: .default, handler: nil)
         alertController.addAction(okAction)
         let settingsAction = UIAlertAction(title: "Settings".localized, style: .default, handler: { (action : UIAlertAction) in
-            UIApplication.shared.openURL(NSURL(string:UIApplicationOpenSettingsURLString)! as URL)
+            UIApplication.shared.openURL(NSURL(string:UIApplication.openSettingsURLString)! as URL)
         })
         alertController.addAction(settingsAction)
         alertController.view?.tintColor = AccentColor
