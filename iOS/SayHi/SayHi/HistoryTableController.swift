@@ -105,7 +105,7 @@ class HistoryTableController : ListViewController {
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         if let rightBarButtonItems = self.navigationItem.rightBarButtonItems {
-            if let index = rightBarButtonItems.index(of: deleteAllButton) {
+            if let index = rightBarButtonItems.firstIndex(of: deleteAllButton) {
                 self.navigationItem.rightBarButtonItems?.remove(at: index)
             }
             if editing && UserData.instance.history.count > 0 {

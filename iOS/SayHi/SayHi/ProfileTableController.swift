@@ -52,7 +52,7 @@ class ProfileTableController : ListViewController, RelationTypeTableControllerDe
         if Settings.instance.disableNewProfiles {
             helpCreateProfileArrow.isHidden = true
             helpCreateProfileLabel.isHidden = true
-            if let index = self.navigationItem.rightBarButtonItems?.index(of: newProfileButton) {
+            if let index = self.navigationItem.rightBarButtonItems?.firstIndex(of: newProfileButton) {
                 self.navigationItem.rightBarButtonItems?.remove(at: index)
             }
         }

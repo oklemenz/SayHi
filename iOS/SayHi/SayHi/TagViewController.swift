@@ -216,7 +216,7 @@ class TagViewController: PlainController, DragAndDropCollectionViewDataSource, N
         if Settings.instance.disableNewTags {
             helpNewTagArrow.isHidden = true
             helpNewTagLabel.isHidden = true
-            if let index = self.navigationItem.rightBarButtonItems?.index(of: newTagButton) {
+            if let index = self.navigationItem.rightBarButtonItems?.firstIndex(of: newTagButton) {
                 self.navigationItem.rightBarButtonItems?.remove(at: index)
             }
         }
@@ -274,10 +274,10 @@ class TagViewController: PlainController, DragAndDropCollectionViewDataSource, N
     
     func makeReadOnly() {
         _ = view
-        if let index = self.navigationItem.rightBarButtonItems?.index(of: newTagButton) {
+        if let index = self.navigationItem.rightBarButtonItems?.firstIndex(of: newTagButton) {
             self.navigationItem.rightBarButtonItems?.remove(at: index)
         }
-        if let index = self.navigationItem.rightBarButtonItems?.index(of: matchButton) {
+        if let index = self.navigationItem.rightBarButtonItems?.firstIndex(of: matchButton) {
             self.navigationItem.rightBarButtonItems?.remove(at: index)
         }
         
@@ -518,12 +518,12 @@ class TagViewController: PlainController, DragAndDropCollectionViewDataSource, N
             case tagCollectionView!:
                 return nil
             case posTagCollectionView!:
-                if let index = profile.posTags.index(of: tag) {
+                if let index = profile.posTags.firstIndex(of: tag) {
                     return IndexPath(row: index, section: 0)
                 }
                 return nil
             case negTagCollectionView!:
-                if let index = profile.negTags.index(of: tag) {
+                if let index = profile.negTags.firstIndex(of: tag) {
                     return IndexPath(row: index, section: 0)
                 }
                 return nil
@@ -630,7 +630,7 @@ class TagViewController: PlainController, DragAndDropCollectionViewDataSource, N
             let tags = tagsForCollectionView(collectionView)
             for aTag : Tag in tags {
                 if tag == aTag {
-                    let position = tags.index(of: aTag)!
+                    let position = tags.firstIndex(of: aTag)!
                     let indexPath = IndexPath(item: position, section: 0)
                     return indexPath
                 }
@@ -937,10 +937,10 @@ class TagViewController: PlainController, DragAndDropCollectionViewDataSource, N
     }
     
     func assignTag(_ tag: Tag, assignPos: Bool) {
-        let posIndex = profile.posTags.index { (posTag) -> Bool in
+        let posIndex = profile.posTags.firstIndex { (posTag) -> Bool in
             return posTag.effectiveKey == tag.effectiveKey
         }
-        let negIndex = profile.negTags.index { (negTag) -> Bool in
+        let negIndex = profile.negTags.firstIndex { (negTag) -> Bool in
             return negTag.effectiveKey == tag.effectiveKey
         }
         if assignPos {

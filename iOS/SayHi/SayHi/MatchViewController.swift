@@ -191,7 +191,7 @@ class MatchViewController: PlainController, UICollectionViewDataSource, UICollec
             
             if match.matchLangCode.isEmpty || match.matchLangCode == match.langCode {
                 if let rightBarButtonItems = self.navigationItem.rightBarButtonItems {
-                    if let index = rightBarButtonItems.index(of: infoButton) {
+                    if let index = rightBarButtonItems.firstIndex(of: infoButton) {
                         self.navigationItem.rightBarButtonItems?.remove(at: index)
                     }
                 }

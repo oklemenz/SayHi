@@ -70,7 +70,7 @@ class PlainController: UIViewController {
                 }
             }
             if let helpButton = helpButton {
-                if let index = rightBarButtonItems.index(of: helpButton) {
+                if let index = rightBarButtonItems.firstIndex(of: helpButton) {
                     if Settings.instance.disableHelp {
                         self.navigationItem.rightBarButtonItems?.remove(at: index)
                         helpButtonIndex = index

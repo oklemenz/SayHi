@@ -168,7 +168,7 @@ class QRCodeViewController : PlainController, UIScrollViewDelegate {
         for button in buttons {
             switch button {
             case "tag":
-                if let index = self.navigationItem.rightBarButtonItems?.index(of: tagBarButtonItem) {
+                if let index = self.navigationItem.rightBarButtonItems?.firstIndex(of: tagBarButtonItem) {
                     self.navigationItem.rightBarButtonItems?.remove(at: index)
                 }
             default:

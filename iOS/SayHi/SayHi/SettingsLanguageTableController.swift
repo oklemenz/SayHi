@@ -186,7 +186,7 @@ class SettingsLanguageTableController: ListViewController {
     }
     
     override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
-        if let i = sections.index(of: title) {
+        if let i = sections.firstIndex(of: title) {
             self.scrollDrag = true
             self.tableView.scrollToRow(at: IndexPath(row: 0, section: i), at: .top, animated: true)
         }

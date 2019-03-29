@@ -87,7 +87,7 @@ class SearchCategoryViewController: ListViewController, UISearchBarDelegate, New
             helpNewCategorArrow.isHidden = true
             helpNewCategoryLabel.isHidden = true
             if newCategoryButton != nil {
-                if let index = self.navigationItem.rightBarButtonItems?.index(of: newCategoryButton) {
+                if let index = self.navigationItem.rightBarButtonItems?.firstIndex(of: newCategoryButton) {
                     self.navigationItem.rightBarButtonItems?.remove(at: index)
                 }
             }

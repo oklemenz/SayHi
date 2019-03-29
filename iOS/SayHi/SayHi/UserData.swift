@@ -231,7 +231,7 @@ class UserData {
         profile.name = name
         Analytics.instance.logChangeProfile(profile: profile)
         self.touch()
-        return self.profiles.index(where: { $0 === profile }) ?? -1
+        return self.profiles.firstIndex(where: { $0 === profile }) ?? -1
     }
     
     func removeProfile(_ profile: Profile) -> Int? {
@@ -352,7 +352,7 @@ class UserData {
     }
     
     func removeMatch(_ match: Match) {
-        if let index = history.index(where: { (entry) -> Bool in
+        if let index = history.firstIndex(where: { (entry) -> Bool in
             return entry == match
         }) {
             history.remove(at: index)

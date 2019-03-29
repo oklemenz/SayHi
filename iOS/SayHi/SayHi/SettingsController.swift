@@ -183,7 +183,7 @@ class SettingsViewController: ListViewController, UITextFieldDelegate, UIPickerV
             matchHandshakeSwitch.isEnabled = false
         }
         
-        matchModePickerView.selectRow(MatchMode.list.index(of: UserData.instance.matchMode) ?? 0, inComponent: 0, animated: false)
+        matchModePickerView.selectRow(MatchMode.list.firstIndex(of: UserData.instance.matchMode) ?? 0, inComponent: 0, animated: false)
         updateMatchMode()
 
         updateRecordMatchGreeting()
@@ -206,7 +206,7 @@ class SettingsViewController: ListViewController, UITextFieldDelegate, UIPickerV
                 touchIDSwitch.isEnabled = false
             }
         }
-        requestAuthPickerView.selectRow(PasscodeTimeout.list.index(of: UserData.instance.passcodeTimeout) ?? 0, inComponent: 0, animated: false)
+        requestAuthPickerView.selectRow(PasscodeTimeout.list.firstIndex(of: UserData.instance.passcodeTimeout) ?? 0, inComponent: 0, animated: false)
         updateRequestAuth()
     }
     

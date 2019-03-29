@@ -272,14 +272,14 @@ class Match : NSObject {
             return message.posTags.contains(tag.effectiveKey)
         })
         match.bothPosTags.sort { (tag1, tag2) -> Bool in
-            return (message.posTags.index(of: tag1.effectiveKey) ?? 0) - (message.posTags.index(of: tag2.effectiveKey) ?? 0) < 0
+            return (message.posTags.firstIndex(of: tag1.effectiveKey) ?? 0) - (message.posTags.firstIndex(of: tag2.effectiveKey) ?? 0) < 0
         }
         
         match.bothNegTags = profile.negTags.filter({ (tag) -> Bool in
             return message.negTags.contains(tag.effectiveKey)
         })
         match.bothNegTags.sort { (tag1, tag2) -> Bool in
-            return (message.negTags.index(of: tag1.effectiveKey) ?? 0) - (message.negTags.index(of: tag2.effectiveKey) ?? 0) < 0
+            return (message.negTags.firstIndex(of: tag1.effectiveKey) ?? 0) - (message.negTags.firstIndex(of: tag2.effectiveKey) ?? 0) < 0
         }
         
         if match.mode == .adapt || match.mode == .open {
@@ -287,7 +287,7 @@ class Match : NSObject {
                 return message.negTags.contains(tag.effectiveKey)
             })
             match.onlyPosTags.sort { (tag1, tag2) -> Bool in
-                return (message.negTags.index(of: tag1.effectiveKey) ?? 0) - (message.negTags.index(of: tag2.effectiveKey) ?? 0) < 0
+                return (message.negTags.firstIndex(of: tag1.effectiveKey) ?? 0) - (message.negTags.firstIndex(of: tag2.effectiveKey) ?? 0) < 0
             }
         }
         
@@ -296,7 +296,7 @@ class Match : NSObject {
                 return message.posTags.contains(tag.effectiveKey)
             })
             match.onlyNegTags.sort { (tag1, tag2) -> Bool in
-                return (message.posTags.index(of: tag1.effectiveKey) ?? 0) - (message.posTags.index(of: tag2.effectiveKey) ?? 0) < 0
+                return (message.posTags.firstIndex(of: tag1.effectiveKey) ?? 0) - (message.posTags.firstIndex(of: tag2.effectiveKey) ?? 0) < 0
             }
         }
         
