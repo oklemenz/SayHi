@@ -179,7 +179,7 @@ Bis bald!
 "MatchingDetails" = "Matchingdetails";
 "MatchingDifferentLanguage" = "Matching wurde basierend auf unterschiedlichen Inhaltssprachen durchgeführt (%@ / %@).\n\nTags ohne englische Entsprechung wurden beim Matching nicht berücksichtigt.";
 
-"AppStoreUrlIOS" = "https://itunes.apple.com/de/app/say-hi/id1224255479?l=de&ls=1&mt=8";
+"AppStoreUrlIOS" = "https://apps.apple.com/de/app/say-hi/id1224255479?l=de&ls=1&mt=8";
 "AppStoreUrlAndroid" = "https://play.google.com/store/apps/details?id=de.oklemenz.sayhi";
 
 "%@*" = "%@*";
