@@ -179,7 +179,7 @@ Bye!
 "MatchingDetails" = "Matching Details";
 "MatchingDifferentLanguage" = "Matching was performed based on different content languages (%@ / %@).\n\nTags without english equivalent were not considered during matching.";
 
-"AppStoreUrlIOS" = "https://itunes.apple.com/us/app/say-hi/id1224255479?l=de&ls=1&mt=8";
+"AppStoreUrlIOS" = "https://apps.apple.com/us/app/say-hi/id1224255479?l=de&ls=1&mt=8";
 "AppStoreUrlAndroid" = "https://play.google.com/store/apps/details?id=de.oklemenz.sayhi";
 
 "SpaceSwitchedSuccessfully." = "Space switched successfully. Space can be changed again in settings.";
