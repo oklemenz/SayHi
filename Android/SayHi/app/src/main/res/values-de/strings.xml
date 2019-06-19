@@ -164,7 +164,7 @@
     <string name="UseExistingTag">Verwende Existierenden</string>
     <string name="UseExistingCategory">Verwende Existierende</string>
 
-    <string name="AppStoreUrlIOS">https://itunes.apple.com/de/app/say-hi/id1224255479?l=de&amp;ls=1&amp;mt=8</string>
+    <string name="AppStoreUrlIOS">https://apps.apple.com/de/app/say-hi/id1224255479?l=de&amp;ls=1&amp;mt=8</string>
     <string name="AppStoreUrlAndroid">https://play.google.com/store/apps/details?id=de.oklemenz.sayhi</string>
 
     <string name="MatchNum">%1$d Match</string>
