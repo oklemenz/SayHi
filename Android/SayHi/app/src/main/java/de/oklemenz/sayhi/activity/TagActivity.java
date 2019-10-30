@@ -556,10 +556,13 @@ public class TagActivity extends BaseActivity implements TagAdapter.Delegate, Ca
                 fetchTags();
             }
             Analytics.getInstance().logNeutral(tag, previousValue);
+            refreshPosNegTags();
         } else if (view == posTagView) {
             Analytics.getInstance().logPositive(tag, previousValue);
+            refreshPosTags();
         } else if (view == negTagView) {
             Analytics.getInstance().logNegative(tag, previousValue);
+            refreshNegTags();
         }
         updateLabels();
         profile.touch(null);
