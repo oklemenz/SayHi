@@ -175,7 +175,7 @@ class Match : NSObject {
     }
     
     static func fromJSON(json : JSON) -> Match {
-        var raw = json.rawValue as! [String:Any]
+        let raw = json.rawValue as! [String:Any]
         let match = Match()
         
         match.date = (raw["d"] as! String).dateFromISO!

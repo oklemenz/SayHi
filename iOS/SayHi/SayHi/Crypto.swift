@@ -89,7 +89,7 @@ class Crypto {
     }
     
     static func toBase64(_ bytesArray: [UInt8]) -> String {
-        return Data(bytes: bytesArray).base64EncodedString()
+        return Data(bytesArray).base64EncodedString()
     }
     
     static func fromBase64(_ base64: String) -> [UInt8]? {

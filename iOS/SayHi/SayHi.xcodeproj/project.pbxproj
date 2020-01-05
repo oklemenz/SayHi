@@ -389,7 +389,6 @@
 				546381761DAE375800BD14ED /* Frameworks */,
 				546381771DAE375800BD14ED /* Resources */,
 				341C6749BBB28CCA6DA0B3EB /* [CP] Embed Pods Frameworks */,
-				1586727195B2C41F263BEE46 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -460,21 +459,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1586727195B2C41F263BEE46 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SayHi/Pods-SayHi-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		341C6749BBB28CCA6DA0B3EB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

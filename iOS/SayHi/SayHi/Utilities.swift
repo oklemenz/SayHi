@@ -378,7 +378,7 @@ extension String {
     
     static func random(length: Int) -> String {
         let charSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-        var c = charSet.map { String($0) }
+        let c = charSet.map { String($0) }
         var s:String = ""
         for _ in (1...length) {
             s.append(c[Int(arc4random()) % c.count])

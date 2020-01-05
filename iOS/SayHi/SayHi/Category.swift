@@ -154,7 +154,7 @@ class Category: Equatable {
     }
     
     static func fromJSON(json : JSON) -> Category {
-        var raw = json.rawValue as! [String:Any]
+        let raw = json.rawValue as! [String:Any]
         let category = Category(key: raw["k"] as! String,
                                 langCode: raw["l"] as! String,
                                 name: raw["n"] as! String,

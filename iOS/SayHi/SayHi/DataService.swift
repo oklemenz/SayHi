@@ -1005,7 +1005,7 @@ class DataService {
             if let matchesRef = matchesRef {
                 let matchRef = matchesRef.child(key)
                 matchRef.runTransactionBlock({ (currentData) -> TransactionResult in
-                    if var data = currentData.value as? [String: Any] {
+                    if let data = currentData.value as? [String: Any] {
                         let first = data["first"] as? [String: Any]
                         let second = data["second"] as? [String: Any]
                         if (first == nil || first?["active"] as? Bool == false) &&

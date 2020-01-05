@@ -122,7 +122,7 @@ class Tag: Equatable {
     }
     
     static func fromJSON(json : JSON) -> Tag {
-        var raw = json.rawValue as! [String:Any]
+        let raw = json.rawValue as! [String:Any]
         let tag = Tag(key: raw["k"] as! String,
                       langCode: raw["l"] as! String,
                       name: raw["n"] as! String,

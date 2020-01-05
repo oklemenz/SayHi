@@ -84,7 +84,7 @@ class Profile {
     }
     
     static func fromJSON(json : JSON) -> Profile {
-        var raw = json.rawValue as! [String: Any]
+        let raw = json.rawValue as! [String: Any]
         let profile = Profile(id: raw["i"] as! Int,
                               name: raw["n"] as! String)
         profile.relationType = RelationType(rawValue: raw["r"] as? String ?? RelationType.none.rawValue)!

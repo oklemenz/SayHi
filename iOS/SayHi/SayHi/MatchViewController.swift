@@ -290,7 +290,7 @@ class MatchViewController: PlainController, UICollectionViewDataSource, UICollec
             case .adapt:
                 leftWidthConstraint = leftWidthConstraint.setMultiplier(multiplier: 1.0)
                 rightWidthConstraint = rightWidthConstraint.setMultiplier(multiplier: 0.0)
-                middleHeightConstraint = middleHeightConstraint.setFirstItem(topContainerView)
+                middleHeightConstraint = middleHeightConstraint.setFirstItem(topContainerView!)
                 middleHeightConstraint.constant = InfoBarHeight
                 helpLeftWidthConstraint = helpLeftWidthConstraint.setMultiplier(multiplier: 1.0)
                 helpRightWidthConstraint = helpRightWidthConstraint.setMultiplier(multiplier: 0.0)
@@ -298,7 +298,7 @@ class MatchViewController: PlainController, UICollectionViewDataSource, UICollec
             case .tries:
                 leftWidthConstraint = leftWidthConstraint.setMultiplier(multiplier: 0.0)
                 rightWidthConstraint = rightWidthConstraint.setMultiplier(multiplier: 1.0)
-                middleHeightConstraint = middleHeightConstraint.setFirstItem(topContainerView)
+                middleHeightConstraint = middleHeightConstraint.setFirstItem(topContainerView!)
                 middleHeightConstraint.constant = InfoBarHeight
                 helpLeftWidthConstraint = helpLeftWidthConstraint.setMultiplier(multiplier: 0.0)
                 helpRightWidthConstraint = helpRightWidthConstraint.setMultiplier(multiplier: 1.0)

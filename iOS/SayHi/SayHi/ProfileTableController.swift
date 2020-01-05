@@ -362,9 +362,9 @@ class ProfileTableController : ListViewController, RelationTypeTableControllerDe
         alertController.view.tintColor = AccentColor
         self.present(alertController, animated: true, completion: nil)
 
-        let width = NSLayoutConstraint(item: alertController.view, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 270)
+        let width = NSLayoutConstraint(item: alertController.view!, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 270)
         alertController.view.addConstraint(width)
-        let height = NSLayoutConstraint(item: alertController.view, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 295)
+        let height = NSLayoutConstraint(item: alertController.view!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 295)
         alertController.view.addConstraint(height)
         
         pickerView.selectRow(30, inComponent: 0, animated: false)
