@@ -1,0 +1,12 @@
+{
+    "name": "SAY Hi!",
+    "short_name": "SAY Hi!",
+    "description": "» Meet & Match «",
+    "icons": [{
+        "src": "touch-icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }],
+    "display": "fullscreen",
+    "orientation": "any"
+}
