@@ -15,7 +15,7 @@ So what are you waiting for. Get SAY Hi! now and start your new experience when 
 ## Download
 
 - App Store: https://apps.apple.com/us/app/say-hi/id1224255479?mt=8
-- Play Store: https://play.google.com/store/apps/details?id=de.oklemenz.sayhi![Uploading say_hi.jpeg…]()
+- Play Store: https://play.google.com/store/apps/details?id=de.oklemenz.sayhi
 
 ## Targets
 
