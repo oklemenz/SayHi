@@ -4,18 +4,17 @@
   src: url("sanfrancisco.woff");
 }
 
-html {
-    height: calc(100% + env(safe-area-inset-top));
-	height: calc(100% + constant(safe-area-inset-top));
-}
-
 .body {
-    position: fixed;    
-    overflow: hidden;
     margin: 0px;
     width: 100%;
-    min-width: 320px;
-    min-height: 320px;
+	height: 100%;
+}
+
+@media (orientation: landscape) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
 }
 
 .body_no_margin {
@@ -25,10 +24,10 @@ html {
 .background {
     top: 0px;
     bottom: 0px;
-    background: #89BDAA;
     background: -webkit-linear-gradient(top left,#89BDAB, #E8DFB3);
     background: -o-linear-gradient(top left,#89BDAB, #E8DFB3);
     background: linear-gradient(to bottom right,#89BDAB, #E8DFB3);
+	background-color: black;
     background-repeat: no-repeat;
     -webkit-background-size: 100%; 
     -moz-background-size: 100%; 
