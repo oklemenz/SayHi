@@ -4,6 +4,7 @@
   src: url("sanfrancisco.woff");
 }
 
+html,
 .body {
     margin: 0px;
     width: 100%;
@@ -11,6 +12,7 @@
 }
 
 @media (orientation: landscape) {
+	html,
     body {
         width: 100vw;
         height: 100vh;
@@ -40,7 +42,6 @@
 }
 
 .main {
-    position: absolute;
     top: 0;
     right: 0;
     left: 0;
@@ -111,7 +112,7 @@
 
 .download_label {
     font-family: "San Francisco";
-    font-size: 14px;
+    font-size: 15px;
     color: white;
     padding-bottom: 10px;
 }
@@ -150,7 +151,7 @@
 .dataprivacy {
     color: white;
     font-family: "San Francisco";
-    font-size: 13px;
+    font-size: 15px;
     position: absolute;
     width: 100%;
     bottom: 10px;
@@ -162,7 +163,7 @@
 .dataprivacy a {
     color: white;
     font-family: "San Francisco";
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     text-decoration: none;
 }
